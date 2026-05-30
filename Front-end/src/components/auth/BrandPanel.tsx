@@ -29,11 +29,11 @@ export function BrandPanel() {
               aria-hidden="true"
             />
           </div>
-          <span className="text-2xl font-bold tracking-tight text-white" style={{ fontFamily: "var(--font-aref-ruqaa)" }}>
-            Pytomatiza<span className="-ml-1 text-[var(--brand-accent-dynamic)]">+</span>
+          <span className="text-2xl font-bold tracking-tight text-[var(--brand-accent-foreground)]" style={{ fontFamily: "var(--font-aref-ruqaa)" }}>
+            Pytomatiza<span className="-ml-1 text-[var(--brand-accent-foreground)]/70">+</span>
           </span>
         </div>
-        <p className="mt-6 max-w-sm text-lg leading-relaxed text-white/80">
+        <p className="mt-6 max-w-sm text-lg leading-relaxed text-[var(--brand-accent-foreground)]/80">
           AI-powered automation that thinks, learns, and executes &mdash; so you
           don&apos;t have to.
         </p>
@@ -60,11 +60,11 @@ export function BrandPanel() {
         ].map(({ icon: Icon, title, desc }) => (
           <div key={title} className="flex gap-4">
             <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-[var(--radius-sm)] bg-white/15">
-              <Icon className="h-4 w-4 text-white" aria-hidden="true" />
+              <Icon className="h-4 w-4 text-[var(--brand-accent-foreground)]" aria-hidden="true" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-white">{title}</p>
-              <p className="text-xs leading-relaxed text-white/65">{desc}</p>
+              <p className="text-sm font-semibold text-[var(--brand-accent-foreground)]">{title}</p>
+              <p className="text-xs leading-relaxed text-[var(--brand-accent-foreground)]/65">{desc}</p>
             </div>
           </div>
         ))}

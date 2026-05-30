@@ -287,7 +287,16 @@
     "quickActionsDescription": "Allgemeine Aufgaben für den Einstieg",
     "createAutomation": "Neue Automatisierung",
     "viewAgents": "Alle Agenten anzeigen",
-    "viewReports": "Berichte anzeigen"
+    "viewReports": "Berichte anzeigen",
+    "error": {
+      "title": "Fehler beim Laden der Daten",
+      "loadingFailed": "Dashboard-Daten konnten nicht geladen werden. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+      "retry": "Erneut versuchen"
+    },
+    "empty": {
+      "title": "Keine Agenten gefunden",
+      "description": "Erstellen Sie Ihren ersten Automatisierungsagenten, um hier Aktivitäten zu sehen."
+    }
   },
   "agents": {
     "title": "Agentinnen",

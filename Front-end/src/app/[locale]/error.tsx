@@ -39,7 +39,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
           <div className="flex gap-4">
             <button
               onClick={reset}
-              className="inline-flex items-center gap-2 rounded-[var(--radius-md)] bg-[var(--brand-accent)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[var(--brand-accent-hover)] transition-colors min-h-[44px]"
+              className="inline-flex items-center gap-2 rounded-[var(--radius-md)] bg-[var(--brand-accent)] px-5 py-2.5 text-sm font-medium text-[var(--brand-accent-foreground)] hover:bg-[var(--brand-accent-hover)] transition-colors min-h-[44px]"
             >
               <RefreshCw className="h-4 w-4" aria-hidden="true" />
               Try again

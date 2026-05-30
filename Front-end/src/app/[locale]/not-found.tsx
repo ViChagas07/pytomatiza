@@ -23,7 +23,7 @@ export default function NotFound() {
 
       <Link
         href="/dashboard"
-        className="inline-flex items-center gap-2 rounded-[var(--radius-md)] bg-[var(--brand-accent)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[var(--brand-accent-hover)] transition-colors min-h-[44px]"
+        className="inline-flex items-center gap-2 rounded-[var(--radius-md)] bg-[var(--brand-accent)] px-5 py-2.5 text-sm font-medium text-[var(--brand-accent-foreground)] hover:bg-[var(--brand-accent-hover)] transition-colors min-h-[44px]"
       >
         Go to dashboard
       </Link>

@@ -25,6 +25,7 @@ import {
   type NLPWorkflowInput,
 } from "@/lib/validations/workflow";
 import { Button } from "@/components/ui/Button";
+import { LoginAlert } from "@/components/ui/LoginAlert";
 import { cn } from "@/lib/utils";
 
 /* ── Mock workflow type ──────────────────────────────────────────── */
@@ -39,11 +40,7 @@ interface Workflow {
 
 /* ── Example suggestions ─────────────────────────────────────────── */
 
-const suggestions = [
-  "automations.nlpBuilder.example1",
-  "automations.nlpBuilder.example2",
-  "automations.nlpBuilder.example3",
-];
+const suggestions = ["example1", "example2", "example3"];
 
 export function AutomationsContent() {
   const t = useTranslations("automations");
@@ -52,24 +49,7 @@ export function AutomationsContent() {
   const [isBuilding, setIsBuilding] = React.useState(false);
   const [buildResult, setBuildResult] = React.useState<string | null>(null);
   const [buildError, setBuildError] = React.useState<string | null>(null);
-  const [workflows, setWorkflows] = React.useState<Workflow[]>([
-    {
-      id: "wf-1",
-      instruction:
-        "When I receive an email from a client with an attachment, save the attachment to Google Drive and notify me on Slack.",
-      status: "active",
-      lastTriggered: new Date(Date.now() - 3600000).toISOString(),
-      executions: 142,
-    },
-    {
-      id: "wf-2",
-      instruction:
-        "Every Friday at 5pm, compile all closed support tickets and send a summary to #team-updates on Slack.",
-      status: "active",
-      lastTriggered: new Date(Date.now() - 86400000).toISOString(),
-      executions: 28,
-    },
-  ]);
+  const [workflows, setWorkflows] = React.useState<Workflow[]>([]);
 
   const {
     register,
@@ -155,6 +135,9 @@ export function AutomationsContent() {
 
   return (
     <>
+      {/* Login prompt — shown when user is a visitor (not authenticated) */}
+      <LoginAlert label={t("loginPrompt")} />
+
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold tracking-tight text-[var(--text-primary)]">

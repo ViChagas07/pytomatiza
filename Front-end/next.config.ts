@@ -26,6 +26,16 @@ const nextConfig: NextConfig = {
 
   /* Redirects are handled by src/proxy.ts — no redirects needed here */
 
+  /* API Proxy — forwards /api/v1/* requests to the FastAPI backend.
+     Eliminates CORS issues for client-side fetches while keeping
+     server-side fetches direct. */
+  rewrites: async () => [
+    {
+      source: "/api/v1/:path*",
+      destination: "http://localhost:8000/api/v1/:path*",
+    },
+  ],
+
   /* Security Headers */
   headers: async () => [
     {

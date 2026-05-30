@@ -284,10 +284,19 @@
     },
     "recentActivity": "Actividad reciente",
     "quickActions": "Acciones rápidas",
-    "quickActionsDescription": "Tareas comunes para empezar",
+    "quickActionsDescription": "Tareas comunes para comenzar",
     "createAutomation": "Nueva automatización",
     "viewAgents": "Ver todos los agentes",
-    "viewReports": "Ver informes"
+    "viewReports": "Ver informes",
+    "error": {
+      "title": "Error al cargar datos",
+      "loadingFailed": "No se pudieron cargar los datos del panel. Verifique su conexión e intente nuevamente.",
+      "retry": "Intentar de nuevo"
+    },
+    "empty": {
+      "title": "No se encontraron agentes",
+      "description": "Cree su primer agente de automatización para comenzar a ver actividad aquí."
+    }
   },
   "agents": {
     "title": "Agentes",

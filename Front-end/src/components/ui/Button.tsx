@@ -27,7 +27,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-[var(--brand-accent)] text-[var(--text-inverse)] hover:bg-[var(--brand-accent-hover)]",
+          "bg-[var(--brand-accent)] text-[var(--brand-accent-foreground)] hover:bg-[var(--brand-accent-hover)]",
         secondary:
           "bg-[var(--surface-2)] text-[var(--text-primary)] hover:bg-[var(--border-default)]",
         outline:
@@ -37,7 +37,7 @@ const buttonVariants = cva(
         danger:
           "bg-[var(--color-danger)] text-white hover:bg-[#c93a39]",
         accent:
-          "bg-[var(--brand-accent)] text-[var(--text-inverse)] hover:bg-[var(--brand-accent-hover)]",
+          "bg-[var(--brand-accent)] text-[var(--brand-accent-foreground)] hover:bg-[var(--brand-accent-hover)]",
       },
       size: {
         sm: "h-9 px-3 text-xs rounded-[var(--radius-sm)]",

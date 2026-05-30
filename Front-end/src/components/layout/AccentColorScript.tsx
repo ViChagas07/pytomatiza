@@ -40,10 +40,17 @@ export function AccentColorScript() {
               purple: "#453CA0", orange: "#D1651F", red: "#D03A39", pink: "#C530E0"
             };
 
+            /* Foreground: dark for yellow, white for all others */
+            var fgMap = {
+              yellow: "#1A1500", blue: "#ffffff", green: "#ffffff",
+              purple: "#ffffff", orange: "#ffffff", red: "#ffffff", pink: "#ffffff"
+            };
+
             root.style.setProperty("--brand-accent-dynamic", mainMap[key] || "#FFD43B");
             root.style.setProperty("--brand-accent", mainMap[key] || "#FFD43B");
             root.style.setProperty("--brand-accent-light", lightMap[key] || "#FFF8E1");
             root.style.setProperty("--brand-accent-hover", hoverMap[key] || "#E6BF36");
+            root.style.setProperty("--brand-accent-foreground", fgMap[key] || "#ffffff");
           }
         }
       } catch (e) {

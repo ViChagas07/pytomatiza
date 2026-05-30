@@ -39,6 +39,20 @@ export const accentColorMapDark: Record<AccentColor, string> = {
   pink: "#f0abfc",
 };
 
+/* ── Foreground (text/icon color on accent backgrounds) ──────────── */
+/*    Yellow needs a dark foreground for WCAG AAA contrast;
+      all other colors stay white.                                  */
+
+export const accentColorForegroundMap: Record<AccentColor, string> = {
+  yellow: "#1A1500",
+  blue: "#ffffff",
+  green: "#ffffff",
+  purple: "#ffffff",
+  orange: "#ffffff",
+  red: "#ffffff",
+  pink: "#ffffff",
+};
+
 /* ── Light variant (backgrounds, selection, icon circles) ────────── */
 
 export const accentColorLightMap: Record<AccentColor, string> = {
@@ -100,11 +114,13 @@ export function applyAccentColor(accentColor: AccentColor): void {
   const main = isDark ? accentColorMapDark[accentColor] : accentColorMap[accentColor];
   const light = isDark ? accentColorLightMapDark[accentColor] : accentColorLightMap[accentColor];
   const hover = isDark ? accentColorHoverMapDark[accentColor] : accentColorHoverMap[accentColor];
+  const fg = accentColorForegroundMap[accentColor];
 
   root.style.setProperty("--brand-accent-dynamic", main);
   root.style.setProperty("--brand-accent", main);
   root.style.setProperty("--brand-accent-light", light);
   root.style.setProperty("--brand-accent-hover", hover);
+  root.style.setProperty("--brand-accent-foreground", fg);
 }
 
 /* ── Zustand persisted store ──────────────────────────────────────── */

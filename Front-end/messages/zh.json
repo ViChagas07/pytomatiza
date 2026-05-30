@@ -287,7 +287,16 @@
     "quickActionsDescription": "帮助您入门的常见任务",
     "createAutomation": "新自动化",
     "viewAgents": "查看所有代理",
-    "viewReports": "查看报告"
+    "viewReports": "查看报告",
+    "error": {
+      "title": "数据加载错误",
+      "loadingFailed": "无法加载仪表板数据。请检查您的连接后重试。",
+      "retry": "重试"
+    },
+    "empty": {
+      "title": "未找到代理",
+      "description": "创建您的第一个自动化代理以开始在此处查看活动。"
+    }
   },
   "agents": {
     "title": "代理商",

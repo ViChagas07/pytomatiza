@@ -287,7 +287,16 @@
     "quickActionsDescription": "Attività comuni per iniziare",
     "createAutomation": "Nuova automazione",
     "viewAgents": "Visualizza tutti gli agenti",
-    "viewReports": "Visualizza rapporti"
+    "viewReports": "Visualizza rapporti",
+    "error": {
+      "title": "Errore nel caricamento dei dati",
+      "loadingFailed": "Impossibile caricare i dati del dashboard. Verifica la connessione e riprova.",
+      "retry": "Riprova"
+    },
+    "empty": {
+      "title": "Nessun agente trovato",
+      "description": "Crea il tuo primo agente di automazione per iniziare a vedere l'attività qui."
+    }
   },
   "agents": {
     "title": "Agenti",

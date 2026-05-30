@@ -283,11 +283,26 @@
       "pendingApprovals": "Pending approvals"
     },
     "recentActivity": "Recent activity",
+    "recentActivityEmpty": "Empty history… Create your first automation with Pytomatiza+ by going to Modules!",
     "quickActions": "Quick actions",
     "quickActionsDescription": "Common tasks to get you started",
     "createAutomation": "New automation",
     "viewAgents": "View all agents",
-    "viewReports": "View reports"
+    "viewReports": "View reports",
+    "error": {
+      "title": "Error loading data",
+      "loadingFailed": "Unable to load dashboard data. Please check your connection and try again.",
+      "retry": "Try again",
+      "offlineBanner": "Backend unavailable — displayed data may be out of date"
+    },
+    "loginPrompt": "Sign in to your account to access real-time data!",
+    "loginAction": "Sign in",
+    "empty": {
+      "title": "No agents found",
+      "description": "Create your first automation agent to start seeing activity here.",
+      "offlineTitle": "Backend offline",
+      "offlineDescription": "Connect to the backend to see your agents. Click \"Retry\" once the service is available."
+    }
   },
   "agents": {
     "title": "Agents",
@@ -395,6 +410,7 @@
       "deleted": "Workflow deleted successfully",
       "statusToggled": "Workflow {status}"
     },
+    "loginPrompt": "Log in to your account to access real-time data!",
     "errors": {
       "instructionTooShort": "Instruction must be at least 10 characters",
       "instructionTooLong": "Instruction must not exceed 500 characters",
@@ -457,6 +473,7 @@
       "errors24h": "Errors (24h)"
     },
     "tableHeader": "Recent Executions",
+    "tableEmpty": "No execution logs found.",
     "tableAriaLabel": "Execution logs",
     "status": {
       "success": "Success",
@@ -484,6 +501,7 @@
       "log7": "Scheduled 2 team syncs for next week",
       "log8": "Translating blog post to 9 languages"
     },
+    "loginPrompt": "Log in to your account to access real-time data!",
     "duration": {
       "ongoing": "ongoing"
     }

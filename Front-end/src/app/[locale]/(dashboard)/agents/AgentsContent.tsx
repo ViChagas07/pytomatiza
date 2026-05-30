@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════
    Pytomatiza+ Agents — AgentsContent (Client)
-   Searchable, filterable grid of agent cards.
+   Receives server-fetched agent data. Handles search, filtering,
+   and interactive actions (run, pause, configure) via API calls.
    ═══════════════════════════════════════════════════════════════════ */
 
 "use client";
@@ -9,7 +10,6 @@ import * as React from "react";
 import { useTranslations } from "next-intl";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import { AgentCard } from "@/components/dashboard/AgentCard";
-import { AgentCardsSkeleton } from "@/components/dashboard/DashboardSkeletons";
 import {
   useAgentStore,
   type AgentType,
@@ -17,99 +17,9 @@ import {
   type Agent,
 } from "@/store";
 import { cn } from "@/lib/utils";
+import { api } from "@/lib/api";
 
-/* ── Mock agent data ──────────────────────────────────────────────── */
-
-const mockAgents: Agent[] = [
-  {
-    id: "1",
-    name: "Email Attachment Saver",
-    description: "Monitors inbox for attachments, saves them to Google Drive, and notifies via Slack.",
-    type: "productivity",
-    status: "running",
-    lastRun: new Date().toISOString(),
-    successRate: 98,
-    totalExecutions: 1423,
-    isEditable: true,
-  },
-  {
-    id: "2",
-    name: "Weekly Report Generator",
-    description: "Compiles data from multiple sources and generates a formatted PDF report every Monday.",
-    type: "data",
-    status: "idle",
-    lastRun: new Date(Date.now() - 86400000).toISOString(),
-    successRate: 100,
-    totalExecutions: 52,
-    isEditable: true,
-  },
-  {
-    id: "3",
-    name: "Social Media Monitor",
-    description: "Tracks brand mentions across Twitter, LinkedIn, and Reddit. Auto-responds to support queries.",
-    type: "content",
-    status: "running",
-    lastRun: new Date().toISOString(),
-    successRate: 87,
-    totalExecutions: 3890,
-    isEditable: true,
-  },
-  {
-    id: "4",
-    name: "Database Backup Agent",
-    description: "Performs nightly database backups and verifies integrity. Alerts on failure.",
-    type: "admin",
-    status: "error",
-    lastRun: new Date(Date.now() - 43200000).toISOString(),
-    successRate: 95,
-    totalExecutions: 365,
-    isEditable: true,
-  },
-  {
-    id: "5",
-    name: "API Health Checker",
-    description: "Pings all internal APIs every minute. Escalates to PagerDuty on downtime.",
-    type: "technical",
-    status: "running",
-    lastRun: new Date().toISOString(),
-    successRate: 99,
-    totalExecutions: 8760,
-    isEditable: true,
-  },
-  {
-    id: "6",
-    name: "Invoice Processor",
-    description: "Extracts data from PDF invoices using OCR and pushes to accounting software.",
-    type: "data",
-    status: "paused",
-    lastRun: new Date(Date.now() - 259200000).toISOString(),
-    successRate: 92,
-    totalExecutions: 210,
-    isEditable: false,
-  },
-  {
-    id: "7",
-    name: "Meeting Scheduler",
-    description: "Coordinates calendars across teams to find optimal meeting times and sends invites.",
-    type: "productivity",
-    status: "idle",
-    lastRun: new Date(Date.now() - 3600000).toISOString(),
-    successRate: 96,
-    totalExecutions: 840,
-    isEditable: true,
-  },
-  {
-    id: "8",
-    name: "Content Translator",
-    description: "Translates blog posts and documentation into 9 languages using AI.",
-    type: "content",
-    status: "idle",
-    lastRun: null,
-    successRate: 0,
-    totalExecutions: 0,
-    isEditable: true,
-  },
-];
+/* ── Filter option definitions ───────────────────────────────────── */
 
 const agentTypes: { value: AgentType | "all"; labelKey: string }[] = [
   { value: "all", labelKey: "allTypes" },
@@ -128,20 +38,68 @@ const agentStatuses: { value: AgentStatus | "all"; labelKey: string }[] = [
   { value: "paused", labelKey: "statuses.paused" },
 ];
 
-export function AgentsContent() {
-  const t = useTranslations("agents");
-  const { filters, setFilters, resetFilters } = useAgentStore();
-  const [loaded, setLoaded] = React.useState(false);
+/* ── Props ────────────────────────────────────────────────────────── */
 
+interface AgentsContentProps {
+  /** Agents pre-fetched on the server (SSR) */
+  initialAgents: Agent[];
+}
+
+/* ── Component ────────────────────────────────────────────────────── */
+
+export function AgentsContent({ initialAgents }: AgentsContentProps) {
+  const t = useTranslations("agents");
+  const { filters, setFilters, resetFilters, setAgents } = useAgentStore();
+
+  const [agents, setLocalAgents] = React.useState<Agent[]>(initialAgents);
+  const [actionError, setActionError] = React.useState<string | null>(null);
+
+  /* Sync initial agents to global store on mount */
   React.useEffect(() => {
-    const timer = setTimeout(() => setLoaded(true), 1000);
-    return () => clearTimeout(timer);
+    setAgents(initialAgents);
+  }, [initialAgents, setAgents]);
+
+  /* ── Action handlers ────────────────────────────────────────── */
+
+  const handleRun = React.useCallback(async (id: string) => {
+    setActionError(null);
+    try {
+      const res = await api.runAgent(id);
+      if (res.error) {
+        setActionError(res.error.message);
+        return;
+      }
+      setLocalAgents((prev) =>
+        prev.map((a) => (a.id === id ? { ...a, status: "running" as const } : a))
+      );
+    } catch (err) {
+      setActionError(err instanceof Error ? err.message : "Unknown error");
+    }
   }, []);
 
-  if (!loaded) return <AgentCardsSkeleton />;
+  const handlePause = React.useCallback(async (id: string) => {
+    setActionError(null);
+    try {
+      const res = await api.pauseAgent(id);
+      if (res.error) {
+        setActionError(res.error.message);
+        return;
+      }
+      setLocalAgents((prev) =>
+        prev.map((a) => (a.id === id ? { ...a, status: "paused" as const } : a))
+      );
+    } catch (err) {
+      setActionError(err instanceof Error ? err.message : "Unknown error");
+    }
+  }, []);
 
-  /* Filter logic */
-  const filtered = mockAgents.filter((agent) => {
+  const handleConfigure = React.useCallback((id: string) => {
+    window.location.href = `/agents?id=${id}`;
+  }, []);
+
+  /* ── Filter logic (client-side) ─────────────────────────────── */
+
+  const filtered = agents.filter((agent) => {
     const matchesSearch =
       !filters.search ||
       agent.name.toLowerCase().includes(filters.search.toLowerCase()) ||
@@ -167,6 +125,16 @@ export function AgentsContent() {
           {t("subtitle")}
         </p>
       </div>
+
+      {/* Action error banner */}
+      {actionError && (
+        <div
+          role="alert"
+          className="rounded-[var(--radius-md)] border border-[var(--color-danger)]/30 bg-[#fef2f2] px-4 py-3 text-sm text-[var(--text-primary)]"
+        >
+          {actionError}
+        </div>
+      )}
 
       {/* Search + Filters */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -251,7 +219,7 @@ export function AgentsContent() {
               "focus-visible:outline-[var(--brand-accent)]",
               "min-h-[40px]"
             )}
-            aria-label="Reset all filters"
+            aria-label={t("resetFilters") || "Reset all filters"}
           >
             <X className="h-3.5 w-3.5" aria-hidden="true" />
             <span className="hidden sm:inline">Reset</span>
@@ -279,12 +247,28 @@ export function AgentsContent() {
             <div key={agent.id} role="listitem">
               <AgentCard
                 agent={agent}
+                onRun={handleRun}
+                onPause={handlePause}
+                onConfigure={handleConfigure}
                 data-testid={`agent-card-${agent.id}`}
               />
             </div>
           ))}
         </div>
+      ) : agents.length === 0 ? (
+        /* No agents at all — real empty state */
+        <div
+          className="flex flex-col items-center justify-center py-16 text-center"
+          role="status"
+          data-testid="agents-empty"
+        >
+          <SlidersHorizontal className="h-10 w-10 text-[var(--text-tertiary)] mb-3" aria-hidden="true" />
+          <p className="text-sm text-[var(--text-secondary)] max-w-sm">
+            {t("empty")}
+          </p>
+        </div>
       ) : (
+        /* Has agents but none match filters */
         <div
           className="flex flex-col items-center justify-center py-16 text-center"
           role="status"

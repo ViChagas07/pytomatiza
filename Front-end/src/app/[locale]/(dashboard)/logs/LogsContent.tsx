@@ -10,91 +10,12 @@ import * as React from "react";
 import { useTranslations } from "next-intl";
 import {
   ClipboardList,
-  Clock,
   CheckCircle,
-  XCircle,
-  AlertTriangle,
   Hourglass,
+  XCircle,
+  Clock,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
-
-/* ── Mock log entries ────────────────────────────────────────────── */
-
-interface LogEntry {
-  id: string;
-  agentKey: string;
-  actionKey: string;
-  status: "success" | "error" | "pending" | "running";
-  timestamp: string;
-  duration: string;
-}
-
-const mockLogs: LogEntry[] = [
-  {
-    id: "log1",
-    agentKey: "emailSaver",
-    actionKey: "log1",
-    status: "success",
-    timestamp: new Date(Date.now() - 120000).toISOString(),
-    duration: "4.2s",
-  },
-  {
-    id: "log2",
-    agentKey: "reportGen",
-    actionKey: "log2",
-    status: "success",
-    timestamp: new Date(Date.now() - 3600000).toISOString(),
-    duration: "12.8s",
-  },
-  {
-    id: "log3",
-    agentKey: "socialMonitor",
-    actionKey: "log3",
-    status: "success",
-    timestamp: new Date(Date.now() - 7200000).toISOString(),
-    duration: "2.1s",
-  },
-  {
-    id: "log4",
-    agentKey: "dbBackup",
-    actionKey: "log4",
-    status: "error",
-    timestamp: new Date(Date.now() - 43200000).toISOString(),
-    duration: "45.3s",
-  },
-  {
-    id: "log5",
-    agentKey: "apiChecker",
-    actionKey: "log5",
-    status: "success",
-    timestamp: new Date(Date.now() - 60000).toISOString(),
-    duration: "0.8s",
-  },
-  {
-    id: "log6",
-    agentKey: "invoiceProc",
-    actionKey: "log6",
-    status: "pending",
-    timestamp: new Date(Date.now() - 1800000).toISOString(),
-    duration: "—",
-  },
-  {
-    id: "log7",
-    agentKey: "meetingSched",
-    actionKey: "log7",
-    status: "success",
-    timestamp: new Date(Date.now() - 900000).toISOString(),
-    duration: "3.5s",
-  },
-  {
-    id: "log8",
-    agentKey: "contentTrans",
-    actionKey: "log8",
-    status: "running",
-    timestamp: new Date(Date.now() - 300000).toISOString(),
-    duration: "ongoing",
-  },
-];
+import { LoginAlert } from "@/components/ui/LoginAlert";
 
 /* ── Component ────────────────────────────────────────────────────── */
 
@@ -107,22 +28,11 @@ export function LogsContent() {
     return () => clearTimeout(timer);
   }, []);
 
-  /* ── Status config (labels from i18n) ───────────────────────── */
-  const statusConfig: Record<
-    LogEntry["status"],
-    { icon: React.ComponentType<{ className?: string }>; color: string; bg: string }
-  > = {
-    success: { icon: CheckCircle, color: "text-[var(--color-success)]", bg: "bg-[var(--color-success)]/10" },
-    error: { icon: XCircle, color: "text-[var(--color-danger)]", bg: "bg-[var(--color-danger)]/10" },
-    pending: { icon: Hourglass, color: "text-[var(--color-warning)]", bg: "bg-[var(--color-warning)]/10" },
-    running: { icon: AlertTriangle, color: "text-[var(--brand-accent)]", bg: "bg-[var(--brand-accent-light)]" },
-  };
-
   const stats = [
-    { key: "totalExecutions", value: "1,247", icon: ClipboardList },
-    { key: "successRate", value: "96.4%", icon: CheckCircle },
-    { key: "pendingApprovals", value: "3", icon: Hourglass },
-    { key: "errors24h", value: "1", icon: XCircle },
+    { key: "totalExecutions", value: "0", icon: ClipboardList },
+    { key: "successRate", value: "---", icon: CheckCircle },
+    { key: "pendingApprovals", value: "0", icon: Hourglass },
+    { key: "errors24h", value: "0", icon: XCircle },
   ];
 
   if (!loaded) {
@@ -131,6 +41,9 @@ export function LogsContent() {
 
   return (
     <div className="space-y-8">
+      {/* Login prompt — shown when user is a visitor (not authenticated) */}
+      <LoginAlert label={t("loginPrompt")} />
+
       {/* ── Header ──────────────────────────────────────────────── */}
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
@@ -161,72 +74,17 @@ export function LogsContent() {
         ))}
       </div>
 
-      {/* ── Logs table ───────────────────────────────────────────── */}
+      {/* ── Logs table (empty — mock data removed) ────────────────── */}
       <div className="rounded-[var(--radius-lg)] border border-[var(--border-default)] bg-[var(--surface-0)] shadow-[var(--shadow-sm)] overflow-hidden">
-        {/* Table header */}
         <div className="flex items-center gap-4 border-b border-[var(--border-default)] px-5 py-3">
           <Clock className="h-4 w-4 text-[var(--text-tertiary)]" aria-hidden="true" />
           <span className="text-sm font-semibold text-[var(--text-primary)]">{t("tableHeader")}</span>
         </div>
-
-        {/* Table body */}
-        <div role="list" aria-label={t("tableAriaLabel")}>
-          {mockLogs.map((log) => {
-            const s = statusConfig[log.status];
-            const Icon = s.icon;
-            const durationLabel = log.duration === "ongoing" ? t("duration.ongoing") : log.duration;
-            return (
-              <div
-                key={log.id}
-                role="listitem"
-                className={cn(
-                  "flex items-center gap-4 border-b border-[var(--border-default)] px-5 py-4",
-                  "last:border-b-0 transition-colors hover:bg-[var(--surface-1)]"
-                )}
-              >
-                {/* Status icon */}
-                <div className={cn("flex h-8 w-8 shrink-0 items-center justify-center rounded-full", s.bg)}>
-                  <Icon className={cn("h-4 w-4", s.color)} aria-hidden="true" />
-                </div>
-
-                {/* Info */}
-                <div className="min-w-0 flex-1">
-                  <p className="text-sm font-medium text-[var(--text-primary)] truncate">
-                    {t(`agents.${log.agentKey}`)}
-                  </p>
-                  <p className="text-xs text-[var(--text-secondary)] truncate">
-                    {t(`actions.${log.actionKey}`)}
-                  </p>
-                </div>
-
-                {/* Meta */}
-                <div className="hidden sm:flex sm:items-center sm:gap-4 shrink-0">
-                  <span className="text-xs text-[var(--text-tertiary)]">
-                    {new Date(log.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
-                  </span>
-                  <span className="text-xs text-[var(--text-tertiary)] tabular-nums w-12 text-right">
-                    {durationLabel}
-                  </span>
-                </div>
-
-                {/* Status badge */}
-                <span
-                  className={cn(
-                    "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium shrink-0",
-                    s.bg,
-                    s.color
-                  )}
-                >
-                  {t(`status.${log.status}`)}
-                </span>
-
-                {/* Mobile time */}
-                <span className="text-xs text-[var(--text-tertiary)] sm:hidden shrink-0">
-                  {new Date(log.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
-                </span>
-              </div>
-            );
-          })}
+        <div className="flex flex-col items-center justify-center py-12 text-center">
+          <Clock className="h-10 w-10 text-[var(--text-tertiary)] mb-3" aria-hidden="true" />
+          <p className="text-sm text-[var(--text-secondary)]">
+            {t("tableEmpty")}
+          </p>
         </div>
       </div>
     </div>

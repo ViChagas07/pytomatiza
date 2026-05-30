@@ -227,7 +227,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     "focus-visible:outline-2 focus-visible:outline-offset-2",
                     "focus-visible:outline-[var(--brand-accent)]",
                     isActive(href)
-                      ? "bg-[var(--brand-accent)] text-white font-semibold"
+                      ? "bg-[var(--brand-accent)] text-[var(--brand-accent-foreground)] font-semibold"
                       : "text-[var(--text-secondary)] hover:bg-[var(--surface-1)] hover:text-[var(--text-primary)]"
                   )}
                 >
@@ -260,7 +260,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     "focus-visible:outline-2 focus-visible:outline-offset-2",
                     "focus-visible:outline-[var(--brand-accent)]",
                     active
-                      ? "border-[var(--brand-accent)] bg-[var(--brand-accent)] text-white font-semibold"
+                      ? "border-[var(--brand-accent)] bg-[var(--brand-accent)] text-[var(--brand-accent-foreground)] font-semibold"
                       : "border border-[var(--border-default)] text-[var(--text-secondary)] hover:bg-[var(--surface-1)] hover:text-[var(--text-primary)]"
                   )}
                 >

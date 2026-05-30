@@ -238,7 +238,7 @@ export function ModulesDropdown({ isOpen, onClose, triggerRef, activeHref }: Mod
               "flex h-10 w-10 shrink-0 items-center justify-center rounded-[var(--radius-md)] transition-colors",
               isActiveModule ? "bg-[var(--brand-accent)]" : "bg-[var(--brand-accent-light)]"
             )}>
-              <Icon className={cn("h-5 w-5", isActiveModule ? "text-white" : "text-[var(--brand-accent)]")} aria-hidden="true" />
+              <Icon className={cn("h-5 w-5", isActiveModule ? "text-[var(--brand-accent-foreground)]" : "text-[var(--brand-accent)]")} aria-hidden="true" />
             </div>
             <div className="min-w-0">
               <h3 className={cn("text-sm font-semibold", isActiveModule ? "text-[var(--brand-accent)]" : "text-[var(--text-primary)]")}>

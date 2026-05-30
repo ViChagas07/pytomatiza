@@ -149,7 +149,7 @@ export function AgentCard({
             className={cn(
               "inline-flex items-center gap-1.5 rounded-[var(--radius-sm)] px-3 py-1.5",
               "text-xs font-medium transition-colors",
-              "bg-[var(--brand-accent)] text-white",
+              "bg-[var(--brand-accent)] text-[var(--brand-accent-foreground)]",
               "hover:bg-[var(--brand-accent-hover)]",
               "focus-visible:outline-2 focus-visible:outline-offset-1",
               "focus-visible:outline-[var(--brand-accent)]",

@@ -283,11 +283,26 @@
       "pendingApprovals": "Aprovações pendentes"
     },
     "recentActivity": "Atividade recente",
+    "recentActivityEmpty": "Histórico vazio… Faça sua primeira automação com o Pytomatiza+ indo em Módulos!",
     "quickActions": "Ações rápidas",
     "quickActionsDescription": "Tarefas comuns para começar",
     "createAutomation": "Nova automação",
     "viewAgents": "Ver todos os agentes",
-    "viewReports": "Ver relatórios"
+    "viewReports": "Ver relatórios",
+    "error": {
+      "title": "Erro ao carregar dados",
+      "loadingFailed": "Não foi possível carregar os dados do painel. Verifique sua conexão e tente novamente.",
+      "retry": "Tentar novamente",
+      "offlineBanner": "Backend indisponível — os dados exibidos podem estar desatualizados"
+    },
+    "loginPrompt": "Faça login em sua conta para ter acesso a dados em tempo-real!",
+    "loginAction": "Entrar",
+    "empty": {
+      "title": "Nenhum agente encontrado",
+      "description": "Crie seu primeiro agente de automação para começar a ver atividades aqui.",
+      "offlineTitle": "Backend offline",
+      "offlineDescription": "Conecte-se ao backend para ver seus agentes. Clique em \"Tentar novamente\" quando o serviço estiver disponível."
+    }
   },
   "agents": {
     "title": "Agentes",
@@ -395,6 +410,7 @@
       "deleted": "Fluxo excluído com sucesso",
       "statusToggled": "Fluxo {status}"
     },
+    "loginPrompt": "Faça login em sua conta para ter acesso a dados em tempo-real!",
     "errors": {
       "instructionTooShort": "A instrução deve ter pelo menos 10 caracteres",
       "instructionTooLong": "A instrução não deve exceder 500 caracteres",
@@ -457,6 +473,7 @@
       "errors24h": "Erros (24h)"
     },
     "tableHeader": "Execuções Recentes",
+    "tableEmpty": "Nenhum registro de execução encontrado.",
     "tableAriaLabel": "Registros de execução",
     "status": {
       "success": "Sucesso",
@@ -484,6 +501,7 @@
       "log7": "Agendou 2 sincronizações de equipe para a próxima semana",
       "log8": "Traduzindo post do blog para 9 idiomas"
     },
+    "loginPrompt": "Faça login em sua conta para ter acesso a dados em tempo-real!",
     "duration": {
       "ongoing": "em andamento"
     }

@@ -284,10 +284,19 @@
     },
     "recentActivity": "Activité récente",
     "quickActions": "Actions rapides",
-    "quickActionsDescription": "Tâches courantes pour vous aider à démarrer",
+    "quickActionsDescription": "Tâches courantes pour commencer",
     "createAutomation": "Nouvelle automatisation",
     "viewAgents": "Voir tous les agents",
-    "viewReports": "Afficher les rapports"
+    "viewReports": "Afficher les rapports",
+    "error": {
+      "title": "Erreur de chargement des données",
+      "loadingFailed": "Impossible de charger les données du tableau de bord. Vérifiez votre connexion et réessayez.",
+      "retry": "Réessayer"
+    },
+    "empty": {
+      "title": "Aucun agent trouvé",
+      "description": "Créez votre premier agent d'automatisation pour commencer à voir l'activité ici."
+    }
   },
   "agents": {
     "title": "Agentes",

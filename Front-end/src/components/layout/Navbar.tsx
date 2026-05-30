@@ -161,7 +161,7 @@ export function Navbar() {
                   "focus-visible:outline-[var(--brand-accent)]",
                   /* Active page — solid accent highlight */
                   isActive(href)
-                    ? "text-white bg-[var(--brand-accent)] font-semibold"
+                    ? "text-[var(--brand-accent-foreground)] bg-[var(--brand-accent)] font-semibold"
                     : "text-[var(--text-secondary)] hover:bg-[var(--surface-1)] hover:text-[var(--text-primary)]"
                 )}
               >
@@ -205,7 +205,7 @@ export function Navbar() {
                 "focus-visible:outline-2 focus-visible:outline-offset-2",
                 "focus-visible:outline-[var(--brand-accent)]",
                 (isModulesOpen || isOnModulePage)
-                  ? "text-white bg-[var(--brand-accent)] font-semibold"
+                  ? "text-[var(--brand-accent-foreground)] bg-[var(--brand-accent)] font-semibold"
                   : "text-[var(--text-secondary)]"
               )}
               onMouseEnter={(e) => {

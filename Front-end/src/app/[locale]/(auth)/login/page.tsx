@@ -74,7 +74,7 @@ export default async function LoginPage({ params }: LoginPageProps) {
         <Link
           href="/"
           aria-label="Pytomatiza+ — Ir para a página inicial"
-          className="flex items-center gap-4 rounded-[var(--radius-sm)] transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="flex items-center gap-2 rounded-[var(--radius-sm)] text-lg font-bold tracking-tight transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] bg-white/15 backdrop-blur-sm">
             <Image
@@ -86,9 +86,10 @@ export default async function LoginPage({ params }: LoginPageProps) {
               aria-hidden="true"
             />
           </div>
-          <span className="text-lg font-bold tracking-tight text-white" style={{ fontFamily: "var(--font-aref-ruqaa)" }}>
-            Pytomatiza<span className="-ml-1 text-[var(--brand-accent-dynamic)]">+</span>
+          <span className="text-white" style={{ fontFamily: "var(--font-aref-ruqaa)" }}>
+            Pytomatiza
           </span>
+          <span className="-ml-2 text-base text-[var(--brand-accent-dynamic)]">+</span>
         </Link>
 
         {/* Language + Theme toggles — white over dark bg */}

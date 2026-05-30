@@ -101,16 +101,31 @@ class Settings(BaseSettings):
         ".doc", ".docx", ".txt", ".csv", ".xlsx",
     }
 
+    @field_validator("CORS_ORIGINS", mode="before")
+    @classmethod
+    def _parse_cors_origins(cls, v: Any) -> list[str]:
+        """Parse JSON array string from .env into a list of origin URLs."""
+        if isinstance(v, str):
+            import json
+            try:
+                parsed: list[Any] = json.loads(v)  # ← anota o retorno de json.loads
+                return [str(item) for item in parsed]  # item é Any → str() aceita
+            except (json.JSONDecodeError, TypeError):
+                pass
+            return [item.strip() for item in v.split(",") if item.strip()]
+        if isinstance(v, (list, tuple)):
+            return [str(item) for item in v]  # type: ignore[arg-type]
+        return ["http://localhost:3000"]
+
     @field_validator("ALLOWED_UPLOAD_EXTENSIONS", mode="before")
     @classmethod
     def _parse_extensions(cls, v: Any) -> set[str]:
-            """Parse a comma-separated string from env into a set of extensions."""
-            if isinstance(v, str):
-                return {ext.strip().lower() for ext in v.split(",") if ext.strip()}
-            if isinstance(v, (list, tuple, set)):
-                items: list[Any] = list(v)  # type: ignore[arg-type]
-                return {str(item) for item in items}
-            return set()
+        """Parse a comma-separated string from env into a set of extensions."""
+        if isinstance(v, str):
+            return {ext.strip().lower() for ext in v.split(",") if ext.strip()}
+        if isinstance(v, (list, tuple, set)):
+            return {str(item) for item in list(v)}  # type: ignore[arg-type]
+        return set()
 
 
 @lru_cache

@@ -284,10 +284,19 @@
     },
     "recentActivity": "最近の活動",
     "quickActions": "クイックアクション",
-    "quickActionsDescription": "始めるための一般的なタスク",
+    "quickActionsDescription": "はじめによく使う操作",
     "createAutomation": "新しい自動化",
     "viewAgents": "すべてのエージェントを表示",
-    "viewReports": "レポートを表示する"
+    "viewReports": "レポートを表示する",
+    "error": {
+      "title": "データの読み込みエラー",
+      "loadingFailed": "ダッシュボードデータを読み込めませんでした。接続を確認して再試行してください。",
+      "retry": "再試行"
+    },
+    "empty": {
+      "title": "エージェントが見つかりません",
+      "description": "最初の自動化エージェントを作成して、ここでアクティビティを確認できるようにしましょう。"
+    }
   },
   "agents": {
     "title": "エージェント",

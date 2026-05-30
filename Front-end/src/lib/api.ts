@@ -2,9 +2,15 @@
    Pytomatiza+ API Client
    Typed fetch wrapper for the FastAPI backend.
    Handles auth tokens, error normalization, and response parsing.
+
+   Resilience features:
+   - Automatic retry with exponential backoff for transient errors
+   - Network error classification (OFFLINE vs SERVER_ERROR vs AUTH)
+   - Health-check endpoint to verify backend reachability
+   - Graceful degradation helpers for dashboard consumers
    ═══════════════════════════════════════════════════════════════════ */
 
-import type { Agent } from "@/store";
+import type { Agent, AgentStatus } from "@/store";
 
 /* ── API Response Types ──────────────────────────────────────────── */
 
@@ -20,10 +26,21 @@ export interface ApiError {
   details?: Record<string, string[]>;
 }
 
+/** Categorised error codes so consumers can decide on UI treatment. */
+export type ErrorCode =
+  | "NETWORK_ERROR"      // backend unreachable (DNS, connection refused, timeout)
+  | "BACKEND_OFFLINE"    // health-check explicitly returned 503 or timed out
+  | "AUTH_ERROR"         // 401 / 403 — token expired, insufficient permissions
+  | "NOT_FOUND"          // 404
+  | "VALIDATION_ERROR"   // 422 / 400
+  | "SERVER_ERROR"       // 5xx
+  | "UNKNOWN_ERROR";     // anything else
+
 export interface PaginatedResponse<T> {
   items: T[];
   total: number;
   page: number;
+  /** Number of items per page (backend sends `per_page`) */
   pageSize: number;
   totalPages: number;
 }
@@ -35,137 +52,331 @@ export interface DashboardStats {
   pendingApprovals: number;
 }
 
+/** Default zeroed stats for graceful degradation when backend is offline. */
+export const EMPTY_DASHBOARD_STATS: DashboardStats = {
+  activeAgents: 0,
+  automationsToday: 0,
+  successRate: 0,
+  pendingApprovals: 0,
+};
+
+/* ── Backend Agent Response Shape ────────────────────────────────── */
+
+/** Raw agent shape returned by the FastAPI backend. */
+export interface BackendAgentResponse {
+  id: string;
+  name: string;
+  description: string;
+  agent_type: string;
+  status: string;
+  config: Record<string, unknown>;
+  owner_id: string;
+  created_at: string;
+  updated_at: string;
+}
+
+/** Paginated agent list as returned by GET /agents */
+export interface BackendAgentListResponse {
+  items: BackendAgentResponse[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+/** Mapped frontend agent list — what consumers receive */
+export interface AgentListResult {
+  items: Agent[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+}
+
+/* ── Mapping helpers ─────────────────────────────────────────────── */
+
+const STATUS_MAP: Record<string, AgentStatus> = {
+  active: "running",
+  running: "running",
+  inactive: "idle",
+  idle: "idle",
+  paused: "paused",
+  error: "error",
+};
+
+/**
+ * Maps a backend agent response to the frontend Agent shape.
+ */
+export function mapAgentToFrontend(raw: BackendAgentResponse): Agent {
+  return {
+    id: raw.id,
+    name: raw.name,
+    description: raw.description,
+    type: raw.agent_type as Agent["type"],
+    status: STATUS_MAP[raw.status] ?? "idle",
+    lastRun: raw.updated_at,
+    successRate: 0, // Not yet provided by backend — TODO: add computed field
+    totalExecutions: 0, // Not yet provided by backend — TODO: add computed field
+    isEditable: true, // Owner can always edit their own agents
+  };
+}
+
 /* ── API Base URL ────────────────────────────────────────────────── */
 
-const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
+/* ── API Base URLs ──────────────────────────────────────────────────
+   Client-side:  relative path → Next.js proxy → http://localhost:8000
+   Server-side:  absolute URL   → direct fetch (Node.js needs this)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/** Relative URL for browser fetches (goes through Next.js rewrite → no CORS). */
+const API_BASE = "/api/v1";
+
+/** Absolute URL for server-side fetches (Node.js requires absolute URLs). */
+const SERVER_API_BASE = "http://localhost:8000/api/v1";
+
+/* ── Backend Health State (module-level cache) ────────────────────── */
+
+let _backendReachable: boolean | null = null;    // null = unchecked
+let _lastHealthCheck = 0;
+const HEALTH_CACHE_MS = 15_000;                  // 15 s cooldown
+
+/* ── Error Classification ─────────────────────────────────────────── */
+
+function classifyError(status: number, message: string): ErrorCode {
+  if (status === 0) return "NETWORK_ERROR";
+  if (status === 401 || status === 403) return "AUTH_ERROR";
+  if (status === 404) return "NOT_FOUND";
+  if (status === 400 || status === 422) return "VALIDATION_ERROR";
+  if (status >= 500) return "SERVER_ERROR";
+  return "UNKNOWN_ERROR";
+}
+
+/** Returns true if the error is a network/connectivity problem. */
+export function isNetworkError(error: ApiError | null): boolean {
+  if (!error) return false;
+  const code = (error.code as ErrorCode) || classifyError(0, error.message);
+  return code === "NETWORK_ERROR" || code === "BACKEND_OFFLINE";
+}
+
+/* ── Retry helper ─────────────────────────────────────────────────── */
+
+interface RetryOptions {
+  maxRetries?: number;          // default 2
+  baseDelayMs?: number;         // default 500
+  /** Only retry on network errors (default true). */
+  onlyNetwork?: boolean;
+}
+
+async function withRetry<T>(
+  fn: () => Promise<ApiResponse<T>>,
+  options: RetryOptions = {}
+): Promise<ApiResponse<T>> {
+  const { maxRetries = 2, baseDelayMs = 500, onlyNetwork = true } = options;
+
+  let lastResponse: ApiResponse<T> | null = null;
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const res = await fn();
+    lastResponse = res;
+
+    // Success — return immediately
+    if (!res.error) return res;
+
+    // If we shouldn't retry this error type, bail out
+    if (onlyNetwork && !isNetworkError(res.error)) return res;
+
+    // Last attempt — don't sleep
+    if (attempt === maxRetries) return res;
+
+    // Exponential backoff: 500, 1000, 2000 …
+    await new Promise((r) => setTimeout(r, baseDelayMs * 2 ** attempt));
+  }
+
+  return lastResponse!;
+}
+
+/* ── Backend Health Check ─────────────────────────────────────────── */
+
+/**
+ * Check if the FastAPI backend is reachable.
+ * Result is cached for HEALTH_CACHE_MS to avoid flooding.
+ */
+export async function checkBackendHealth(): Promise<boolean> {
+  const now = Date.now();
+  if (_backendReachable !== null && now - _lastHealthCheck < HEALTH_CACHE_MS) {
+    return _backendReachable;
+  }
+
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 3_000);
+    const res = await fetch(`${API_BASE}/health`, {
+      signal: controller.signal,
+      cache: "no-store",
+    });
+    clearTimeout(timeout);
+
+    _backendReachable = res.ok;
+  } catch {
+    _backendReachable = false;
+  }
+
+  _lastHealthCheck = now;
+  return _backendReachable;
+}
+
+/** Reset the cached health state (call after successful reconnection). */
+export function resetHealthState(): void {
+  _backendReachable = null;
+  _lastHealthCheck = 0;
+}
 
 /* ── Server-side fetch (with auth cookie forwarding) ─────────────── */
 
 interface ServerFetchOptions extends Omit<RequestInit, "body"> {
   body?: unknown;
   tags?: string[];
+  /** Set to false to skip the automatic retry for network errors. */
+  retry?: boolean;
 }
 
 /**
  * Server-side fetch helper.
  * Forwards cookies for auth. Adds cache tags for ISR revalidation.
+ * Automatically retries once on transient network failures.
  */
 export async function serverFetch<T>(
   endpoint: string,
   options: ServerFetchOptions = {}
 ): Promise<ApiResponse<T>> {
-  const { body, tags, ...fetchOptions } = options;
+  const { body, tags, retry = true, ...fetchOptions } = options;
 
-  try {
-    const headers: HeadersInit = {
-      "Content-Type": "application/json",
-      ...((fetchOptions.headers as Record<string, string>) || {}),
-    };
+  async function doFetch(): Promise<ApiResponse<T>> {
+    try {
+      const headers: HeadersInit = {
+        "Content-Type": "application/json",
+        ...((fetchOptions.headers as Record<string, string>) || {}),
+      };
 
-    // Forward auth cookies in server context
-    const { cookies } = await import("next/headers");
-    const cookieStore = await cookies();
-    const allCookies = cookieStore.getAll();
-    if (allCookies.length > 0) {
-      const cookieHeader = allCookies
-        .map((c) => `${c.name}=${c.value}`)
-        .join("; ");
-      (headers as Record<string, string>)["Cookie"] = cookieHeader;
-    }
-
-    const response = await fetch(`${API_BASE}${endpoint}`, {
-      ...fetchOptions,
-      headers,
-      body: body ? JSON.stringify(body) : undefined,
-      next: tags ? { tags } : undefined,
-    });
-
-    const status = response.status;
-
-    if (!response.ok) {
-      let error: ApiError;
-      try {
-        error = await response.json();
-      } catch {
-        error = {
-          code: "UNKNOWN_ERROR",
-          message: `Request failed with status ${status}`,
-        };
+      // Forward auth cookies in server context
+      const { cookies } = await import("next/headers");
+      const cookieStore = await cookies();
+      const allCookies = cookieStore.getAll();
+      if (allCookies.length > 0) {
+        const cookieHeader = allCookies
+          .map((c) => `${c.name}=${c.value}`)
+          .join("; ");
+        (headers as Record<string, string>)["Cookie"] = cookieHeader;
       }
-      return { data: null, error, status };
-    }
 
-    const data = (await response.json()) as T;
-    return { data, error: null, status };
-  } catch (err) {
-    return {
-      data: null,
-      error: {
-        code: "NETWORK_ERROR",
-        message:
-          err instanceof Error ? err.message : "Network request failed",
-      },
-      status: 0,
-    };
+      const response = await fetch(`${SERVER_API_BASE}${endpoint}`, {
+        ...fetchOptions,
+        headers,
+        body: body ? JSON.stringify(body) : undefined,
+        next: tags ? { tags } : undefined,
+      });
+
+      const status = response.status;
+
+      if (!response.ok) {
+        let error: ApiError;
+        try {
+          error = await response.json();
+        } catch {
+          error = {
+            code: classifyError(status, `HTTP ${status}`),
+            message: `Request failed with status ${status}`,
+          };
+        }
+        return { data: null, error, status };
+      }
+
+      const data = (await response.json()) as T;
+      return { data, error: null, status };
+    } catch (err) {
+      return {
+        data: null,
+        error: {
+          code: "NETWORK_ERROR",
+          message:
+            err instanceof Error ? err.message : "Network request failed",
+        },
+        status: 0,
+      };
+    }
   }
+
+  if (retry) {
+    return withRetry(doFetch, { maxRetries: 2, baseDelayMs: 400 });
+  }
+  return doFetch();
 }
 
 /* ── Client-side fetch (uses browser cookies automatically) ──────── */
 
 interface ClientFetchOptions extends Omit<RequestInit, "body"> {
   body?: unknown;
+  /** Set to false to skip the automatic retry for network errors. */
+  retry?: boolean;
 }
 
 /**
  * Client-side fetch helper.
  * Credentials included automatically via `credentials: "include"`.
+ * Auto-retries on transient network failures.
  */
 export async function clientFetch<T>(
   endpoint: string,
   options: ClientFetchOptions = {}
 ): Promise<ApiResponse<T>> {
-  const { body, ...fetchOptions } = options;
+  const { body, retry = true, ...fetchOptions } = options;
 
-  try {
-    const response = await fetch(`${API_BASE}${endpoint}`, {
-      ...fetchOptions,
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-        ...((fetchOptions.headers as Record<string, string>) || {}),
-      },
-      body: body ? JSON.stringify(body) : undefined,
-    });
+  async function doFetch(): Promise<ApiResponse<T>> {
+    try {
+      const response = await fetch(`${API_BASE}${endpoint}`, {
+        ...fetchOptions,
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          ...((fetchOptions.headers as Record<string, string>) || {}),
+        },
+        body: body ? JSON.stringify(body) : undefined,
+      });
 
-    const status = response.status;
+      const status = response.status;
 
-    if (!response.ok) {
-      let error: ApiError;
-      try {
-        error = await response.json();
-      } catch {
-        error = {
-          code: "UNKNOWN_ERROR",
-          message: `Request failed with status ${status}`,
-        };
+      if (!response.ok) {
+        let error: ApiError;
+        try {
+          error = await response.json();
+        } catch {
+          error = {
+            code: classifyError(status, `HTTP ${status}`),
+            message: `Request failed with status ${status}`,
+          };
+        }
+        return { data: null, error, status };
       }
-      return { data: null, error, status };
-    }
 
-    const data = (await response.json()) as T;
-    return { data, error: null, status };
-  } catch (err) {
-    return {
-      data: null,
-      error: {
-        code: "NETWORK_ERROR",
-        message:
-          err instanceof Error ? err.message : "Network request failed",
-      },
-      status: 0,
-    };
+      const data = (await response.json()) as T;
+      return { data, error: null, status };
+    } catch (err) {
+      return {
+        data: null,
+        error: {
+          code: "NETWORK_ERROR",
+          message:
+            err instanceof Error ? err.message : "Network request failed",
+        },
+        status: 0,
+      };
+    }
   }
+
+  if (retry) {
+    return withRetry(doFetch, { maxRetries: 2, baseDelayMs: 400 });
+  }
+  return doFetch();
 }
 
 /* ── API Endpoints ────────────────────────────────────────────────── */
@@ -185,18 +396,44 @@ export const api = {
     ),
 
   /* Agents */
-  getAgents: () => clientFetch<Agent[]>("/agents"),
+  getAgents: async (): Promise<ApiResponse<AgentListResult>> => {
+    const res = await clientFetch<BackendAgentListResponse>("/agents");
+    if (res.error || !res.data) {
+      return { data: null, error: res.error, status: res.status };
+    }
+    return {
+      data: {
+        items: res.data.items.map(mapAgentToFrontend),
+        total: res.data.total,
+        page: res.data.page,
+        pageSize: res.data.per_page,
+        totalPages: res.data.pages,
+      },
+      error: null,
+      status: res.status,
+    };
+  },
 
-  getAgent: (id: string) => clientFetch<Agent>(`/agents/${id}`),
+  getAgent: async (id: string): Promise<ApiResponse<Agent>> => {
+    const res = await clientFetch<BackendAgentResponse>(`/agents/${id}`);
+    if (res.error || !res.data) {
+      return { data: null, error: res.error, status: res.status };
+    }
+    return {
+      data: mapAgentToFrontend(res.data),
+      error: null,
+      status: res.status,
+    };
+  },
 
   runAgent: (id: string) =>
-    clientFetch<{ status: string }>(`/agents/${id}/run`, { method: "POST" }),
+    clientFetch<BackendAgentResponse>(`/agents/${id}/run`, { method: "POST" }),
 
   pauseAgent: (id: string) =>
-    clientFetch<{ status: string }>(`/agents/${id}/pause`, { method: "POST" }),
+    clientFetch<BackendAgentResponse>(`/agents/${id}/pause`, { method: "POST" }),
 
   resumeAgent: (id: string) =>
-    clientFetch<{ status: string }>(`/agents/${id}/resume`, {
+    clientFetch<BackendAgentResponse>(`/agents/${id}/resume`, {
       method: "POST",
     }),
 

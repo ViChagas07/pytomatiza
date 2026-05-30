@@ -46,7 +46,7 @@ export function AccountPanel() {
                 href="/login"
                 className={cn(
                   "inline-flex items-center gap-2 rounded-[var(--radius-md)] px-4 py-2 text-sm font-medium",
-                  "bg-[var(--brand-accent)] text-white hover:bg-[var(--brand-accent-hover)] transition-colors",
+                  "bg-[var(--brand-accent)] text-[var(--brand-accent-foreground)] hover:bg-[var(--brand-accent-hover)] transition-colors",
                   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-accent)]"
                 )}
               >
@@ -172,7 +172,7 @@ export function AccountPanel() {
             type="button"
             disabled={!isAuthenticated}
             className={cn(
-              "rounded-[var(--radius-md)] px-4 py-2 text-sm font-medium text-white transition-colors",
+              "rounded-[var(--radius-md)] px-4 py-2 text-sm font-medium text-[var(--brand-accent-foreground)] transition-colors",
               "bg-[var(--brand-accent)] hover:bg-[var(--brand-accent-hover)]",
               "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-accent)]",
               "disabled:opacity-50 disabled:cursor-not-allowed"
