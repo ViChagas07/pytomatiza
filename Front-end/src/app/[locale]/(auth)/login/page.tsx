@@ -6,7 +6,7 @@
 
 import { type Metadata } from "next";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SkipLink } from "@/components/ui/SkipLink";
 import { AuthForm } from "@/components/auth";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
@@ -26,6 +26,7 @@ export async function generateMetadata({
   params,
 }: LoginPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.login" });
 
   return {
@@ -48,6 +49,7 @@ export async function generateMetadata({
 
 export default async function LoginPage({ params }: LoginPageProps) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "a11y" });
 
   return (

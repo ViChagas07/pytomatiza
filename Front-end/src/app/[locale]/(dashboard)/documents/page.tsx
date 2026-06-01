@@ -5,7 +5,7 @@
 
 import { type Metadata } from "next";
 import { Suspense } from "react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
 import { Skeleton } from "@/components/ui/Skeleton";
 import { DocumentsContent } from "./DocumentsContent";
@@ -18,6 +18,7 @@ export async function generateMetadata({
   params,
 }: DocumentsPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.documents" });
 
   return {
@@ -43,7 +44,9 @@ function DocumentsSkeleton() {
   );
 }
 
-export default function DocumentsPage() {
+export default async function DocumentsPage({ params }: DocumentsPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="space-y-8">
       <Suspense fallback={<DocumentsSkeleton />}>

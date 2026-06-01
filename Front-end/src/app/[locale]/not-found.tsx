@@ -4,7 +4,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FileQuestion } from "lucide-react";
 
 interface NotFoundProps {
@@ -12,7 +12,9 @@ interface NotFoundProps {
 }
 
 export default async function NotFound({ params }: NotFoundProps) {
-  const { locale } = await params;
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale ?? "pt";
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "errors" });
   return (
     <div className="flex min-h-screen flex-col items-center justify-center px-6 text-center">

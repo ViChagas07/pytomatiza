@@ -5,7 +5,7 @@
 
 import { type Metadata } from "next";
 import { Suspense } from "react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
 import { LogsContent } from "./LogsContent";
 
@@ -43,6 +43,7 @@ export async function generateMetadata({
   params,
 }: LogsPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.logs" });
 
   return {
@@ -59,7 +60,9 @@ export async function generateMetadata({
 
 /* ── Page ─────────────────────────────────────────────────────────── */
 
-export default function LogsPage() {
+export default async function LogsPage({ params }: LogsPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="space-y-8">
       <Suspense fallback={<LogsLoading />}>

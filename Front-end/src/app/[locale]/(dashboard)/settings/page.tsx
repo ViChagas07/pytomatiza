@@ -5,7 +5,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 import { type Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Settings as SettingsIcon } from "lucide-react";
 import { locales } from "@/i18n/config";
 import { SettingsTabs } from "@/components/settings";
@@ -22,6 +22,7 @@ export async function generateMetadata({
   params,
 }: SettingsPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.settings" });
 
   return {
@@ -40,6 +41,7 @@ export async function generateMetadata({
 
 export default async function SettingsPage({ params }: SettingsPageProps) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "settings" });
 
   return (

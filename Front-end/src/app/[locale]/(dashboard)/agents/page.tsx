@@ -5,7 +5,7 @@
 
 import { type Metadata } from "next";
 import { Suspense } from "react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
 import { AgentCardsSkeleton } from "@/components/dashboard/DashboardSkeletons";
 import {
@@ -28,6 +28,7 @@ export async function generateMetadata({
   params,
 }: AgentsPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.agents" });
 
   return {
@@ -52,7 +53,9 @@ async function fetchAgents(): Promise<Agent[]> {
 
 /* ── Page ─────────────────────────────────────────────────────────── */
 
-export default function AgentsPage() {
+export default async function AgentsPage({ params }: AgentsPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="space-y-8">
       <Suspense fallback={<AgentCardsSkeleton />}>

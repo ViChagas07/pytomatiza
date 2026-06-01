@@ -10,7 +10,7 @@
 
 import { type Metadata } from "next";
 import { Suspense } from "react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
 import {
   StatsSkeleton,
@@ -40,6 +40,7 @@ export async function generateMetadata({
   params,
 }: DashboardPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.dashboard" });
 
   return {
@@ -85,7 +86,9 @@ async function fetchAgentsData(): Promise<{
 
 /* ── Page ─────────────────────────────────────────────────────────── */
 
-export default function DashboardPage() {
+export default async function DashboardPage({ params }: DashboardPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="space-y-8">
       {/* Stats section — streamed from server */}

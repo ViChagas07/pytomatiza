@@ -29,10 +29,11 @@ export default async function LocaleLayout({
   children,
   params,
 }: LocaleLayoutProps) {
-  const { locale } = await params;
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale ?? "";
 
   // Validate locale
-  if (!locales.includes(locale as Locale)) {
+  if (!locale || !locales.includes(locale as Locale)) {
     notFound();
   }
 

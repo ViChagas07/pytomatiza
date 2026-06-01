@@ -4,7 +4,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 import { type Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { HelpCircle, Book, MessageCircle, ExternalLink } from "lucide-react";
 import { locales } from "@/i18n/config";
 
@@ -20,6 +20,7 @@ export async function generateMetadata({
   params,
 }: HelpPageProps): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta.help" });
 
   return {
@@ -38,6 +39,7 @@ export async function generateMetadata({
 
 export default async function HelpPage({ params }: HelpPageProps) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "help" });
 
   return (
