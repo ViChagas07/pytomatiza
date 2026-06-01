@@ -74,7 +74,7 @@ export default async function LoginPage({ params }: LoginPageProps) {
         {/* Logo + brand name — clickable → home */}
         <Link
           href="/"
-          aria-label={t("a11y.goToHome")}
+          aria-label={t("goToHome")}
           className="flex items-center gap-2 rounded-[var(--radius-sm)] text-lg font-bold tracking-tight transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] bg-white/15 backdrop-blur-sm">
