@@ -226,6 +226,49 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════════════
+   CURSOR POINTER — Every clickable element shows the "hand" cursor
+   Covers all native interactive elements + ARIA roles + tabindex
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Native interactive elements & ARIA roles ──────────────────── */
+button:not(:disabled),
+[role="button"]:not(:disabled),
+a[href],
+[role="link"][href],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"]::file-selector-button,
+label,
+summary,
+select {
+  cursor: pointer;
+}
+
+/* ── Elements with tabindex ≥ 0 (focusable by keyboard) ────────── */
+[tabindex]:not([tabindex="-1"]):not(:disabled) {
+  cursor: pointer;
+}
+
+/* ── Disabled interactive elements → "not-allowed" cursor ──────── */
+:where(
+  button, [role="button"], a[href], [role="link"],
+  input, select, textarea, summary, label
+):disabled,
+:where(
+  button, [role="button"], a[href], [role="link"],
+  input, select, textarea, summary, label
+)[disabled],
+:where(
+  button, [role="button"], a[href], [role="link"],
+  input, select, textarea, summary, label
+)[aria-disabled="true"] {
+  cursor: not-allowed !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
    TYPOGRAPHY UTILITIES
    ═══════════════════════════════════════════════════════════════════ */
 h1, h2, h3, h4, h5, h6 {
