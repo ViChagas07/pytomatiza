@@ -86,11 +86,7 @@ export function DataContent() {
   const [error, setError] = React.useState<string | null>(null);
   const drive = useGoogleIntegration("drive");
 
-  const [recentDatasets, setRecentDatasets] = React.useState<DatasetEntry[]>([
-    { id: "ds1", name: "Vendas_Q1_2026.csv", source: "CSV Upload", rows: 4850, cols: 12, lastUsed: new Date(Date.now() - 3600000) },
-    { id: "ds2", name: "Clientes_Ativos", source: "Google Sheets", rows: 12840, cols: 18, lastUsed: new Date(Date.now() - 86400000) },
-    { id: "ds3", name: "produtos_catalogo", source: "PostgreSQL", rows: 3240, cols: 8, lastUsed: new Date(Date.now() - 172800000) },
-  ]);
+  const [recentDatasets, setRecentDatasets] = React.useState<DatasetEntry[]>([]);
 
   React.useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 600);
@@ -221,41 +217,9 @@ export function DataContent() {
                 </span>
               </div>
               <div className="overflow-x-auto">
-                <table className="w-full text-xs" role="table" aria-label={t("preview.title")}>
-                  <thead>
-                    <tr className="border-b border-[var(--border-default)] bg-[var(--surface-1)]">
-                      <th className="px-4 py-2 text-left font-medium text-[var(--text-secondary)]">{t("preview.id")}</th>
-                      <th className="px-4 py-2 text-left font-medium text-[var(--text-secondary)]">{t("preview.name")}</th>
-                      <th className="px-4 py-2 text-left font-medium text-[var(--text-secondary)]">{t("preview.region")}</th>
-                      <th className="px-4 py-2 text-right font-medium text-[var(--text-secondary)]">{t("preview.sales")}</th>
-                      <th className="px-4 py-2 text-left font-medium text-[var(--text-secondary)]">{t("preview.status")}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      { id: 1, nome: "João Silva", regiao: "Sudeste", vendas: "R$12.450", status: "Ativo" },
-                      { id: 2, nome: "Maria Santos", regiao: "Sul", vendas: "R$8.920", status: "Ativo" },
-                      { id: 3, nome: "Pedro Costa", regiao: "Nordeste", vendas: "R$15.780", status: "Pendente" },
-                    ].map((row) => (
-                      <tr key={row.id} className="border-b border-[var(--border-default)] hover:bg-[var(--surface-1)] transition-colors">
-                        <td className="px-4 py-2.5 text-[var(--text-tertiary)]">{row.id}</td>
-                        <td className="px-4 py-2.5 text-[var(--text-primary)]">{row.nome}</td>
-                        <td className="px-4 py-2.5 text-[var(--text-secondary)]">{row.regiao}</td>
-                        <td className="px-4 py-2.5 text-right text-[var(--text-primary)] font-mono">{row.vendas}</td>
-                        <td className="px-4 py-2.5">
-                          <span className={cn(
-                            "inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium",
-                            row.status === "Ativo" ? "bg-[var(--color-success)]/10 text-[var(--color-success)]" : "bg-[var(--brand-accent-light)] text-[var(--brand-accent-hover)]"
-                          )}>
-                            {row.status}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                <div className="px-4 py-2 text-center text-xs text-[var(--text-tertiary)]">
-                  {t("preview.showingRecords", { shown: 3, total: 3240 })}
+                <div className="flex flex-col items-center justify-center py-12 text-center" role="status">
+                  <Table2 className="h-8 w-8 text-[var(--text-tertiary)] mb-2" aria-hidden="true" />
+                  <p className="text-xs text-[var(--text-secondary)]">{t("recentDatasets.empty")}</p>
                 </div>
               </div>
             </section>

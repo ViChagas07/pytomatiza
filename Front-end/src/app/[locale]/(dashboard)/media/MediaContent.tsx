@@ -103,12 +103,8 @@ export function MediaContent() {
   const [isAiProcessing, setIsAiProcessing] = React.useState(false);
   const [aiResult, setAiResult] = React.useState<string | null>(null);
 
-  /* ── Recent media mock ────────────────────────────────────────── */
-  const [recentMedia, setRecentMedia] = React.useState<Array<{ id: string; name: string; type: string; size: string; processedAt: Date }>>([
-    { id: "r1", name: "banner_promo_junho.jpg", type: "JPG → WebP", size: "1.2 MB → 340 KB", processedAt: new Date(Date.now() - 3600000) },
-    { id: "r2", name: "logo_empresa.png", type: "PNG → SVG", size: "450 KB → 120 KB", processedAt: new Date(Date.now() - 86400000) },
-    { id: "r3", name: "foto_produto_001.jpg", type: "Redimensionado", size: "3.8 MB → 890 KB", processedAt: new Date(Date.now() - 172800000) },
-  ]);
+  /* ── Recent media — empty until user performs operations ──────── */
+  const [recentMedia, setRecentMedia] = React.useState<Array<{ id: string; name: string; type: string; size: string; processedAt: Date }>>([]);
 
   React.useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 600);

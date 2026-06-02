@@ -100,11 +100,7 @@ export function ArchitectureContent() {
   const [result, setResult] = React.useState<string | null>(null);
   const [error, setError] = React.useState<string | null>(null);
 
-  const [diagrams, setDiagrams] = React.useState<DiagramEntry[]>([
-    { id: "d1", name: "E-commerce Platform v2", template: "aws", components: 14, format: "PNG", createdAt: new Date(Date.now() - 86400000) },
-    { id: "d2", name: "Microserviços de Pagamento", template: "microservices", components: 8, format: "SVG", createdAt: new Date(Date.now() - 259200000) },
-    { id: "d3", name: "Pipeline CI/CD Principal", template: "ciCd", components: 6, format: "Draw.io", createdAt: new Date(Date.now() - 604800000) },
-  ]);
+  const [diagrams, setDiagrams] = React.useState<DiagramEntry[]>([]);
 
   React.useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 600);

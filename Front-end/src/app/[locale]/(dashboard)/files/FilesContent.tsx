@@ -81,24 +81,7 @@ const fileColors: Record<string, string> = {
   file: "var(--text-tertiary)",
 };
 
-/* ── Mock data ──────────────────────────────────────────────────── */
-
-const mockFiles: FileEntry[] = [
-  { id: "f1", name: "Financeiro", type: "folder", size: "—", modified: new Date(Date.now() - 86400000) },
-  { id: "f2", name: "Relatorio_Anual_2025.pdf", type: "pdf", size: "4.2 MB", modified: new Date(Date.now() - 3600000) },
-  { id: "f3", name: "Contratos", type: "folder", size: "—", modified: new Date(Date.now() - 172800000) },
-  { id: "f4", name: "Planilha_Vendas_Q1.xlsx", type: "sheet", size: "1.8 MB", modified: new Date(Date.now() - 7200000) },
-  { id: "f5", name: "logo_novo.png", type: "image", size: "340 KB", modified: new Date(Date.now() - 259200000) },
-  { id: "f6", name: "Imagens_Produtos", type: "folder", size: "—", modified: new Date(Date.now() - 432000000) },
-  { id: "f7", name: "api_documentation.md", type: "code", size: "12 KB", modified: new Date(Date.now() - 600000) },
-  { id: "f8", name: "Propostas_Comerciais", type: "folder", size: "—", modified: new Date(Date.now() - 2592000000) },
-];
-
-const mockRules: StorageRule[] = [
-  { id: "r1", name: "Organizar faturas por mês", condition: "nome contém 'fatura' OU 'invoice'", action: "Mover para /Financeiro/Faturas/{ano}/{mes}", active: true },
-  { id: "r2", name: "Arquivar contratos antigos", condition: "tipo = PDF E data > 1 ano", action: "Mover para /Arquivo/Contratos", active: true },
-  { id: "r3", name: "Compactar imagens grandes", condition: "tipo = imagem E tamanho > 5 MB", action: "Comprimir com qualidade 85%", active: false },
-];
+/* ── Storage is empty until the user performs operations ────────── */
 
 /* ── Component ───────────────────────────────────────────────────── */
 
@@ -111,7 +94,7 @@ export function FilesContent() {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
   /* Rules state */
-  const [rules, setRules] = React.useState<StorageRule[]>(mockRules);
+  const [rules, setRules] = React.useState<StorageRule[]>([]);
   const [showRuleForm, setShowRuleForm] = React.useState(false);
   const [newRule, setNewRule] = React.useState({ name: "", condition: "", action: "" });
 
@@ -126,7 +109,7 @@ export function FilesContent() {
   }, []);
 
   /* ── File operations ──────────────────────────────────────────── */
-  const [filesList, setFilesList] = React.useState<FileEntry[]>(mockFiles);
+  const [filesList, setFilesList] = React.useState<FileEntry[]>([]);
   const [openMenuId, setOpenMenuId] = React.useState<string | null>(null);
   const drive = useGoogleIntegration("drive");
 
@@ -346,9 +329,9 @@ export function FilesContent() {
       {/* Storage stats cards */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {[
-          { icon: HardDrive, label: t("storage.used"), value: "3.2 GB", sub: t("storage.total", { total: "10 GB" }), color: "var(--brand-python-blue)", progress: 32 },
-          { icon: File, label: t("storage.files", { count: 184 }), value: "184", sub: t("storage.folders", { count: 12 }), color: "var(--color-success)" },
-          { icon: FolderOpen, label: t("storage.folders", { count: 12 }), value: "12", sub: t("storage.lastFolder", { name: "Financeiro" }), color: "var(--brand-accent)" },
+          { icon: HardDrive, label: t("storage.used"), value: "0 GB", sub: t("storage.total", { total: "10 GB" }), color: "var(--brand-python-blue)", progress: 0 },
+          { icon: File, label: t("storage.files", { count: 0 }), value: "0", sub: t("storage.folders", { count: 0 }), color: "var(--color-success)" },
+          { icon: FolderOpen, label: t("storage.folders", { count: 0 }), value: "0", sub: t("storage.lastFolder", { name: "—" }), color: "var(--brand-accent)" },
           { icon: Zap, label: t("storage.activeRules"), value: String(rules.filter((r) => r.active).length), sub: t("storage.rulesConfigured", { count: rules.length }), color: "var(--color-warning)" },
         ].map((stat, i) => (
           <div

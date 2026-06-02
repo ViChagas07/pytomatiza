@@ -77,11 +77,7 @@ export function CommunicationContent() {
   const [result, setResult] = React.useState<string | null>(null);
   const [error, setError] = React.useState<string | null>(null);
 
-  const [recentMessages, setRecentMessages] = React.useState<RecentMessage[]>([
-    { id: "m1", channel: "email", subject: "Lembrete: Fatura vencendo em 3 dias", sentAt: new Date(Date.now() - 3600000), status: "sent", recipients: 45 },
-    { id: "m2", channel: "slack", subject: "Relatório semanal de vendas #team-vendas", sentAt: new Date(Date.now() - 86400000), status: "sent", recipients: 12 },
-    { id: "m3", channel: "whatsapp", subject: "Confirmação de pedido #45921", sentAt: new Date(Date.now() - 172800000), status: "failed", recipients: 1 },
-  ]);
+  const [recentMessages, setRecentMessages] = React.useState<RecentMessage[]>([]);
 
   React.useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 600);

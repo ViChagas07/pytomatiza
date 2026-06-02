@@ -78,32 +78,7 @@ export function DocumentsContent() {
   const drive = useGoogleIntegration("drive");
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
-  const [recentDocs, setRecentDocs] = React.useState<RecentDoc[]>([
-    {
-      id: "d1",
-      name: "Relatorio_Financeiro_Q1.pdf",
-      type: "PDF",
-      size: "2.4 MB",
-      processedAt: new Date(Date.now() - 3600000),
-      status: "completed",
-    },
-    {
-      id: "d2",
-      name: "Contrato_Prestacao_Servicos.docx",
-      type: "DOCX",
-      size: "856 KB",
-      processedAt: new Date(Date.now() - 86400000),
-      status: "completed",
-    },
-    {
-      id: "d3",
-      name: "Notas_Fiscais_Marco.xlsx",
-      type: "XLSX",
-      size: "1.2 MB",
-      processedAt: new Date(Date.now() - 172800000),
-      status: "failed",
-    },
-  ]);
+  const [recentDocs, setRecentDocs] = React.useState<RecentDoc[]>([]);
 
   React.useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 600);
