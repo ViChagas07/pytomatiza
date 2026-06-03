@@ -73,7 +73,7 @@ export function AgentsContent({ initialAgents }: AgentsContentProps) {
         prev.map((a) => (a.id === id ? { ...a, status: "running" as const } : a))
       );
     } catch (err) {
-      setActionError(err instanceof Error ? err.message : "Unknown error");
+      setActionError(err instanceof Error ? err.message : t("error"));
     }
   }, []);
 
@@ -89,7 +89,7 @@ export function AgentsContent({ initialAgents }: AgentsContentProps) {
         prev.map((a) => (a.id === id ? { ...a, status: "paused" as const } : a))
       );
     } catch (err) {
-      setActionError(err instanceof Error ? err.message : "Unknown error");
+      setActionError(err instanceof Error ? err.message : t("error"));
     }
   }, []);
 
@@ -222,7 +222,7 @@ export function AgentsContent({ initialAgents }: AgentsContentProps) {
             aria-label={t("resetFilters") || "Reset all filters"}
           >
             <X className="h-3.5 w-3.5" aria-hidden="true" />
-            <span className="hidden sm:inline">Reset</span>
+            <span className="hidden sm:inline">{t("resetFilters")}</span>
           </button>
         )}
       </div>
@@ -241,7 +241,7 @@ export function AgentsContent({ initialAgents }: AgentsContentProps) {
         <div
           className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3"
           role="list"
-          aria-label="Agents"
+          aria-label={t("title")}
         >
           {filtered.map((agent) => (
             <div key={agent.id} role="listitem">
@@ -283,7 +283,7 @@ export function AgentsContent({ initialAgents }: AgentsContentProps) {
             onClick={resetFilters}
             className="mt-3 text-sm font-medium text-[var(--brand-accent)] hover:underline"
           >
-            Clear all filters
+            {t("resetFilters")}
           </button>
         </div>
       )}

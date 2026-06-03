@@ -107,7 +107,7 @@ export function AutomationsContent() {
       // Reset form
       setValue("instruction", "");
     } catch {
-      setBuildError(ta("buildFailed"));
+      setBuildError(t("errors.buildFailed"));
     } finally {
       setIsBuilding(false);
     }
@@ -224,7 +224,7 @@ export function AutomationsContent() {
                 className="mt-1 text-xs text-[var(--color-danger)]"
                 data-testid="nlp-instruction-error"
               >
-                {ta(errors.instruction.message as string)}
+                {t(errors.instruction.message as string)}
               </p>
             )}
           </div>

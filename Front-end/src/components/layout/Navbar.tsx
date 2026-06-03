@@ -73,7 +73,7 @@ export function Navbar() {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const { data: session } = useSession();
-  const userName = session?.user?.name || "User";
+  const userName = session?.user?.name || t("user");
 
   const [isModulesOpen, setIsModulesOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);

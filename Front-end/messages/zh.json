@@ -11,8 +11,8 @@
     "breadcrumb": "面包屑",
     "pagination": "分页",
     "currentPage": "当前页面，第 {page} 页",
-    "goToPage": "转到第{页}页",
-    "goToHome": "Go to home page"
+    "goToPage": "转到第{page}页",
+    "goToHome": "转到主页"
   },
   "common": {
     "loading": "加载中…",
@@ -35,8 +35,8 @@
     "copied": "已复制到剪贴板",
     "enabled": "启用",
     "disabled": "残疾人",
-    "increasedBy": "Increased by",
-    "decreasedBy": "Decreased by"
+    "increasedBy": "增加了",
+    "decreasedBy": "减少了"
   },
   "auth": {
     "signIn": {
@@ -80,7 +80,7 @@
       "generic": "发生意外错误。 请再试一次。",
       "rateLimited": "尝试次数太多。 请稍等。"
     },
-    "authenticationForm": "Authentication form"
+    "authenticationForm": "认证表格"
   },
   "meta": {
     "login": {
@@ -112,28 +112,28 @@
       "description": "Visualize execuções de automação, histórico de agentes e gerencie aprovações pendentes."
     },
     "documents": {
-      "title": "Documents — Pytomatiza+",
-      "description": "Automate document processing with AI. Extract data, convert formats, and manage PDFs, DOCX, and more."
+      "title": "文件 — Pytomatiza+",
+      "description": "使用 AI 自动化文档处理。 提取数据、转换格式以及管理 PDF、DOCX 等。"
     },
     "data": {
-      "title": "Data & Spreadsheets — Pytomatiza+",
-      "description": "Connect data sources, transform spreadsheets, and automate analysis with AI agents."
+      "title": "数据和电子表格 — Pytomatiza+",
+      "description": "连接数据源、转换电子表格并使用 AI 代理自动分析。"
     },
     "communication": {
-      "title": "Communication — Pytomatiza+",
-      "description": "Automate emails, messages, and multi-channel notifications with intelligent workflows."
+      "title": "沟通 — Pytomatiza+",
+      "description": "通过智能工作流程自动化电子邮件、消息和多渠道通知。"
     },
     "media": {
-      "title": "Media & Images — Pytomatiza+",
-      "description": "Process, convert, and optimize images and media in batch with intelligent automation."
+      "title": "媒体与图像 — Pytomatiza+",
+      "description": "通过智能自动化批量处理、转换和优化图像和媒体。"
     },
     "files": {
-      "title": "Files — Pytomatiza+",
-      "description": "Manage, organize, and automate file operations with intelligent rules."
+      "title": "文件 — Pytomatiza+",
+      "description": "使用智能规则管理、组织和自动化文件操作。"
     },
     "architecture": {
-      "title": "Architecture — Pytomatiza+",
-      "description": "Generate architecture diagrams, technical documentation, and system flows with AI."
+      "title": "建筑 — Pytomatiza+",
+      "description": "使用 AI 生成架构图、技术文档和系统流程。"
     }
   },
   "navigation": {
@@ -188,14 +188,14 @@
       "bgPresetSepia": "棕褐色",
       "bgPresetMidnight": "午夜",
       "bgPresetSlate": "石板",
-      "colorYellow": "Yellow",
+      "colorYellow": "黄色的",
       "colorBlue": "Blue",
       "colorGreen": "Green",
-      "colorPurple": "Purple",
-      "colorOrange": "Orange",
+      "colorPurple": "紫色的",
+      "colorOrange": "橙子",
       "colorRed": "Red",
       "colorPink": "Pink",
-      "accentColorAria": "{color} accent color"
+      "accentColorAria": "{color} 强调色"
     },
     "accessibility": {
       "title": "无障碍",
@@ -280,26 +280,26 @@
   "help": {
     "title": "帮助与支持",
     "subtitle": "获取帮助、浏览文档并联系我们的团队。",
-    "documentation": "Documentation",
-    "documentationDescription": "Browse guides, tutorials, and API references.",
-    "contactSupport": "Contact Support",
-    "contactSupportDescription": "Get help from our team. Usually responds within 24 hours.",
-    "faqTitle": "Frequently Asked Questions",
+    "documentation": "文档",
+    "documentationDescription": "浏览指南、教程和 API 参考。",
+    "contactSupport": "联系支持人员",
+    "contactSupportDescription": "从我们的团队获得帮助。 通常会在 24 小时内回复。",
+    "faqTitle": "常见问题解答",
     "faq0": {
-      "question": "How do I create an automation?",
-      "answer": "Go to the Automations page and use the Natural Language Workflow Builder. Describe what you want to automate in plain English, and Pytomatiza+ will build the workflow for you."
+      "question": "如何创建自动化？",
+      "answer": "转到自动化页面并使用 Natural Language Workflow Builder。 用简单的英语描述您想要自动化的内容，Pytomatiza+将为您构建工作流程。"
     },
     "faq1": {
-      "question": "How do I connect a new integration?",
-      "answer": "Navigate to Settings → Integrations to connect third-party services like Google Workspace, Slack, or GitHub."
+      "question": "如何连接新的集成？",
+      "answer": "导航到设置→集成以连接第三方服务，例如Google Workspace、Slack或GitHub。"
     },
     "faq2": {
-      "question": "What happens if an agent fails?",
-      "answer": "Failed agents are marked with an error status. You can view the error details in the agent card and retry the execution."
+      "question": "如果代理失败会发生什么？",
+      "answer": "失败的代理会被标记为错误状态。 您可以在代理卡中查看错误详细信息并重试执行。"
     },
     "faq3": {
-      "question": "How do I change my language?",
-      "answer": "Click the globe icon in the header to switch between 9 supported languages."
+      "question": "如何更改我的语言？",
+      "answer": "单击标题中的地球图标可在 9 种支持的语言之间切换。"
     }
   },
   "dashboard": {
@@ -314,8 +314,8 @@
       "automationsToday": "当今的自动化",
       "successRate": "成功率",
       "pendingApprovals": "待批准",
-      "increasedBy": "Increased by {value}",
-      "decreasedBy": "Decreased by {value}"
+      "increasedBy": "增加{value}",
+      "decreasedBy": "减少{value}"
     },
     "recentActivity": "最近的活动",
     "quickActions": "快速行动",
@@ -327,18 +327,18 @@
       "title": "数据加载错误",
       "loadingFailed": "无法加载仪表板数据。请检查您的连接后重试。",
       "retry": "重试",
-      "offlineBanner": "Backend unavailable — displayed data may be out of date",
-      "unknown": "Unknown error"
+      "offlineBanner": "后端不可用——显示的数据可能已过时",
+      "unknown": "未知错误"
     },
     "empty": {
       "title": "未找到代理",
       "description": "创建您的第一个自动化代理以开始在此处查看活动。",
-      "offlineTitle": "Backend offline",
-      "offlineDescription": "Connect to the backend to see your agents. Click \"Retry\" once the service is available."
+      "offlineTitle": "后端离线",
+      "offlineDescription": "连接到后端以查看您的代理。 服务可用后，单击“重试”。"
     },
-    "recentActivityEmpty": "Empty history… Create your first automation with Pytomatiza+ by going to Modules!",
-    "loginPrompt": "Sign in to your account to access real-time data!",
-    "loginAction": "Sign in",
+    "recentActivityEmpty": "清空历史记录...通过转到模块，使用 Pytomatiza+ 创建您的第一个自动化！",
+    "loginPrompt": "登录您的帐户以访问实时数据！",
+    "loginAction": "登入",
     "user": "User"
   },
   "agents": {
@@ -360,80 +360,12 @@
       "idle": "闲置的",
       "running": "跑步",
       "error": "错误",
-      "mock": {
-        "1": {
-          "name": "Salvador de Anexos de E-mail",
-          "desc": "Monitora a caixa de entrada em busca de anexos, salva-os no Google Drive e notifica via Slack."
-        },
-        "2": {
-          "name": "Gerador de Relat�rios Semanais",
-          "desc": "Compila dados de m�ltiplas fontes e gera um relat�rio PDF formatado toda segunda-feira."
-        },
-        "3": {
-          "name": "Monitor de Redes Sociais",
-          "desc": "Rastreia men��es � marca no Twitter, LinkedIn e Reddit. Responde automaticamente a consultas de suporte."
-        },
-        "4": {
-          "name": "Agente de Backup de Banco de Dados",
-          "desc": "Realiza backups noturnos do banco de dados e verifica a integridade. Alerta em caso de falha."
-        },
-        "5": {
-          "name": "Verificador de Sa�de de APIs",
-          "desc": "Faz ping em todas as APIs internas a cada minuto. Escala para o PagerDuty em caso de inatividade."
-        },
-        "6": {
-          "name": "Processador de Faturas",
-          "desc": "Extrai dados de faturas em PDF usando OCR e envia para o software de contabilidade."
-        },
-        "7": {
-          "name": "Agendador de Reuni�es",
-          "desc": "Coordena calend�rios entre equipes para encontrar hor�rios ideais e envia convites."
-        },
-        "8": {
-          "name": "Tradutor de Conte�do",
-          "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
-        }
-      },
       "paused": "已暂停"
     },
     "statusDescriptions": {
       "idle": "状态：准备就绪，等待",
       "running": "状态：正在执行",
       "error": "状态：遇到错误",
-      "mock": {
-        "1": {
-          "name": "Salvador de Anexos de E-mail",
-          "desc": "Monitora a caixa de entrada em busca de anexos, salva-os no Google Drive e notifica via Slack."
-        },
-        "2": {
-          "name": "Gerador de Relat�rios Semanais",
-          "desc": "Compila dados de m�ltiplas fontes e gera um relat�rio PDF formatado toda segunda-feira."
-        },
-        "3": {
-          "name": "Monitor de Redes Sociais",
-          "desc": "Rastreia men��es � marca no Twitter, LinkedIn e Reddit. Responde automaticamente a consultas de suporte."
-        },
-        "4": {
-          "name": "Agente de Backup de Banco de Dados",
-          "desc": "Realiza backups noturnos do banco de dados e verifica a integridade. Alerta em caso de falha."
-        },
-        "5": {
-          "name": "Verificador de Sa�de de APIs",
-          "desc": "Faz ping em todas as APIs internas a cada minuto. Escala para o PagerDuty em caso de inatividade."
-        },
-        "6": {
-          "name": "Processador de Faturas",
-          "desc": "Extrai dados de faturas em PDF usando OCR e envia para o software de contabilidade."
-        },
-        "7": {
-          "name": "Agendador de Reuni�es",
-          "desc": "Coordena calend�rios entre equipes para encontrar hor�rios ideais e envia convites."
-        },
-        "8": {
-          "name": "Tradutor de Conte�do",
-          "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
-        }
-      },
       "paused": "状态：已被用户暂停"
     },
     "card": {
@@ -481,7 +413,8 @@
         "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
       }
     },
-    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}"
+    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}",
+    "resetFilters": "重置所有筛选条件"
   },
   "automations": {
     "title": "自动化",
@@ -498,7 +431,7 @@
       "requireApprovalHelper": "启用后，工作流程将在运行前暂停以供您查看。",
       "build": "构建工作流程",
       "building": "构建工作流程...",
-      "charCount": "{当前}/{最大} 个字符",
+      "charCount": "{current}/{max} 个字符",
       "suggestions": "尝试以下示例：",
       "example1": "每周五下午 5 点向团队 Slack 频道发送所有已关闭工单的每周报告",
       "example2": "监控我们的 Twitter 提及并通过帮助中心的链接自动回复支持问题",
@@ -513,26 +446,26 @@
       "delete": "删除工作流程",
       "deleteConfirm": "您确定要删除此工作流程吗？ 此操作无法撤消。",
       "deleted": "工作流程删除成功",
-      "statusToggled": "工作流程{状态}",
-      "label": "Workflows",
-      "neverTriggered": "Never triggered",
-      "status": "Status: {status}",
-      "created": "Workflow created! Agent type: {agentType}. Approval: {approval}.",
-      "required": "required",
-      "notRequired": "not required"
+      "statusToggled": "工作流程{status}",
+      "label": "工作流程",
+      "neverTriggered": "从未触发过",
+      "status": "状态：{status}",
+      "created": "工作流程已创建！ 代理类型：{agentType}。 批准：{approval}。",
+      "required": "必需的",
+      "notRequired": "不需要"
     },
     "errors": {
       "instructionTooShort": "说明必须至少 10 个字符",
       "instructionTooLong": "说明不得超过 500 个字符",
       "buildFailed": "无法构建工作流程。 请再试一次。"
     },
-    "loginPrompt": "Log in to your account to access real-time data!",
+    "loginPrompt": "登录您的帐户即可访问实时数据！",
     "agentTypes": {
-      "productivity": "Productivity",
+      "productivity": "生产率",
       "data": "Data",
-      "content": "Content",
+      "content": "内容",
       "admin": "Admin",
-      "technical": "Technical"
+      "technical": "技术的"
     }
   },
   "theme": {
@@ -556,17 +489,17 @@
       "description": "您需要登录才能访问此页面。",
       "signIn": "登入"
     },
-    "notFoundTitle": "Page not found",
-    "notFoundDescription": "The page you're looking for doesn't exist or has been moved.",
-    "notFoundAction": "Go to dashboard",
-    "somethingWentWrong": "Something went wrong",
-    "unexpectedError": "An unexpected error occurred. Our team has been notified.",
-    "dashboardErrorDescription": "An unexpected error occurred while loading this page.",
-    "tryAgain": "Try again",
-    "goHome": "Go home",
-    "errorId": "Error ID: ",
-    "loadingDashboard": "Loading dashboard",
-    "loadingDashboardContent": "Loading dashboard content…"
+    "notFoundTitle": "找不到页面",
+    "notFoundDescription": "您要查找的页面不存在或已被移动。",
+    "notFoundAction": "转到仪表板",
+    "somethingWentWrong": "出了点问题",
+    "unexpectedError": "发生意外错误。 我们的团队已收到通知。",
+    "dashboardErrorDescription": "加载此页面时发生意外错误。",
+    "tryAgain": "再试一次",
+    "goHome": "回家吧",
+    "errorId": "错误ID：",
+    "loadingDashboard": "正在加载仪表板",
+    "loadingDashboardContent": "正在加载仪表板内容..."
   },
   "nav": {
     "dashboard": "仪表板",
@@ -591,510 +524,510 @@
     "filesDesc": "一般文件存储和管理。",
     "architecture": "建筑学",
     "architectureDesc": "系统图和架构文档。",
-    "settings": "Settings",
-    "signOut": "Sign Out",
-    "signIn": "Sign In",
+    "settings": "设置",
+    "signOut": "登出",
+    "signIn": "登入",
     "appearance": "外观",
     "user": "User"
   },
   "modules": {
     "documents": {
-      "title": "Documents",
-      "subtitle": "Automate intelligent document processing with AI agents",
+      "title": "文件",
+      "subtitle": "使用 AI 代理自动执行智能文档处理",
       "upload": {
-        "title": "Attach document",
-        "description": "Drag and drop your file here or click to select",
-        "dragActive": "Drop the file to attach",
-        "browse": "Browse files",
+        "title": "附上文件",
+        "description": "将文件拖放到此处或单击以选择",
+        "dragActive": "删除要附加的文件",
+        "browse": "浏览文件",
         "supportedFormats": "Supported formats: PDF, DOCX, XLSX, PPTX, TXT, CSV, images",
-        "maxSize": "Max size: 25 MB",
-        "fileSelected": "File selected",
-        "remove": "Remove file"
+        "maxSize": "最大大小：25 MB",
+        "fileSelected": "已选择文件",
+        "remove": "删除文件"
       },
       "instruction": {
-        "title": "What should the AI agent do?",
-        "description": "Describe in natural language what you want the agent to do with this document.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Extract all data from the table on page 3 and convert it to a CSV spreadsheet. Then email it to finance@company.com.",
-        "helper": "Be specific: include which data to extract, output format, recipients, and post-processing actions.",
-        "charCount": "{current}/{max} characters"
+        "title": "AI代理应该做什么？",
+        "description": "用自然语言描述您希望代理如何处理此文档。",
+        "label": "代理指令",
+        "placeholder": "例如，从第 3 页的表格中提取所有数据并将其转换为 CSV 电子表格。 然后通过电子邮件将其发送至finance@company.com。",
+        "helper": "具体：包括要提取的数据、输出格式、收件人和后处理操作。",
+        "charCount": "{current}/{max} 个字符"
       },
       "quickActions": {
-        "title": "Quick actions",
-        "extractData": "Extract data",
-        "convertFormat": "Convert format",
-        "mergeDocs": "Merge documents",
-        "ocrScan": "OCR scan",
-        "summarize": "Summarize content",
-        "translate": "Translate",
+        "title": "快速行动",
+        "extractData": "提取数据",
+        "convertFormat": "转换格式",
+        "mergeDocs": "合并文档",
+        "ocrScan": "光学字符识别扫描",
+        "summarize": "总结内容",
+        "translate": "翻译",
         "presets": {
-          "extract": "Extract all structured data from this document and export as CSV.",
-          "convert": "Convert this document to PDF format while preserving the original layout.",
-          "merge": "Merge this document with other files in the folder and generate a single unified PDF.",
-          "ocr": "Scan this document using OCR and extract all text in editable format.",
-          "summarize": "Summarize the content of this document in one paragraph with key points.",
-          "translate": "Translate this document to English while preserving the original formatting."
+          "extract": "从此文档中提取所有结构化数据并导出为 CSV。",
+          "convert": "将此文档转换为 PDF 格式，同时保留原始布局。",
+          "merge": "将此文档与文件夹中的其他文件合并并生成单个统一的 PDF。",
+          "ocr": "使用 OCR 扫描此文档并以可编辑格式提取所有文本。",
+          "summarize": "用一段话概括本文档的内容并列出要点。",
+          "translate": "将此文档翻译成英文，同时保留原始格式。"
         }
       },
       "recentDocuments": {
-        "title": "Recent documents",
-        "empty": "No documents processed yet. Upload your first document above.",
-        "processed": "Processed",
-        "status": "Status",
-        "actions": "Actions",
-        "download": "Download result",
-        "reprocess": "Reprocess",
-        "delete": "Delete"
+        "title": "最近的文件",
+        "empty": "尚未处理任何文件。 在上面上传您的第一个文档。",
+        "processed": "已加工",
+        "status": "地位",
+        "actions": "行动",
+        "download": "下载结果",
+        "reprocess": "再加工",
+        "delete": "删除"
       },
       "processing": {
-        "button": "Process document",
-        "processing": "Processing…",
-        "success": "Document processed successfully!",
-        "error": "Failed to process document. Please try again.",
-        "reprocessInstruction": "Reprocess the document {name} applying the same previous transformations."
+        "button": "工艺文件",
+        "processing": "加工…",
+        "success": "文件处理成功！",
+        "error": "处理文档失败。 请再试一次。",
+        "reprocessInstruction": "应用相同的先前转换重新处理文档 {name}。"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and select documents directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "直接从您的Google Drive访问和选择文档。",
+          "connect": "连接Google Drive",
+          "connecting": "正在连接...",
+          "connected": "连接到Google Drive",
+          "browse": "浏览驱动器"
         }
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this document? This action cannot be undone."
+        "deleteConfirm": "您确定要删除该文档吗？ 此操作无法撤消。"
       }
     },
     "data": {
-      "title": "Data & Spreadsheets",
-      "subtitle": "Connect data sources, transform spreadsheets, and automate analysis",
+      "title": "数据和电子表格",
+      "subtitle": "连接数据源、转换电子表格并自动分析",
       "source": {
-        "title": "Data source",
-        "description": "Choose how to connect your data",
-        "uploadCsv": "Upload CSV/Excel",
+        "title": "数据来源",
+        "description": "选择如何连接您的数据",
+        "uploadCsv": "上传 CSV/Excel",
         "googleSheets": "Google Sheets",
-        "database": "SQL Database",
-        "api": "REST API",
-        "url": "Public URL",
-        "selectPlaceholder": "Select source type…",
-        "connect": "Connect",
-        "connecting": "Connecting…"
+        "database": "SQL数据库",
+        "api": "休息API",
+        "url": "公共网址",
+        "selectPlaceholder": "选择源类型...",
+        "connect": "连接",
+        "connecting": "正在连接…"
       },
       "instruction": {
-        "title": "What to do with the data?",
-        "description": "Describe the desired transformation, analysis, or automation",
-        "label": "Processing instruction",
-        "placeholder": "e.g., Merge 'First Name' and 'Last Name' columns, filter records with sales over $10,000, group by region, and generate a bar chart.",
-        "helper": "Include filters, aggregations, table joins, and the desired output format.",
-        "charCount": "{current}/{max} characters"
+        "title": "如何处理数据？",
+        "description": "描述所需的转换、分析或自动化",
+        "label": "加工指令",
+        "placeholder": "例如，合并“名字”和“姓氏”列，过滤销售额超过 10,000 美元的记录，按区域分组并生成条形图。",
+        "helper": "包括过滤器、聚合、表连接和所需的输出格式。",
+        "charCount": "{current}/{max} 个字符"
       },
       "preview": {
-        "title": "Preview",
-        "noData": "Connect a data source to preview",
-        "rows": "{count} rows",
-        "columns": "{count} columns",
+        "title": "预览",
+        "noData": "连接数据源进行预览",
+        "rows": "{count} 行",
+        "columns": "{count} 列",
         "id": "ID",
         "name": "Name",
-        "region": "Region",
+        "region": "地区",
         "sales": "Sales",
-        "status": "Status",
-        "showingRecords": "Showing {shown} of {total} records"
+        "status": "地位",
+        "showingRecords": "显示第 {shown} 条记录，共 {total} 条记录"
       },
       "recentDatasets": {
-        "title": "Recent datasets",
-        "empty": "No datasets processed yet",
-        "source": "Source",
-        "lastUsed": "Last used",
-        "info": "{rows} rows · {cols} columns"
+        "title": "最近的数据集",
+        "empty": "尚未处理数据集",
+        "source": "来源",
+        "lastUsed": "上次使用",
+        "info": "{rows} 行 · {cols} 列"
       },
       "actions": {
-        "transform": "Transform data",
-        "analyze": "Analyze data",
-        "export": "Export result",
-        "schedule": "Schedule automation",
-        "sidebarTitle": "Actions",
-        "dashboard": "Dashboard",
-        "processing": "Processing…"
+        "transform": "转换数据",
+        "analyze": "分析数据",
+        "export": "导出结果",
+        "schedule": "日程自动化",
+        "sidebarTitle": "行动",
+        "dashboard": "仪表板",
+        "processing": "加工…"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access spreadsheets and data files directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "直接从您的Google Drive访问电子表格和数据文件。",
+          "connect": "连接Google Drive",
+          "connecting": "正在连接...",
+          "connected": "连接到Google Drive",
+          "browse": "浏览驱动器"
         }
       },
       "errors": {
-        "connectFailed": "Failed to connect to data source.",
-        "processFailed": "Failed to process data."
+        "connectFailed": "无法连接到数据源。",
+        "processFailed": "处理数据失败。"
       },
       "results": {
-        "connected": "Connected successfully! Data source ready for processing.",
-        "transformComplete": "Transformation complete! {count} records processed. The result is ready for download.",
-        "analyzeInstruction": "Analyze the connected data and generate insights: trends, outliers, correlations, and recommendations.",
-        "scheduleAlert": "Scheduling configured! Data will be processed automatically.",
-        "comingSoon": "Feature coming soon."
+        "connected": "连接成功！ 数据源已准备好进行处理。",
+        "transformComplete": "转型完成！ 已处理 {count} 条记录。 结果已可供下载。",
+        "analyzeInstruction": "分析关联数据并生成见解：趋势、异常值、相关性和建议。",
+        "scheduleAlert": "调度已配置！ 数据将被自动处理。",
+        "comingSoon": "功能即将推出。"
       },
       "presets": {
         "merge": {
-          "label": "Merge columns",
-          "prompt": "Merge 'Name' and 'Last Name' columns into a single 'Full Name' column."
+          "label": "合并列",
+          "prompt": "将“姓名”和“姓氏”列合并为一个“全名”列。"
         },
         "filter": {
-          "label": "Filter records",
-          "prompt": "Filter records where 'Sales' column is greater than $10,000."
+          "label": "过滤记录",
+          "prompt": "过滤“销售额”列大于 10,000 美元的记录。"
         },
         "group": {
-          "label": "Group & summarize",
-          "prompt": "Group data by 'Region' and calculate the sum and average of 'Sales'."
+          "label": "分组并总结",
+          "prompt": "按“区域”对数据进行分组，并计算“销售额”的总和和平均值。"
         },
         "pivot": {
-          "label": "Pivot table",
-          "prompt": "Create a pivot table with 'Category' as rows, 'Month' as columns, and sum of 'Revenue'."
+          "label": "数据透视表",
+          "prompt": "创建一个数据透视表，其中“类别”为行，“月份”为列，“收入”总和。"
         },
         "chart": {
-          "label": "Generate chart",
-          "prompt": "Generate a bar chart comparing sales by region."
+          "label": "生成图表",
+          "prompt": "生成按地区比较销售额的条形图。"
         },
         "export": {
-          "label": "Export structured",
-          "prompt": "Export the transformed data to a CSV file with UTF-8 encoding."
+          "label": "出口结构化",
+          "prompt": "将转换后的数据导出到采用 UTF-8 编码的 CSV 文件。"
         }
       }
     },
     "communication": {
-      "title": "Communication",
-      "subtitle": "Automate emails, messages, and multi-channel notifications",
+      "title": "沟通",
+      "subtitle": "自动执行电子邮件、消息和多渠道通知",
       "composer": {
-        "title": "Compose message",
-        "description": "Describe the content and the AI agent will draft the message",
-        "instructionLabel": "Message instruction",
-        "instructionPlaceholder": "e.g., Send a reminder email to all clients with invoices due in 3 days, using a professional yet friendly tone, and include the payment link.",
-        "instructionHelper": "Specify: message tone, information to include, personalizations, and call-to-action.",
-        "subjectLabel": "Subject (for emails)",
-        "subjectPlaceholder": "Email subject…",
-        "charCount": "{current}/{max} characters",
-        "noSubject": "(no subject)"
+        "title": "撰写消息",
+        "description": "描述内容，AI 代理将起草消息",
+        "instructionLabel": "留言说明",
+        "instructionPlaceholder": "例如，使用专业而友好的语气向所有发票在 3 天内到期的客户发送提醒电子邮件，并包含付款链接。",
+        "instructionHelper": "指定：消息提示音、要包含的信息、个性化设置和号召性用语。",
+        "subjectLabel": "主题（适用于电子邮件）",
+        "subjectPlaceholder": "电子邮件主题...",
+        "charCount": "{current}/{max} 个字符",
+        "noSubject": "（无主题）"
       },
       "channels": {
-        "title": "Delivery channels",
+        "title": "发货渠道",
         "email": "Email",
         "slack": "Slack",
         "whatsapp": "WhatsApp",
-        "teams": "Microsoft Teams",
+        "teams": "微软团队",
         "sms": "SMS",
-        "discord": "Discord"
+        "discord": "不和谐"
       },
       "recipients": {
-        "title": "Recipients",
-        "description": "Configure who will receive the message",
+        "title": "收件人",
+        "description": "配置谁将接收消息",
         "to": "To",
-        "toPlaceholder": "email@example.com",
-        "cc": "CC (carbon copy)",
-        "ccPlaceholder": "email@example.com",
-        "addMore": "Add more",
-        "list": "Distribution list",
-        "condition": "By condition (e.g., inactive clients)"
+        "toPlaceholder": "电子邮件@example.com",
+        "cc": "抄送（抄送）",
+        "ccPlaceholder": "电子邮件@example.com",
+        "addMore": "添加更多",
+        "list": "分发列表",
+        "condition": "按条件（例如，不活跃的客户端）"
       },
       "schedule": {
-        "title": "Schedule",
-        "sendNow": "Send now",
-        "scheduleLater": "Schedule for later",
-        "recurring": "Recurring",
-        "dateTime": "Date and time",
-        "frequency": "Frequency",
+        "title": "日程",
+        "sendNow": "立即发送",
+        "scheduleLater": "稍后安排",
+        "recurring": "再次发生的",
+        "dateTime": "日期和时间",
+        "frequency": "频率",
         "daily": "Daily",
-        "weekly": "Weekly",
-        "monthly": "Monthly",
-        "dateTimePlaceholder": "Date/time picker available in the full version."
+        "weekly": "每周",
+        "monthly": "每月",
+        "dateTimePlaceholder": "完整版本中提供日期/时间选择器。"
       },
       "recentMessages": {
-        "title": "Recent messages",
-        "empty": "No messages sent yet",
-        "channel": "Channel",
-        "sentAt": "Sent at",
-        "status": "Status"
+        "title": "最近消息",
+        "empty": "尚未发送消息",
+        "channel": "渠道",
+        "sentAt": "发送于",
+        "status": "地位"
       },
       "actions": {
-        "send": "Send message",
-        "sending": "Sending…",
-        "preview": "Preview",
-        "saveDraft": "Save draft",
-        "testSend": "Send test",
-        "testSendDescription": "Send a test to verify formatting"
+        "send": "发送消息",
+        "sending": "正在发送...",
+        "preview": "预览",
+        "saveDraft": "保存草稿",
+        "testSend": "发送测试",
+        "testSendDescription": "发送测试以验证格式"
       },
       "status": {
         "sent": "Sent",
-        "scheduled": "Scheduled",
-        "failed": "Failed"
+        "scheduled": "预定",
+        "failed": "失败的"
       },
       "results": {
-        "sent": "Message sent successfully via {channels}!",
-        "preview": "[PREVIEW]\n\nChannels: {channels}\nSubject: {subject}\n\n{instruction}\n\n(This is a preview simulation)",
-        "draftSaved": "Draft saved successfully! You can access it in 'Messages > Drafts'.",
-        "testSent": "Test sent to {email}! Check your inbox."
+        "sent": "{channels}消息发送成功！",
+        "preview": "[预览]\n\n 频道：{channels}\n 主题：{subject}\n\n {instruction}\n\n （这是预览模拟）",
+        "draftSaved": "草稿保存成功！ 您可以在“消息 > 草稿”中访问它。",
+        "testSent": "测试已发送至{email}！ 检查您的收件箱。"
       },
       "errors": {
-        "sendFailed": "Failed to send message.",
-        "testNoRecipient": "Please enter a recipient for the test."
+        "sendFailed": "发送消息失败。",
+        "testNoRecipient": "请输入测试的收件人。"
       }
     },
     "media": {
-      "title": "Media & Images",
-      "subtitle": "Process, convert, and optimize images and media in batch",
+      "title": "媒体与图像",
+      "subtitle": "批量处理、转换和优化图像和媒体",
       "instruction": {
-        "title": "What should the AI agent do with the media?",
-        "description": "Describe in natural language what you want the agent to do with your images or videos.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Remove the background from all images, resize to 1200x800 maintaining aspect ratio, convert to WebP at 85% quality, apply brightness +10 filter, and add '© My Company' watermark at the bottom right corner.",
-        "helper": "Include: which transformations to apply, dimensions, output format, quality, filters, and watermark.",
-        "charCount": "{current}/{max} characters",
-        "button": "Process with AI",
-        "processing": "Processing…"
+        "title": "AI代理应该对媒体做什么？",
+        "description": "用自然语言描述您希望代理如何处理您的图像或视频。",
+        "label": "代理指令",
+        "placeholder": "例如，从所有图像中删除背景，将大小调整为 1200x800，保持纵横比，以 85% 质量转换为 WebP，应用亮度 +10 滤镜，并在右下角添加“© My Company”水印。",
+        "helper": "包括：要应用哪些转换、尺寸、输出格式、质量、过滤器和水印。",
+        "charCount": "{current}/{max} 个字符",
+        "button": "人工智能处理",
+        "processing": "加工…"
       },
       "upload": {
-        "title": "Media upload",
-        "description": "Drag images or videos to get started",
-        "dragActive": "Drop files to upload",
-        "browse": "Browse files",
+        "title": "媒体上传",
+        "description": "拖动图像或视频即可开始",
+        "dragActive": "删除要上传的文件",
+        "browse": "浏览文件",
         "supportedFormats": "Formats: JPG, PNG, GIF, SVG, WebP, MP4, MOV, WebM",
-        "maxSize": "Max size: 100 MB per file",
-        "batchInfo": "{count} file(s) selected",
-        "remove": "Remove"
+        "maxSize": "最大大小：每个文件 100 MB",
+        "batchInfo": "已选择 {count} 文件",
+        "remove": "消除"
       },
       "transformations": {
-        "title": "Transformations",
-        "description": "Choose what to do with your media",
-        "resize": "Resize",
-        "resizeDescription": "Change image dimensions",
+        "title": "转换",
+        "description": "选择如何处理您的媒体",
+        "resize": "调整大小",
+        "resizeDescription": "更改图像尺寸",
         "width": "Width",
-        "height": "Height",
-        "maintainAspect": "Maintain aspect ratio",
-        "convertFormat": "Convert format",
-        "convertDescription": "Convert to another file format",
-        "targetFormat": "Target format",
-        "compress": "Compress",
-        "compressDescription": "Reduce file size",
-        "quality": "Quality",
-        "watermark": "Watermark",
-        "watermarkDescription": "Add text or logo overlay on the image",
-        "watermarkText": "Watermark text",
-        "filters": "Filters & adjustments",
-        "brightness": "Brightness",
-        "contrast": "Contrast",
-        "saturation": "Saturation",
+        "height": "高度",
+        "maintainAspect": "保持纵横比",
+        "convertFormat": "转换格式",
+        "convertDescription": "转换为另一种文件格式",
+        "targetFormat": "目标格式",
+        "compress": "压缩",
+        "compressDescription": "减小文件大小",
+        "quality": "质量",
+        "watermark": "水印",
+        "watermarkDescription": "在图像上添加文本或徽标叠加",
+        "watermarkText": "水印文字",
+        "filters": "过滤器和调整",
+        "brightness": "亮度",
+        "contrast": "对比",
+        "saturation": "饱和",
         "blur": "Blur"
       },
       "preview": {
-        "title": "Preview",
-        "original": "Original",
-        "processed": "Processed",
-        "noMedia": "Upload media to preview"
+        "title": "预览",
+        "original": "原来的",
+        "processed": "已加工",
+        "noMedia": "上传媒体进行预览"
       },
       "recentMedia": {
-        "title": "Recent media",
-        "empty": "No media processed yet"
+        "title": "最近的媒体",
+        "empty": "尚未处理任何媒体"
       },
       "actions": {
-        "process": "Process media",
-        "processing": "Processing…",
-        "download": "Download result",
-        "downloadAll": "Download all (ZIP)",
-        "batchProcess": "Batch processing",
-        "filesCount": "{count} files"
+        "process": "工艺介质",
+        "processing": "加工…",
+        "download": "下载结果",
+        "downloadAll": "下载全部 (ZIP)",
+        "batchProcess": "批量处理",
+        "filesCount": "{count} 文件"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access images and videos stored in your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "访问存储在您的Google Drive中的图像和视频。",
+          "connect": "连接Google Drive",
+          "connecting": "正在连接...",
+          "connected": "连接到Google Drive",
+          "browse": "浏览驱动器"
         },
         "googlePhotos": {
-          "title": "Google Photos",
-          "description": "Access your photos and albums directly from Google Photos.",
-          "connect": "Connect Google Photos",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Photos",
-          "browse": "Browse Photos"
+          "title": "谷歌照片",
+          "description": "直接从 Google 相册访问您的照片和相册。",
+          "connect": "连接 Google 相册",
+          "connecting": "正在连接...",
+          "connected": "连接到 Google 相册",
+          "browse": "浏览照片"
         }
       },
       "errors": {
-        "processFailed": "Failed to process media.",
-        "aiFailed": "Failed to interpret instruction."
+        "processFailed": "无法处理媒体。",
+        "aiFailed": "无法解释指令。"
       },
       "results": {
-        "processComplete": "Processing complete! {count} file(s) transformed successfully.",
-        "aiInterpreted": "Instruction interpreted successfully! Transformations have been pre-configured as described. Review the adjustments in the panel and click 'Process media' to apply.",
-        "downloadSimulation": "Simulating download of {count} processed file(s) as ZIP.\n\nIn the full version, all files would be compressed and downloaded.",
-        "downloadComplete": "Download complete! Files removed from the list."
+        "processComplete": "处理完毕！ {count} 文件转换成功。",
+        "aiInterpreted": "指令解释成功！ 转换已按所述预先配置。 查看面板中的调整，然后单击“处理媒体”以应用。",
+        "downloadSimulation": "模拟下载 {count} 已处理文件作为 ZIP。 \n\n在完整版本中，所有文件都将被压缩并下载。",
+        "downloadComplete": "下载完成！ 从列表中删除的文件。"
       }
     },
     "files": {
       "title": "Files",
-      "subtitle": "Manage, organize, and automate file operations",
+      "subtitle": "管理、组织和自动化文件操作",
       "instruction": {
-        "title": "What should the AI agent do with your files?",
-        "description": "Describe in natural language how you want to organize, process, or manage your files.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Organize all PDFs in the Downloads folder by creation date, rename them using the pattern 'YYYY-MM-DD - original name', move invoices to /Finance/Invoices/{year}/{month}, and compress files older than 6 months.",
-        "helper": "Include: which files to affect, how to organize them, renaming pattern, destination folders, and additional actions.",
-        "charCount": "{current}/{max} characters",
-        "button": "Execute with AI",
-        "processing": "Executing…"
+        "title": "AI 代理应该如何处理您的文件？",
+        "description": "用自然语言描述您希望如何组织、处理或管理文件。",
+        "label": "代理指令",
+        "placeholder": "例如，按创建日期组织“下载”文件夹中的所有 PDF，使用“YYYY-MM-DD - 原始名称”模式重命名它们，将发票移至 /Finance/Invoices/{year}/{month}，并压缩 6 个月以上的文件。",
+        "helper": "包括：影响哪些文件、如何组织它们、重命名模式、目标文件夹和其他操作。",
+        "charCount": "{current}/{max} 个字符",
+        "button": "用人工智能执行",
+        "processing": "正在执行..."
       },
       "storage": {
-        "title": "Storage",
+        "title": "贮存",
         "used": "Used",
-        "total": "of {total}",
-        "files": "{count} files",
-        "folders": "{count} folders",
-        "activeRules": "Active rules",
-        "rulesConfigured": "{count} configured",
-        "lastFolder": "Last: {name}",
-        "progressLabel": "{progress}% used"
+        "total": "{total}",
+        "files": "{count} 文件",
+        "folders": "{count} 文件夹",
+        "activeRules": "活动规则",
+        "rulesConfigured": "{count} 配置",
+        "lastFolder": "最后：{name}",
+        "progressLabel": "使用{progress}%"
       },
       "upload": {
-        "title": "File upload",
-        "description": "Drag files or folders to upload",
-        "dragActive": "Drop to upload",
-        "browse": "Browse",
-        "createFolder": "Create folder"
+        "title": "文件上传",
+        "description": "拖动文件或文件夹上传",
+        "dragActive": "拖放即可上传",
+        "browse": "浏览",
+        "createFolder": "创建文件夹"
       },
       "browser": {
-        "title": "File explorer",
-        "empty": "This folder is empty",
+        "title": "文件浏览器",
+        "empty": "该文件夹是空的",
         "name": "Name",
         "size": "Size",
-        "modified": "Modified",
+        "modified": "修改的",
         "type": "Type",
-        "sortBy": "Sort by",
-        "search": "Search files…",
-        "gridView": "Grid view",
-        "listView": "List view",
-        "folder": "Folder"
+        "sortBy": "排序方式",
+        "search": "搜索文件...",
+        "gridView": "网格视图",
+        "listView": "列表视图",
+        "folder": "文件夹"
       },
       "rules": {
-        "title": "Organization rules",
-        "description": "Automate file organization",
-        "ruleName": "Rule name",
-        "ruleNamePlaceholder": "e.g., Sort invoices by month",
-        "condition": "Condition",
-        "conditionPlaceholder": "e.g., filename contains 'invoice'",
-        "action": "Action",
-        "actionPlaceholder": "e.g., move to /Finance/Invoices/{year}/{month}",
-        "addRule": "Add rule",
-        "active": "Active",
-        "inactive": "Inactive",
-        "empty": "No rules configured"
+        "title": "组织规则",
+        "description": "自动化文件组织",
+        "ruleName": "规则名称",
+        "ruleNamePlaceholder": "例如，按月份对发票进行排序",
+        "condition": "健康）状况",
+        "conditionPlaceholder": "例如，文件名包含“发票”",
+        "action": "行动",
+        "actionPlaceholder": "例如，移至 /Finance/Invoices/{year}/{month}",
+        "addRule": "添加规则",
+        "active": "积极的",
+        "inactive": "不活跃",
+        "empty": "没有配置规则"
       },
       "actions": {
-        "label": "Actions",
-        "moreOptions": "More options",
-        "upload": "Upload",
-        "newFolder": "New folder",
-        "delete": "Delete",
-        "rename": "Rename",
+        "label": "行动",
+        "moreOptions": "更多选择",
+        "upload": "上传",
+        "newFolder": "新建文件夹",
+        "delete": "删除",
+        "rename": "重命名",
         "move": "Move",
         "copy": "Copy",
         "share": "Share",
-        "download": "Download"
+        "download": "下载"
       },
-      "aiPlaceholder": "Ex.: Organize todos os PDFs da pasta Downloads por data de criação, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
+      "aiPlaceholder": "E.g.: Organize all PDFs from the Downloads folder by creation date, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and manage files directly from your Google Drive as if it were a local folder.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Explore Drive",
-          "disconnect": "Disconnect"
+          "description": "直接从您的Google Drive访问和管理文件，就像本地文件夹一样。",
+          "connect": "连接Google Drive",
+          "connecting": "正在连接...",
+          "connected": "连接到Google Drive",
+          "browse": "探索驾驶",
+          "disconnect": "断开"
         }
       },
       "dialogs": {
-        "newFolder": "New folder name:",
-        "rename": "Rename to:",
-        "deleteConfirm": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
-        "moveAlert": "Move \"{name}\" — In the full version, a folder selector would be shown.",
-        "copySuffix": " (copy)",
-        "shareLink": "Share link for \"{name}\" copied to clipboard!\n\nhttps://pytomatiza.app/share/{id}",
-        "selectFile": "\"{label}\" — Select a file in the explorer to use this action."
+        "newFolder": "新文件夹名称：",
+        "rename": "重命名为：",
+        "deleteConfirm": "您确定要删除“{name}”吗？ 此操作无法撤消。",
+        "moveAlert": "移动“{name}” - 在完整版本中，将显示文件夹选择器。",
+        "copySuffix": "（复制）",
+        "shareLink": "分享“{name}”的链接已复制到剪贴板！ \n\nhttps://pytomatiza.app/share/{id}",
+        "selectFile": "\"{label}\" — 在资源管理器中选择一个文件以使用此操作。"
       },
       "results": {
-        "aiInterpreted": "Instruction interpreted successfully! Organization rules have been created automatically. Review them in the rules panel."
+        "aiInterpreted": "指令解释成功！ 组织规则已自动创建。 在规则面板中查看它们。"
       }
     },
     "architecture": {
-      "title": "Architecture",
-      "subtitle": "Generate architecture diagrams and technical documentation with AI",
+      "title": "建筑学",
+      "subtitle": "使用 AI 生成架构图和技术文档",
       "diagramBuilder": {
-        "title": "Describe your architecture",
-        "description": "Describe the system in natural language and the AI agent will generate the diagram",
-        "instructionLabel": "Architecture description",
-        "instructionPlaceholder": "e.g., E-commerce system with: load balancer (Nginx), 3 API instances (Node.js on Kubernetes), primary PostgreSQL + read replica, Redis for caching, RabbitMQ queue for orders, Python workers, and S3 storage for product images.",
-        "instructionHelper": "Include: components, connections, protocols, technologies, and data flow.",
-        "charCount": "{current}/{max} characters"
+        "title": "描述您的架构",
+        "description": "用自然语言描述系统，人工智能代理将生成图表",
+        "instructionLabel": "架构说明",
+        "instructionPlaceholder": "例如，电子商务系统具有：负载均衡器 (Nginx)、3 个 API 实例（Kubernetes 上的 Node.js）、主 PostgreSQL + 只读副本、用于缓存的 Redis、用于订单的 RabbitMQ 队列、Python 工作线程和用于产品图像的 S3 存储。",
+        "instructionHelper": "包括：组件、连接、协议、技术和数据流。",
+        "charCount": "{current}/{max} 个字符"
       },
       "templates": {
-        "title": "Architecture templates",
-        "description": "Choose a template as a starting point",
-        "aws": "AWS Cloud",
-        "gcp": "Google Cloud",
-        "azure": "Microsoft Azure",
-        "microservices": "Microservices",
-        "monolith": "Modular Monolith",
-        "serverless": "Serverless",
-        "eventDriven": "Event-Driven",
-        "ciCd": "CI/CD Pipeline",
-        "network": "Network Topology",
-        "dataPipeline": "Data Pipeline"
+        "title": "架构模板",
+        "description": "选择一个模板作为起点",
+        "aws": "AWS 云",
+        "gcp": "谷歌云",
+        "azure": "微软Azure",
+        "microservices": "微服务",
+        "monolith": "模块化整体结构",
+        "serverless": "无服务器",
+        "eventDriven": "事件驱动",
+        "ciCd": "持续集成/持续交付管道",
+        "network": "网络拓扑",
+        "dataPipeline": "数据管道"
       },
       "export": {
-        "title": "Export format",
-        "description": "Choose how to export the diagram",
-        "png": "PNG (image)",
-        "svg": "SVG (vector)",
-        "pdf": "PDF (document)",
-        "drawio": "Draw.io (editable)",
-        "terraform": "Terraform (IaC)",
-        "mermaid": "Mermaid (text)",
-        "plantuml": "PlantUML"
+        "title": "导出格式",
+        "description": "选择导出图表的方式",
+        "png": "PNG（图片）",
+        "svg": "SVG（矢量）",
+        "pdf": "PDF（文档）",
+        "drawio": "Draw.io（可编辑）",
+        "terraform": "地形 (IaC)",
+        "mermaid": "美人鱼（文）",
+        "plantuml": "植物UML"
       },
       "recentDiagrams": {
-        "title": "Recent diagrams",
-        "empty": "No diagrams generated yet",
-        "createdAt": "Created at",
-        "components": "{count} components",
-        "download": "Download",
+        "title": "最近的图表",
+        "empty": "尚未生成图表",
+        "createdAt": "创建于",
+        "components": "{count} 组件",
+        "download": "下载",
         "edit": "Edit",
-        "delete": "Delete"
+        "delete": "删除"
       },
       "actions": {
-        "generate": "Generate diagram",
-        "generating": "Generating diagram…",
-        "generateDescription": "Generate documentation",
-        "save": "Save project",
+        "generate": "生成图表",
+        "generating": "生成图...",
+        "generateDescription": "生成文档",
+        "save": "保存项目",
         "share": "Share",
-        "shareDescription": "Share with your team via link"
+        "shareDescription": "通过链接与您的团队分享"
       },
       "errors": {
-        "generateFailed": "Failed to generate diagram. Please try again."
+        "generateFailed": "无法生成图表。 请再试一次。"
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this diagram?",
-        "shareLink": "Share link copied to clipboard!\n\nShare this architecture project with your team."
+        "deleteConfirm": "您确定要删除该图表吗？",
+        "shareLink": "分享链接已复制到剪贴板！ \n\n与您的团队分享此架构项目。"
       }
     }
   },
   "footer": {
-    "copyright": "© {year} Pytomatiza+. All rights reserved.",
+    "copyright": "© {year} Pytomatiza+。 版权所有。",
     "privacy": "隐私政策",
     "terms": "服务条款",
     "status": "系统状态"
@@ -1104,16 +1037,16 @@
     "subtitle": "Monitore execuções de automação e gerencie solicitações de aprovação pendentes.",
     "stats": {
       "totalExecutions": "Total de Execuções",
-      "successRate": "Taxa de Sucesso",
-      "pendingApprovals": "Aprovações Pendentes",
-      "errors24h": "Erros (24h)"
+      "successRate": "Taxa de Success",
+      "pendingApprovals": "Aprovações Pendings",
+      "errors24h": "错误（24 小时）"
     },
     "tableHeader": "Execuções Recentes",
     "tableAriaLabel": "Registros de execução",
     "status": {
-      "success": "Sucesso",
-      "error": "Erro",
-      "pending": "Aprovação Pendente",
+      "success": "成功",
+      "error": "Error",
+      "pending": "Aprovação Pending",
       "running": "Em Execução"
     },
     "agents": {
@@ -1139,16 +1072,16 @@
     "duration": {
       "ongoing": "em andamento"
     },
-    "tableEmpty": "No execution logs found.",
-    "loginPrompt": "Log in to your account to access real-time data!"
+    "tableEmpty": "未找到执行日志。",
+    "loginPrompt": "登录您的帐户即可访问实时数据！"
   },
   "brand": {
-    "tagline": "AI-powered automation that thinks, learns, and executes — so you don't have to.",
-    "feature1Title": "Natural Language Workflows",
-    "feature1Desc": "Describe tasks in plain English. Our NLP engine builds the automation for you.",
-    "feature2Title": "Multi-Agent Orchestration",
-    "feature2Desc": "Specialized AI agents collaborate to handle complex, multi-step processes.",
-    "feature3Title": "Enterprise-Grade Security",
-    "feature3Desc": "End-to-end encryption, role-based access, and full audit trails."
+    "tagline": "人工智能驱动的自动化可以思考、学习和执行，因此您无需这样做。",
+    "feature1Title": "自然语言工作流程",
+    "feature1Desc": "用简单的英语描述任务。 我们的 NLP 引擎为您构建自动化。",
+    "feature2Title": "多代理编排",
+    "feature2Desc": "专业的人工智能代理协作处理复杂的多步骤流程。",
+    "feature3Title": "Enterprise-Grade 安全",
+    "feature3Desc": "End-to-end 加密、基于角色的访问和完整的审计跟踪。"
   }
 }

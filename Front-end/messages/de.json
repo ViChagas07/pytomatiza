@@ -12,7 +12,7 @@
     "pagination": "Pagination",
     "currentPage": "Aktuelle Seite, Seite {page}",
     "goToPage": "Gehe zur Seite {page}",
-    "goToHome": "Go to home page"
+    "goToHome": "Gehen Sie zur Startseite"
   },
   "common": {
     "loading": "Laden…",
@@ -35,8 +35,8 @@
     "copied": "In die Zwischenablage kopiert",
     "enabled": "Ermöglicht",
     "disabled": "Deaktiviert",
-    "increasedBy": "Increased by",
-    "decreasedBy": "Decreased by"
+    "increasedBy": "Erhöht um",
+    "decreasedBy": "Verringert um"
   },
   "auth": {
     "signIn": {
@@ -80,7 +80,7 @@
       "generic": "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut.",
       "rateLimited": "Zu viele Versuche. Bitte warten Sie einen Moment."
     },
-    "authenticationForm": "Authentication form"
+    "authenticationForm": "Authentifizierungsformular"
   },
   "meta": {
     "login": {
@@ -112,28 +112,28 @@
       "description": "Visualize execuções de automação, histórico de agentes e gerencie aprovações pendentes."
     },
     "documents": {
-      "title": "Documents — Pytomatiza+",
-      "description": "Automate document processing with AI. Extract data, convert formats, and manage PDFs, DOCX, and more."
+      "title": "Dokumente – Pytomatiza+",
+      "description": "Automatisieren Sie die Dokumentenverarbeitung mit KI. Extrahieren Sie Daten, konvertieren Sie Formate und verwalten Sie PDFs, DOCX und mehr."
     },
     "data": {
-      "title": "Data & Spreadsheets — Pytomatiza+",
-      "description": "Connect data sources, transform spreadsheets, and automate analysis with AI agents."
+      "title": "Daten und Tabellen – Pytomatiza+",
+      "description": "Verbinden Sie Datenquellen, transformieren Sie Tabellenkalkulationen und automatisieren Sie Analysen mit KI-Agenten."
     },
     "communication": {
-      "title": "Communication — Pytomatiza+",
-      "description": "Automate emails, messages, and multi-channel notifications with intelligent workflows."
+      "title": "Kommunikation – Pytomatiza+",
+      "description": "Automatisieren Sie E-Mails, Nachrichten und Multi-Channel-Benachrichtigungen mit intelligenten Workflows."
     },
     "media": {
-      "title": "Media & Images — Pytomatiza+",
-      "description": "Process, convert, and optimize images and media in batch with intelligent automation."
+      "title": "Medien und Bilder – Pytomatiza+",
+      "description": "Verarbeiten, konvertieren und optimieren Sie Bilder und Medien im Stapel mit intelligenter Automatisierung."
     },
     "files": {
-      "title": "Files — Pytomatiza+",
-      "description": "Manage, organize, and automate file operations with intelligent rules."
+      "title": "Dateien – Pytomatiza+",
+      "description": "Verwalten, organisieren und automatisieren Sie Dateivorgänge mit intelligenten Regeln."
     },
     "architecture": {
-      "title": "Architecture — Pytomatiza+",
-      "description": "Generate architecture diagrams, technical documentation, and system flows with AI."
+      "title": "Architektur — Pytomatiza+",
+      "description": "Generieren Sie Architekturdiagramme, technische Dokumentation und Systemabläufe mit KI."
     }
   },
   "navigation": {
@@ -188,14 +188,14 @@
       "bgPresetSepia": "Sepia",
       "bgPresetMidnight": "Mitternacht",
       "bgPresetSlate": "Schiefer",
-      "colorYellow": "Yellow",
+      "colorYellow": "Gelb",
       "colorBlue": "Blue",
       "colorGreen": "Green",
-      "colorPurple": "Purple",
+      "colorPurple": "Lila",
       "colorOrange": "Orange",
       "colorRed": "Red",
       "colorPink": "Pink",
-      "accentColorAria": "{color} accent color"
+      "accentColorAria": "{color} Akzentfarbe"
     },
     "accessibility": {
       "title": "Zugänglichkeit",
@@ -280,26 +280,26 @@
   "help": {
     "title": "Hilfe und Support",
     "subtitle": "Holen Sie sich Hilfe, durchsuchen Sie die Dokumentation und kontaktieren Sie unser Team.",
-    "documentation": "Documentation",
-    "documentationDescription": "Browse guides, tutorials, and API references.",
-    "contactSupport": "Contact Support",
-    "contactSupportDescription": "Get help from our team. Usually responds within 24 hours.",
-    "faqTitle": "Frequently Asked Questions",
+    "documentation": "Dokumentation",
+    "documentationDescription": "Durchsuchen Sie Leitfäden, Tutorials und API-Referenzen.",
+    "contactSupport": "Kontaktieren Sie den Support",
+    "contactSupportDescription": "Holen Sie sich Hilfe von unserem Team. Reagiert normalerweise innerhalb von 24 Stunden.",
+    "faqTitle": "Häufig gestellte Fragen",
     "faq0": {
-      "question": "How do I create an automation?",
-      "answer": "Go to the Automations page and use the Natural Language Workflow Builder. Describe what you want to automate in plain English, and Pytomatiza+ will build the workflow for you."
+      "question": "Wie erstelle ich eine Automatisierung?",
+      "answer": "Gehen Sie zur Seite „Automatisierungen“ und verwenden Sie den Natural Language Workflow Builder. Beschreiben Sie in einfachem Englisch, was Sie automatisieren möchten, und Pytomatiza+ erstellt den Workflow für Sie."
     },
     "faq1": {
-      "question": "How do I connect a new integration?",
-      "answer": "Navigate to Settings → Integrations to connect third-party services like Google Workspace, Slack, or GitHub."
+      "question": "Wie verbinde ich eine neue Integration?",
+      "answer": "Navigieren Sie zu Einstellungen → Integrationen, um Drittanbieterdienste wie Google Workspace, Slack oder GitHub zu verbinden."
     },
     "faq2": {
-      "question": "What happens if an agent fails?",
-      "answer": "Failed agents are marked with an error status. You can view the error details in the agent card and retry the execution."
+      "question": "Was passiert, wenn ein Agent ausfällt?",
+      "answer": "Ausgefallene Agenten werden mit einem Fehlerstatus gekennzeichnet. Sie können die Fehlerdetails auf der Agentenkarte anzeigen und die Ausführung erneut versuchen."
     },
     "faq3": {
-      "question": "How do I change my language?",
-      "answer": "Click the globe icon in the header to switch between 9 supported languages."
+      "question": "Wie ändere ich meine Sprache?",
+      "answer": "Klicken Sie auf das Globussymbol in der Kopfzeile, um zwischen 9 unterstützten Sprachen zu wechseln."
     }
   },
   "dashboard": {
@@ -314,8 +314,8 @@
       "automationsToday": "Automatisierungen heute",
       "successRate": "Erfolgsquote",
       "pendingApprovals": "Ausstehende Genehmigungen",
-      "increasedBy": "Increased by {value}",
-      "decreasedBy": "Decreased by {value}"
+      "increasedBy": "Erhöht um {value}",
+      "decreasedBy": "Um {value} verringert"
     },
     "recentActivity": "Aktuelle Aktivität",
     "quickActions": "Schnelle Aktionen",
@@ -327,18 +327,18 @@
       "title": "Fehler beim Laden der Daten",
       "loadingFailed": "Dashboard-Daten konnten nicht geladen werden. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
       "retry": "Erneut versuchen",
-      "offlineBanner": "Backend unavailable — displayed data may be out of date",
-      "unknown": "Unknown error"
+      "offlineBanner": "Backend nicht verfügbar – die angezeigten Daten sind möglicherweise veraltet",
+      "unknown": "Unbekannter Fehler"
     },
     "empty": {
       "title": "Keine Agenten gefunden",
       "description": "Erstellen Sie Ihren ersten Automatisierungsagenten, um hier Aktivitäten zu sehen.",
       "offlineTitle": "Backend offline",
-      "offlineDescription": "Connect to the backend to see your agents. Click \"Retry\" once the service is available."
+      "offlineDescription": "Stellen Sie eine Verbindung zum Backend her, um Ihre Agenten anzuzeigen. Klicken Sie auf „Wiederholen“, sobald der Dienst verfügbar ist."
     },
-    "recentActivityEmpty": "Empty history… Create your first automation with Pytomatiza+ by going to Modules!",
-    "loginPrompt": "Sign in to your account to access real-time data!",
-    "loginAction": "Sign in",
+    "recentActivityEmpty": "Leeren Sie den Verlauf ... Erstellen Sie Ihre erste Automatisierung mit Pytomatiza+, indem Sie zu Module gehen!",
+    "loginPrompt": "Melden Sie sich bei Ihrem Konto an, um auf Echtzeitdaten zuzugreifen!",
+    "loginAction": "anmelden",
     "user": "User"
   },
   "agents": {
@@ -360,80 +360,12 @@
       "idle": "Leerlauf",
       "running": "Läuft",
       "error": "Fehler",
-      "mock": {
-        "1": {
-          "name": "Salvador de Anexos de E-mail",
-          "desc": "Monitora a caixa de entrada em busca de anexos, salva-os no Google Drive e notifica via Slack."
-        },
-        "2": {
-          "name": "Gerador de Relat�rios Semanais",
-          "desc": "Compila dados de m�ltiplas fontes e gera um relat�rio PDF formatado toda segunda-feira."
-        },
-        "3": {
-          "name": "Monitor de Redes Sociais",
-          "desc": "Rastreia men��es � marca no Twitter, LinkedIn e Reddit. Responde automaticamente a consultas de suporte."
-        },
-        "4": {
-          "name": "Agente de Backup de Banco de Dados",
-          "desc": "Realiza backups noturnos do banco de dados e verifica a integridade. Alerta em caso de falha."
-        },
-        "5": {
-          "name": "Verificador de Sa�de de APIs",
-          "desc": "Faz ping em todas as APIs internas a cada minuto. Escala para o PagerDuty em caso de inatividade."
-        },
-        "6": {
-          "name": "Processador de Faturas",
-          "desc": "Extrai dados de faturas em PDF usando OCR e envia para o software de contabilidade."
-        },
-        "7": {
-          "name": "Agendador de Reuni�es",
-          "desc": "Coordena calend�rios entre equipes para encontrar hor�rios ideais e envia convites."
-        },
-        "8": {
-          "name": "Tradutor de Conte�do",
-          "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
-        }
-      },
       "paused": "Angehalten"
     },
     "statusDescriptions": {
       "idle": "Status: Bereit und wartet",
       "running": "Status: Wird derzeit ausgeführt",
       "error": "Status: Fehler aufgetreten",
-      "mock": {
-        "1": {
-          "name": "Salvador de Anexos de E-mail",
-          "desc": "Monitora a caixa de entrada em busca de anexos, salva-os no Google Drive e notifica via Slack."
-        },
-        "2": {
-          "name": "Gerador de Relat�rios Semanais",
-          "desc": "Compila dados de m�ltiplas fontes e gera um relat�rio PDF formatado toda segunda-feira."
-        },
-        "3": {
-          "name": "Monitor de Redes Sociais",
-          "desc": "Rastreia men��es � marca no Twitter, LinkedIn e Reddit. Responde automaticamente a consultas de suporte."
-        },
-        "4": {
-          "name": "Agente de Backup de Banco de Dados",
-          "desc": "Realiza backups noturnos do banco de dados e verifica a integridade. Alerta em caso de falha."
-        },
-        "5": {
-          "name": "Verificador de Sa�de de APIs",
-          "desc": "Faz ping em todas as APIs internas a cada minuto. Escala para o PagerDuty em caso de inatividade."
-        },
-        "6": {
-          "name": "Processador de Faturas",
-          "desc": "Extrai dados de faturas em PDF usando OCR e envia para o software de contabilidade."
-        },
-        "7": {
-          "name": "Agendador de Reuni�es",
-          "desc": "Coordena calend�rios entre equipes para encontrar hor�rios ideais e envia convites."
-        },
-        "8": {
-          "name": "Tradutor de Conte�do",
-          "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
-        }
-      },
       "paused": "Status: Vom Benutzer pausiert"
     },
     "card": {
@@ -481,7 +413,8 @@
         "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
       }
     },
-    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}"
+    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}",
+    "resetFilters": "Alle Filter zurücksetzen"
   },
   "automations": {
     "title": "Automatisierungen",
@@ -498,7 +431,7 @@
       "requireApprovalHelper": "Wenn diese Option aktiviert ist, wird der Workflow vor der Ausführung für Ihre Überprüfung angehalten.",
       "build": "Workflow erstellen",
       "building": "Workflow erstellen…",
-      "charCount": "{aktuell}/{max} Zeichen",
+      "charCount": "{current}/{max} Zeichen",
       "suggestions": "Probieren Sie diese Beispiele aus:",
       "example1": "Senden Sie jeden Freitag um 17:00 Uhr einen wöchentlichen Bericht aller geschlossenen Tickets an den Slack-Kanal des Teams",
       "example2": "Überwachen Sie unsere Twitter-Erwähnungen und antworten Sie automatisch auf Supportfragen mit einem Link zum Hilfecenter",
@@ -513,26 +446,26 @@
       "delete": "Workflow löschen",
       "deleteConfirm": "Sind Sie sicher, dass Sie diesen Workflow löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
       "deleted": "Workflow erfolgreich gelöscht",
-      "statusToggled": "Workflow {Status}",
-      "label": "Workflows",
-      "neverTriggered": "Never triggered",
+      "statusToggled": "Arbeitsablauf {status}",
+      "label": "Arbeitsabläufe",
+      "neverTriggered": "Nie ausgelöst",
       "status": "Status: {status}",
-      "created": "Workflow created! Agent type: {agentType}. Approval: {approval}.",
-      "required": "required",
-      "notRequired": "not required"
+      "created": "Workflow erstellt! Agententyp: {agentType}. Zulassung: {approval}.",
+      "required": "erforderlich",
+      "notRequired": "nicht erforderlich"
     },
     "errors": {
       "instructionTooShort": "Die Anweisung muss mindestens 10 Zeichen lang sein",
       "instructionTooLong": "Die Anweisung darf 500 Zeichen nicht überschreiten",
       "buildFailed": "Der Workflow konnte nicht erstellt werden. Bitte versuchen Sie es erneut."
     },
-    "loginPrompt": "Log in to your account to access real-time data!",
+    "loginPrompt": "Melden Sie sich bei Ihrem Konto an, um auf Echtzeitdaten zuzugreifen!",
     "agentTypes": {
-      "productivity": "Productivity",
+      "productivity": "Produktivität",
       "data": "Data",
-      "content": "Content",
+      "content": "Inhalt",
       "admin": "Admin",
-      "technical": "Technical"
+      "technical": "Technisch"
     }
   },
   "theme": {
@@ -556,17 +489,17 @@
       "description": "Sie müssen sich anmelden, um auf diese Seite zugreifen zu können.",
       "signIn": "anmelden"
     },
-    "notFoundTitle": "Page not found",
-    "notFoundDescription": "The page you're looking for doesn't exist or has been moved.",
-    "notFoundAction": "Go to dashboard",
-    "somethingWentWrong": "Something went wrong",
-    "unexpectedError": "An unexpected error occurred. Our team has been notified.",
-    "dashboardErrorDescription": "An unexpected error occurred while loading this page.",
-    "tryAgain": "Try again",
-    "goHome": "Go home",
-    "errorId": "Error ID: ",
-    "loadingDashboard": "Loading dashboard",
-    "loadingDashboardContent": "Loading dashboard content…"
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundDescription": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "notFoundAction": "Gehen Sie zum Dashboard",
+    "somethingWentWrong": "Etwas ist schief gelaufen",
+    "unexpectedError": "Es ist ein unerwarteter Fehler aufgetreten. Unser Team wurde benachrichtigt.",
+    "dashboardErrorDescription": "Beim Laden dieser Seite ist ein unerwarteter Fehler aufgetreten.",
+    "tryAgain": "Versuchen Sie es erneut",
+    "goHome": "Nach Hause gehen",
+    "errorId": "Fehler-ID:",
+    "loadingDashboard": "Dashboard wird geladen",
+    "loadingDashboardContent": "Dashboard-Inhalt wird geladen…"
   },
   "nav": {
     "dashboard": "Armaturenbrett",
@@ -591,510 +524,510 @@
     "filesDesc": "Allgemeine Dateispeicherung und -verwaltung.",
     "architecture": "Architektur",
     "architectureDesc": "Systemdiagramme und Architekturdokumente.",
-    "settings": "Settings",
-    "signOut": "Sign Out",
-    "signIn": "Sign In",
+    "settings": "Einstellungen",
+    "signOut": "Abmelden",
+    "signIn": "Anmelden",
     "appearance": "Aussehen",
     "user": "User"
   },
   "modules": {
     "documents": {
-      "title": "Documents",
-      "subtitle": "Automate intelligent document processing with AI agents",
+      "title": "Unterlagen",
+      "subtitle": "Automatisieren Sie die intelligente Dokumentenverarbeitung mit KI-Agenten",
       "upload": {
-        "title": "Attach document",
-        "description": "Drag and drop your file here or click to select",
-        "dragActive": "Drop the file to attach",
-        "browse": "Browse files",
+        "title": "Dokument anhängen",
+        "description": "Ziehen Sie Ihre Datei per Drag-and-Drop hierher oder klicken Sie, um sie auszuwählen",
+        "dragActive": "Legen Sie die anzuhängende Datei ab",
+        "browse": "Durchsuchen Sie Dateien",
         "supportedFormats": "Supported formats: PDF, DOCX, XLSX, PPTX, TXT, CSV, images",
-        "maxSize": "Max size: 25 MB",
-        "fileSelected": "File selected",
-        "remove": "Remove file"
+        "maxSize": "Maximale Größe: 25 MB",
+        "fileSelected": "Datei ausgewählt",
+        "remove": "Datei entfernen"
       },
       "instruction": {
-        "title": "What should the AI agent do?",
-        "description": "Describe in natural language what you want the agent to do with this document.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Extract all data from the table on page 3 and convert it to a CSV spreadsheet. Then email it to finance@company.com.",
-        "helper": "Be specific: include which data to extract, output format, recipients, and post-processing actions.",
-        "charCount": "{current}/{max} characters"
+        "title": "Was soll der KI-Agent tun?",
+        "description": "Beschreiben Sie in natürlicher Sprache, was der Agent mit diesem Dokument tun soll.",
+        "label": "Agentenanweisung",
+        "placeholder": "Extrahieren Sie beispielsweise alle Daten aus der Tabelle auf Seite 3 und konvertieren Sie sie in eine CSV-Tabelle. Dann senden Sie es per E-Mail an Finance@company.com.",
+        "helper": "Seien Sie genau: Geben Sie die zu extrahierenden Daten, das Ausgabeformat, die Empfänger und die Nachbearbeitungsaktionen an.",
+        "charCount": "{current}/{max} Zeichen"
       },
       "quickActions": {
-        "title": "Quick actions",
-        "extractData": "Extract data",
-        "convertFormat": "Convert format",
-        "mergeDocs": "Merge documents",
-        "ocrScan": "OCR scan",
-        "summarize": "Summarize content",
-        "translate": "Translate",
+        "title": "Schnelle Aktionen",
+        "extractData": "Daten extrahieren",
+        "convertFormat": "Format konvertieren",
+        "mergeDocs": "Dokumente zusammenführen",
+        "ocrScan": "OCR-Scan",
+        "summarize": "Inhalte zusammenfassen",
+        "translate": "Übersetzen",
         "presets": {
-          "extract": "Extract all structured data from this document and export as CSV.",
-          "convert": "Convert this document to PDF format while preserving the original layout.",
-          "merge": "Merge this document with other files in the folder and generate a single unified PDF.",
-          "ocr": "Scan this document using OCR and extract all text in editable format.",
-          "summarize": "Summarize the content of this document in one paragraph with key points.",
-          "translate": "Translate this document to English while preserving the original formatting."
+          "extract": "Extrahieren Sie alle strukturierten Daten aus diesem Dokument und exportieren Sie es als CSV.",
+          "convert": "Konvertieren Sie dieses Dokument in das PDF-Format und behalten Sie dabei das ursprüngliche Layout bei.",
+          "merge": "Führen Sie dieses Dokument mit anderen Dateien im Ordner zusammen und generieren Sie eine einzige einheitliche PDF-Datei.",
+          "ocr": "Scannen Sie dieses Dokument mit OCR und extrahieren Sie den gesamten Text in bearbeitbarem Format.",
+          "summarize": "Fassen Sie den Inhalt dieses Dokuments in einem Absatz mit den wichtigsten Punkten zusammen.",
+          "translate": "Übersetzen Sie dieses Dokument ins Englische und behalten Sie dabei die ursprüngliche Formatierung bei."
         }
       },
       "recentDocuments": {
-        "title": "Recent documents",
-        "empty": "No documents processed yet. Upload your first document above.",
-        "processed": "Processed",
+        "title": "Aktuelle Dokumente",
+        "empty": "Noch keine Dokumente bearbeitet. Laden Sie oben Ihr erstes Dokument hoch.",
+        "processed": "Verarbeitet",
         "status": "Status",
-        "actions": "Actions",
-        "download": "Download result",
-        "reprocess": "Reprocess",
-        "delete": "Delete"
+        "actions": "Aktionen",
+        "download": "Ergebnis herunterladen",
+        "reprocess": "Wiederaufbereiten",
+        "delete": "Löschen"
       },
       "processing": {
-        "button": "Process document",
-        "processing": "Processing…",
-        "success": "Document processed successfully!",
-        "error": "Failed to process document. Please try again.",
-        "reprocessInstruction": "Reprocess the document {name} applying the same previous transformations."
+        "button": "Prozessdokument",
+        "processing": "Verarbeitung…",
+        "success": "Dokument erfolgreich verarbeitet!",
+        "error": "Dokument konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.",
+        "reprocessInstruction": "Verarbeiten Sie das Dokument {name} erneut und wenden Sie dabei dieselben vorherigen Transformationen an."
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and select documents directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "Greifen Sie direkt von Ihrem Google Drive aus auf Dokumente zu und wählen Sie sie aus.",
+          "connect": "Google Drive verbinden",
+          "connecting": "Verbinden...",
+          "connected": "Verbunden mit Google Drive",
+          "browse": "Durchsuchen Sie das Laufwerk"
         }
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this document? This action cannot be undone."
+        "deleteConfirm": "Möchten Sie dieses Dokument wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden."
       }
     },
     "data": {
-      "title": "Data & Spreadsheets",
-      "subtitle": "Connect data sources, transform spreadsheets, and automate analysis",
+      "title": "Daten und Tabellenkalkulationen",
+      "subtitle": "Verbinden Sie Datenquellen, transformieren Sie Tabellenkalkulationen und automatisieren Sie Analysen",
       "source": {
-        "title": "Data source",
-        "description": "Choose how to connect your data",
-        "uploadCsv": "Upload CSV/Excel",
+        "title": "Datenquelle",
+        "description": "Wählen Sie, wie Sie Ihre Daten verbinden",
+        "uploadCsv": "CSV/Excel hochladen",
         "googleSheets": "Google Sheets",
-        "database": "SQL Database",
-        "api": "REST API",
-        "url": "Public URL",
-        "selectPlaceholder": "Select source type…",
-        "connect": "Connect",
-        "connecting": "Connecting…"
+        "database": "SQL-Datenbank",
+        "api": "REST-API",
+        "url": "Öffentliche URL",
+        "selectPlaceholder": "Quelltyp auswählen…",
+        "connect": "Verbinden",
+        "connecting": "Verbinden…"
       },
       "instruction": {
-        "title": "What to do with the data?",
-        "description": "Describe the desired transformation, analysis, or automation",
-        "label": "Processing instruction",
-        "placeholder": "e.g., Merge 'First Name' and 'Last Name' columns, filter records with sales over $10,000, group by region, and generate a bar chart.",
-        "helper": "Include filters, aggregations, table joins, and the desired output format.",
-        "charCount": "{current}/{max} characters"
+        "title": "Was tun mit den Daten?",
+        "description": "Beschreiben Sie die gewünschte Transformation, Analyse oder Automatisierung",
+        "label": "Verarbeitungsanweisung",
+        "placeholder": "Führen Sie beispielsweise die Spalten „Vorname“ und „Nachname“ zusammen, filtern Sie Datensätze mit Umsätzen über 10.000 US-Dollar, gruppieren Sie sie nach Region und erstellen Sie ein Balkendiagramm.",
+        "helper": "Fügen Sie Filter, Aggregationen, Tabellenverknüpfungen und das gewünschte Ausgabeformat hinzu.",
+        "charCount": "{current}/{max} Zeichen"
       },
       "preview": {
-        "title": "Preview",
-        "noData": "Connect a data source to preview",
-        "rows": "{count} rows",
-        "columns": "{count} columns",
+        "title": "Vorschau",
+        "noData": "Verbinden Sie eine Datenquelle zur Vorschau",
+        "rows": "{count} Zeilen",
+        "columns": "{count} Spalten",
         "id": "ID",
         "name": "Name",
         "region": "Region",
         "sales": "Sales",
         "status": "Status",
-        "showingRecords": "Showing {shown} of {total} records"
+        "showingRecords": "Es werden {shown} von {total} Datensätzen angezeigt"
       },
       "recentDatasets": {
-        "title": "Recent datasets",
-        "empty": "No datasets processed yet",
-        "source": "Source",
-        "lastUsed": "Last used",
-        "info": "{rows} rows · {cols} columns"
+        "title": "Aktuelle Datensätze",
+        "empty": "Noch keine Datensätze verarbeitet",
+        "source": "Quelle",
+        "lastUsed": "Zuletzt verwendet",
+        "info": "{rows} Zeilen · {cols} Spalten"
       },
       "actions": {
-        "transform": "Transform data",
-        "analyze": "Analyze data",
-        "export": "Export result",
-        "schedule": "Schedule automation",
-        "sidebarTitle": "Actions",
-        "dashboard": "Dashboard",
-        "processing": "Processing…"
+        "transform": "Daten transformieren",
+        "analyze": "Daten analysieren",
+        "export": "Ergebnis exportieren",
+        "schedule": "Planen Sie die Automatisierung",
+        "sidebarTitle": "Aktionen",
+        "dashboard": "Armaturenbrett",
+        "processing": "Verarbeitung…"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access spreadsheets and data files directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "Greifen Sie direkt von Ihrem Google Drive aus auf Tabellenkalkulationen und Datendateien zu.",
+          "connect": "Google Drive verbinden",
+          "connecting": "Verbinden...",
+          "connected": "Verbunden mit Google Drive",
+          "browse": "Durchsuchen Sie das Laufwerk"
         }
       },
       "errors": {
-        "connectFailed": "Failed to connect to data source.",
-        "processFailed": "Failed to process data."
+        "connectFailed": "Verbindung zur Datenquelle konnte nicht hergestellt werden.",
+        "processFailed": "Daten konnten nicht verarbeitet werden."
       },
       "results": {
-        "connected": "Connected successfully! Data source ready for processing.",
-        "transformComplete": "Transformation complete! {count} records processed. The result is ready for download.",
-        "analyzeInstruction": "Analyze the connected data and generate insights: trends, outliers, correlations, and recommendations.",
-        "scheduleAlert": "Scheduling configured! Data will be processed automatically.",
-        "comingSoon": "Feature coming soon."
+        "connected": "Erfolgreich verbunden! Datenquelle zur Verarbeitung bereit.",
+        "transformComplete": "Transformation abgeschlossen! {count} Datensätze verarbeitet. Das Ergebnis steht zum Download bereit.",
+        "analyzeInstruction": "Analysieren Sie die verbundenen Daten und generieren Sie Erkenntnisse: Trends, Ausreißer, Korrelationen und Empfehlungen.",
+        "scheduleAlert": "Terminplanung konfiguriert! Die Daten werden automatisch verarbeitet.",
+        "comingSoon": "Funktion kommt bald."
       },
       "presets": {
         "merge": {
-          "label": "Merge columns",
-          "prompt": "Merge 'Name' and 'Last Name' columns into a single 'Full Name' column."
+          "label": "Spalten zusammenführen",
+          "prompt": "Führen Sie die Spalten „Name“ und „Nachname“ in einer einzigen Spalte „Vollständiger Name“ zusammen."
         },
         "filter": {
-          "label": "Filter records",
-          "prompt": "Filter records where 'Sales' column is greater than $10,000."
+          "label": "Datensätze filtern",
+          "prompt": "Filtern Sie Datensätze, in denen die Spalte „Umsatz“ mehr als 10.000 US-Dollar beträgt."
         },
         "group": {
-          "label": "Group & summarize",
-          "prompt": "Group data by 'Region' and calculate the sum and average of 'Sales'."
+          "label": "Gruppieren und zusammenfassen",
+          "prompt": "Gruppieren Sie die Daten nach „Region“ und berechnen Sie die Summe und den Durchschnitt der „Umsätze“."
         },
         "pivot": {
-          "label": "Pivot table",
-          "prompt": "Create a pivot table with 'Category' as rows, 'Month' as columns, and sum of 'Revenue'."
+          "label": "Pivot-Tabelle",
+          "prompt": "Erstellen Sie eine Pivot-Tabelle mit „Kategorie“ als Zeilen, „Monat“ als Spalten und der Summe von „Umsatz“."
         },
         "chart": {
-          "label": "Generate chart",
-          "prompt": "Generate a bar chart comparing sales by region."
+          "label": "Diagramm erstellen",
+          "prompt": "Erstellen Sie ein Balkendiagramm, in dem die Umsätze nach Regionen verglichen werden."
         },
         "export": {
-          "label": "Export structured",
-          "prompt": "Export the transformed data to a CSV file with UTF-8 encoding."
+          "label": "Strukturiert exportieren",
+          "prompt": "Exportieren Sie die transformierten Daten in eine CSV-Datei mit UTF-8-Kodierung."
         }
       }
     },
     "communication": {
-      "title": "Communication",
-      "subtitle": "Automate emails, messages, and multi-channel notifications",
+      "title": "Kommunikation",
+      "subtitle": "Automatisieren Sie E-Mails, Nachrichten und Multi-Channel-Benachrichtigungen",
       "composer": {
-        "title": "Compose message",
-        "description": "Describe the content and the AI agent will draft the message",
-        "instructionLabel": "Message instruction",
-        "instructionPlaceholder": "e.g., Send a reminder email to all clients with invoices due in 3 days, using a professional yet friendly tone, and include the payment link.",
-        "instructionHelper": "Specify: message tone, information to include, personalizations, and call-to-action.",
-        "subjectLabel": "Subject (for emails)",
-        "subjectPlaceholder": "Email subject…",
-        "charCount": "{current}/{max} characters",
-        "noSubject": "(no subject)"
+        "title": "Nachricht verfassen",
+        "description": "Beschreiben Sie den Inhalt und der KI-Agent erstellt die Nachricht",
+        "instructionLabel": "Nachrichtenanweisung",
+        "instructionPlaceholder": "Senden Sie beispielsweise eine Erinnerungs-E-Mail an alle Kunden mit Rechnungen, die in drei Tagen fällig sind, in einem professionellen, aber freundlichen Ton und fügen Sie den Zahlungslink hinzu.",
+        "instructionHelper": "Geben Sie an: Nachrichtenton, einzubeziehende Informationen, Personalisierungen und Handlungsaufforderung.",
+        "subjectLabel": "Betreff (für E-Mails)",
+        "subjectPlaceholder": "E-Mail-Betreff…",
+        "charCount": "{current}/{max} Zeichen",
+        "noSubject": "(kein Thema)"
       },
       "channels": {
-        "title": "Delivery channels",
+        "title": "Lieferkanäle",
         "email": "Email",
         "slack": "Slack",
         "whatsapp": "WhatsApp",
-        "teams": "Microsoft Teams",
+        "teams": "Microsoft-Teams",
         "sms": "SMS",
-        "discord": "Discord"
+        "discord": "Zwietracht"
       },
       "recipients": {
-        "title": "Recipients",
-        "description": "Configure who will receive the message",
+        "title": "Empfänger",
+        "description": "Konfigurieren Sie, wer die Nachricht erhalten soll",
         "to": "To",
         "toPlaceholder": "email@example.com",
-        "cc": "CC (carbon copy)",
+        "cc": "CC (Durchschlag)",
         "ccPlaceholder": "email@example.com",
-        "addMore": "Add more",
-        "list": "Distribution list",
-        "condition": "By condition (e.g., inactive clients)"
+        "addMore": "Fügen Sie weitere hinzu",
+        "list": "Verteilerliste",
+        "condition": "Nach Bedingung (z. B. inaktive Clients)"
       },
       "schedule": {
-        "title": "Schedule",
-        "sendNow": "Send now",
-        "scheduleLater": "Schedule for later",
-        "recurring": "Recurring",
-        "dateTime": "Date and time",
-        "frequency": "Frequency",
+        "title": "Zeitplan",
+        "sendNow": "Jetzt senden",
+        "scheduleLater": "Planen Sie für später",
+        "recurring": "Wiederkehrend",
+        "dateTime": "Datum und Uhrzeit",
+        "frequency": "Frequenz",
         "daily": "Daily",
-        "weekly": "Weekly",
-        "monthly": "Monthly",
-        "dateTimePlaceholder": "Date/time picker available in the full version."
+        "weekly": "Wöchentlich",
+        "monthly": "Monatlich",
+        "dateTimePlaceholder": "Datums-/Uhrzeitauswahl in der Vollversion verfügbar."
       },
       "recentMessages": {
-        "title": "Recent messages",
-        "empty": "No messages sent yet",
-        "channel": "Channel",
-        "sentAt": "Sent at",
+        "title": "Aktuelle Nachrichten",
+        "empty": "Noch keine Nachrichten gesendet",
+        "channel": "Kanal",
+        "sentAt": "Gesendet an",
         "status": "Status"
       },
       "actions": {
-        "send": "Send message",
-        "sending": "Sending…",
-        "preview": "Preview",
-        "saveDraft": "Save draft",
-        "testSend": "Send test",
-        "testSendDescription": "Send a test to verify formatting"
+        "send": "Nachricht senden",
+        "sending": "Senden…",
+        "preview": "Vorschau",
+        "saveDraft": "Entwurf speichern",
+        "testSend": "Test senden",
+        "testSendDescription": "Senden Sie einen Test, um die Formatierung zu überprüfen"
       },
       "status": {
         "sent": "Sent",
-        "scheduled": "Scheduled",
-        "failed": "Failed"
+        "scheduled": "Geplant",
+        "failed": "Fehlgeschlagen"
       },
       "results": {
-        "sent": "Message sent successfully via {channels}!",
-        "preview": "[PREVIEW]\n\nChannels: {channels}\nSubject: {subject}\n\n{instruction}\n\n(This is a preview simulation)",
-        "draftSaved": "Draft saved successfully! You can access it in 'Messages > Drafts'.",
-        "testSent": "Test sent to {email}! Check your inbox."
+        "sent": "Nachricht erfolgreich über {channels} gesendet!",
+        "preview": "[VORSCHAU] \n\nKanäle: {channels} \nBetreff: {subject} \n\n{instruction} \n\n(Dies ist eine Vorschausimulation)",
+        "draftSaved": "Entwurf erfolgreich gespeichert! Sie können darauf unter „Nachrichten > Entwürfe“ zugreifen.",
+        "testSent": "Test an {email} gesendet! Überprüfen Sie Ihren Posteingang."
       },
       "errors": {
-        "sendFailed": "Failed to send message.",
-        "testNoRecipient": "Please enter a recipient for the test."
+        "sendFailed": "Nachricht konnte nicht gesendet werden.",
+        "testNoRecipient": "Bitte geben Sie einen Empfänger für den Test ein."
       }
     },
     "media": {
-      "title": "Media & Images",
-      "subtitle": "Process, convert, and optimize images and media in batch",
+      "title": "Medien & Bilder",
+      "subtitle": "Verarbeiten, konvertieren und optimieren Sie Bilder und Medien im Stapel",
       "instruction": {
-        "title": "What should the AI agent do with the media?",
-        "description": "Describe in natural language what you want the agent to do with your images or videos.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Remove the background from all images, resize to 1200x800 maintaining aspect ratio, convert to WebP at 85% quality, apply brightness +10 filter, and add '© My Company' watermark at the bottom right corner.",
-        "helper": "Include: which transformations to apply, dimensions, output format, quality, filters, and watermark.",
-        "charCount": "{current}/{max} characters",
-        "button": "Process with AI",
-        "processing": "Processing…"
+        "title": "Was soll der KI-Agent mit den Medien machen?",
+        "description": "Beschreiben Sie in natürlicher Sprache, was der Agent mit Ihren Bildern oder Videos tun soll.",
+        "label": "Agentenanweisung",
+        "placeholder": "Entfernen Sie beispielsweise den Hintergrund von allen Bildern, ändern Sie die Größe auf 1200 x 800 unter Beibehaltung des Seitenverhältnisses, konvertieren Sie in WebP mit 85 % Qualität, wenden Sie den Filter „Helligkeit +10“ an und fügen Sie in der unteren rechten Ecke das Wasserzeichen „© My Company“ hinzu.",
+        "helper": "Dazu gehören: welche Transformationen angewendet werden sollen, Abmessungen, Ausgabeformat, Qualität, Filter und Wasserzeichen.",
+        "charCount": "{current}/{max} Zeichen",
+        "button": "Prozess mit KI",
+        "processing": "Verarbeitung…"
       },
       "upload": {
-        "title": "Media upload",
-        "description": "Drag images or videos to get started",
-        "dragActive": "Drop files to upload",
-        "browse": "Browse files",
+        "title": "Medien-Upload",
+        "description": "Ziehen Sie Bilder oder Videos, um loszulegen",
+        "dragActive": "Legen Sie Dateien zum Hochladen ab",
+        "browse": "Durchsuchen Sie Dateien",
         "supportedFormats": "Formats: JPG, PNG, GIF, SVG, WebP, MP4, MOV, WebM",
-        "maxSize": "Max size: 100 MB per file",
-        "batchInfo": "{count} file(s) selected",
-        "remove": "Remove"
+        "maxSize": "Maximale Größe: 100 MB pro Datei",
+        "batchInfo": "{count} Datei(en) ausgewählt",
+        "remove": "Entfernen"
       },
       "transformations": {
-        "title": "Transformations",
-        "description": "Choose what to do with your media",
-        "resize": "Resize",
-        "resizeDescription": "Change image dimensions",
+        "title": "Transformationen",
+        "description": "Wählen Sie, was mit Ihren Medien geschehen soll",
+        "resize": "Größe ändern",
+        "resizeDescription": "Bildabmessungen ändern",
         "width": "Width",
-        "height": "Height",
-        "maintainAspect": "Maintain aspect ratio",
-        "convertFormat": "Convert format",
-        "convertDescription": "Convert to another file format",
-        "targetFormat": "Target format",
-        "compress": "Compress",
-        "compressDescription": "Reduce file size",
-        "quality": "Quality",
-        "watermark": "Watermark",
-        "watermarkDescription": "Add text or logo overlay on the image",
-        "watermarkText": "Watermark text",
-        "filters": "Filters & adjustments",
-        "brightness": "Brightness",
-        "contrast": "Contrast",
-        "saturation": "Saturation",
+        "height": "Höhe",
+        "maintainAspect": "Seitenverhältnis beibehalten",
+        "convertFormat": "Format konvertieren",
+        "convertDescription": "In ein anderes Dateiformat konvertieren",
+        "targetFormat": "Zielformat",
+        "compress": "Kompresse",
+        "compressDescription": "Dateigröße reduzieren",
+        "quality": "Qualität",
+        "watermark": "Wasserzeichen",
+        "watermarkDescription": "Fügen Sie dem Bild eine Text- oder Logo-Überlagerung hinzu",
+        "watermarkText": "Wasserzeichentext",
+        "filters": "Filter und Anpassungen",
+        "brightness": "Helligkeit",
+        "contrast": "Kontrast",
+        "saturation": "Sättigung",
         "blur": "Blur"
       },
       "preview": {
-        "title": "Preview",
+        "title": "Vorschau",
         "original": "Original",
-        "processed": "Processed",
-        "noMedia": "Upload media to preview"
+        "processed": "Verarbeitet",
+        "noMedia": "Laden Sie Medien zur Vorschau hoch"
       },
       "recentMedia": {
-        "title": "Recent media",
-        "empty": "No media processed yet"
+        "title": "Aktuelle Medien",
+        "empty": "Noch keine Medien verarbeitet"
       },
       "actions": {
-        "process": "Process media",
-        "processing": "Processing…",
-        "download": "Download result",
-        "downloadAll": "Download all (ZIP)",
-        "batchProcess": "Batch processing",
-        "filesCount": "{count} files"
+        "process": "Prozessmedien",
+        "processing": "Verarbeitung…",
+        "download": "Ergebnis herunterladen",
+        "downloadAll": "Alles herunterladen (ZIP)",
+        "batchProcess": "Stapelverarbeitung",
+        "filesCount": "{count} Dateien"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access images and videos stored in your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "Greifen Sie auf Bilder und Videos zu, die in Ihrem Google Drive gespeichert sind.",
+          "connect": "Google Drive verbinden",
+          "connecting": "Verbinden...",
+          "connected": "Verbunden mit Google Drive",
+          "browse": "Durchsuchen Sie das Laufwerk"
         },
         "googlePhotos": {
-          "title": "Google Photos",
-          "description": "Access your photos and albums directly from Google Photos.",
-          "connect": "Connect Google Photos",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Photos",
-          "browse": "Browse Photos"
+          "title": "Google Fotos",
+          "description": "Greifen Sie direkt über Google Fotos auf Ihre Fotos und Alben zu.",
+          "connect": "Verbinden Sie Google Fotos",
+          "connecting": "Verbinden...",
+          "connected": "Verbunden mit Google Fotos",
+          "browse": "Fotos durchsuchen"
         }
       },
       "errors": {
-        "processFailed": "Failed to process media.",
-        "aiFailed": "Failed to interpret instruction."
+        "processFailed": "Medien konnten nicht verarbeitet werden.",
+        "aiFailed": "Die Anweisung konnte nicht interpretiert werden."
       },
       "results": {
-        "processComplete": "Processing complete! {count} file(s) transformed successfully.",
-        "aiInterpreted": "Instruction interpreted successfully! Transformations have been pre-configured as described. Review the adjustments in the panel and click 'Process media' to apply.",
-        "downloadSimulation": "Simulating download of {count} processed file(s) as ZIP.\n\nIn the full version, all files would be compressed and downloaded.",
-        "downloadComplete": "Download complete! Files removed from the list."
+        "processComplete": "Bearbeitung abgeschlossen! {count} Datei(en) erfolgreich transformiert.",
+        "aiInterpreted": "Anleitung erfolgreich interpretiert! Transformationen sind wie beschrieben vorkonfiguriert. Überprüfen Sie die Anpassungen im Bedienfeld und klicken Sie zum Übernehmen auf „Medien verarbeiten“.",
+        "downloadSimulation": "Simulation des Downloads von {count} verarbeiteten Dateien als ZIP. \n\nIn der Vollversion würden alle Dateien komprimiert und heruntergeladen.",
+        "downloadComplete": "Download abgeschlossen! Dateien aus der Liste entfernt."
       }
     },
     "files": {
       "title": "Files",
-      "subtitle": "Manage, organize, and automate file operations",
+      "subtitle": "Verwalten, organisieren und automatisieren Sie Dateivorgänge",
       "instruction": {
-        "title": "What should the AI agent do with your files?",
-        "description": "Describe in natural language how you want to organize, process, or manage your files.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Organize all PDFs in the Downloads folder by creation date, rename them using the pattern 'YYYY-MM-DD - original name', move invoices to /Finance/Invoices/{year}/{month}, and compress files older than 6 months.",
-        "helper": "Include: which files to affect, how to organize them, renaming pattern, destination folders, and additional actions.",
-        "charCount": "{current}/{max} characters",
-        "button": "Execute with AI",
-        "processing": "Executing…"
+        "title": "Was soll der KI-Agent mit Ihren Dateien tun?",
+        "description": "Beschreiben Sie in natürlicher Sprache, wie Sie Ihre Dateien organisieren, verarbeiten oder verwalten möchten.",
+        "label": "Agentenanweisung",
+        "placeholder": "Organisieren Sie beispielsweise alle PDFs im Ordner „Downloads“ nach Erstellungsdatum, benennen Sie sie nach dem Muster „YYYY-MM-DD – Originalname“ um, verschieben Sie Rechnungen nach /Finance/Invoices/{year}/{month} und komprimieren Sie Dateien, die älter als 6 Monate sind.",
+        "helper": "Dazu gehören: welche Dateien betroffen sind, wie sie organisiert werden, Umbenennungsmuster, Zielordner und zusätzliche Aktionen.",
+        "charCount": "{current}/{max} Zeichen",
+        "button": "Mit KI ausführen",
+        "processing": "Ausführen…"
       },
       "storage": {
-        "title": "Storage",
+        "title": "Lagerung",
         "used": "Used",
-        "total": "of {total}",
-        "files": "{count} files",
-        "folders": "{count} folders",
-        "activeRules": "Active rules",
-        "rulesConfigured": "{count} configured",
-        "lastFolder": "Last: {name}",
-        "progressLabel": "{progress}% used"
+        "total": "von {total}",
+        "files": "{count} Dateien",
+        "folders": "{count} Ordner",
+        "activeRules": "Aktive Regeln",
+        "rulesConfigured": "{count} konfiguriert",
+        "lastFolder": "Zuletzt: {name}",
+        "progressLabel": "{progress} % genutzt"
       },
       "upload": {
-        "title": "File upload",
-        "description": "Drag files or folders to upload",
-        "dragActive": "Drop to upload",
-        "browse": "Browse",
-        "createFolder": "Create folder"
+        "title": "Datei-Upload",
+        "description": "Ziehen Sie Dateien oder Ordner zum Hochladen",
+        "dragActive": "Zum Hochladen ablegen",
+        "browse": "Durchsuchen",
+        "createFolder": "Ordner erstellen"
       },
       "browser": {
-        "title": "File explorer",
-        "empty": "This folder is empty",
+        "title": "Datei-Explorer",
+        "empty": "Dieser Ordner ist leer",
         "name": "Name",
         "size": "Size",
-        "modified": "Modified",
+        "modified": "Geändert",
         "type": "Type",
-        "sortBy": "Sort by",
-        "search": "Search files…",
-        "gridView": "Grid view",
-        "listView": "List view",
-        "folder": "Folder"
+        "sortBy": "Sortieren nach",
+        "search": "Dateien durchsuchen…",
+        "gridView": "Rasteransicht",
+        "listView": "Listenansicht",
+        "folder": "Ordner"
       },
       "rules": {
-        "title": "Organization rules",
-        "description": "Automate file organization",
-        "ruleName": "Rule name",
-        "ruleNamePlaceholder": "e.g., Sort invoices by month",
-        "condition": "Condition",
-        "conditionPlaceholder": "e.g., filename contains 'invoice'",
-        "action": "Action",
-        "actionPlaceholder": "e.g., move to /Finance/Invoices/{year}/{month}",
-        "addRule": "Add rule",
-        "active": "Active",
-        "inactive": "Inactive",
-        "empty": "No rules configured"
+        "title": "Organisationsregeln",
+        "description": "Automatisieren Sie die Dateiorganisation",
+        "ruleName": "Regelname",
+        "ruleNamePlaceholder": "z. B. Rechnungen nach Monat sortieren",
+        "condition": "Zustand",
+        "conditionPlaceholder": "z. B. enthält der Dateiname „Rechnung“",
+        "action": "Aktion",
+        "actionPlaceholder": "Gehen Sie z. B. zu /Finanzen/Rechnungen/{year}/{month}",
+        "addRule": "Regel hinzufügen",
+        "active": "Aktiv",
+        "inactive": "Inaktiv",
+        "empty": "Keine Regeln konfiguriert"
       },
       "actions": {
-        "label": "Actions",
-        "moreOptions": "More options",
-        "upload": "Upload",
-        "newFolder": "New folder",
-        "delete": "Delete",
-        "rename": "Rename",
+        "label": "Aktionen",
+        "moreOptions": "Weitere Optionen",
+        "upload": "Hochladen",
+        "newFolder": "Neuer Ordner",
+        "delete": "Löschen",
+        "rename": "Umbenennen",
         "move": "Move",
         "copy": "Copy",
         "share": "Share",
-        "download": "Download"
+        "download": "Herunterladen"
       },
-      "aiPlaceholder": "Ex.: Organize todos os PDFs da pasta Downloads por data de criação, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
+      "aiPlaceholder": "E.g.: Organize all PDFs from the Downloads folder by creation date, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and manage files directly from your Google Drive as if it were a local folder.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Explore Drive",
-          "disconnect": "Disconnect"
+          "description": "Greifen Sie direkt von Ihrem Google Drive auf Dateien zu und verwalten Sie diese, als wäre es ein lokaler Ordner.",
+          "connect": "Google Drive verbinden",
+          "connecting": "Verbinden...",
+          "connected": "Verbunden mit Google Drive",
+          "browse": "Entdecken Sie Drive",
+          "disconnect": "Trennen"
         }
       },
       "dialogs": {
-        "newFolder": "New folder name:",
-        "rename": "Rename to:",
-        "deleteConfirm": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
-        "moveAlert": "Move \"{name}\" — In the full version, a folder selector would be shown.",
-        "copySuffix": " (copy)",
-        "shareLink": "Share link for \"{name}\" copied to clipboard!\n\nhttps://pytomatiza.app/share/{id}",
-        "selectFile": "\"{label}\" — Select a file in the explorer to use this action."
+        "newFolder": "Neuer Ordnername:",
+        "rename": "Umbenennen in:",
+        "deleteConfirm": "Sind Sie sicher, dass Sie „{name}“ löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "moveAlert": "„{name}“ verschieben – In der Vollversion wird eine Ordnerauswahl angezeigt.",
+        "copySuffix": "(Kopie)",
+        "shareLink": "Teilen-Link für „{name}“ in die Zwischenablage kopiert! \n\nhttps://pytomatiza.app/share/{id}",
+        "selectFile": "„{label}“ – Wählen Sie eine Datei im Explorer aus, um diese Aktion zu verwenden."
       },
       "results": {
-        "aiInterpreted": "Instruction interpreted successfully! Organization rules have been created automatically. Review them in the rules panel."
+        "aiInterpreted": "Anleitung erfolgreich interpretiert! Organisationsregeln wurden automatisch erstellt. Überprüfen Sie sie im Regelbereich."
       }
     },
     "architecture": {
-      "title": "Architecture",
-      "subtitle": "Generate architecture diagrams and technical documentation with AI",
+      "title": "Architektur",
+      "subtitle": "Erstellen Sie Architekturdiagramme und technische Dokumentation mit KI",
       "diagramBuilder": {
-        "title": "Describe your architecture",
-        "description": "Describe the system in natural language and the AI agent will generate the diagram",
-        "instructionLabel": "Architecture description",
-        "instructionPlaceholder": "e.g., E-commerce system with: load balancer (Nginx), 3 API instances (Node.js on Kubernetes), primary PostgreSQL + read replica, Redis for caching, RabbitMQ queue for orders, Python workers, and S3 storage for product images.",
-        "instructionHelper": "Include: components, connections, protocols, technologies, and data flow.",
-        "charCount": "{current}/{max} characters"
+        "title": "Beschreiben Sie Ihre Architektur",
+        "description": "Beschreiben Sie das System in natürlicher Sprache und der KI-Agent generiert das Diagramm",
+        "instructionLabel": "Architekturbeschreibung",
+        "instructionPlaceholder": "z. B. E-Commerce-System mit: Load Balancer (Nginx), 3 API-Instanzen (Node.js auf Kubernetes), primärem PostgreSQL + Lesereplikat, Redis für Caching, RabbitMQ-Warteschlange für Bestellungen, Python-Worker und S3-Speicher für Produktbilder.",
+        "instructionHelper": "Dazu gehören: Komponenten, Verbindungen, Protokolle, Technologien und Datenfluss.",
+        "charCount": "{current}/{max} Zeichen"
       },
       "templates": {
-        "title": "Architecture templates",
-        "description": "Choose a template as a starting point",
-        "aws": "AWS Cloud",
+        "title": "Architekturvorlagen",
+        "description": "Wählen Sie eine Vorlage als Ausgangspunkt",
+        "aws": "AWS Wolke",
         "gcp": "Google Cloud",
         "azure": "Microsoft Azure",
-        "microservices": "Microservices",
-        "monolith": "Modular Monolith",
-        "serverless": "Serverless",
-        "eventDriven": "Event-Driven",
-        "ciCd": "CI/CD Pipeline",
-        "network": "Network Topology",
-        "dataPipeline": "Data Pipeline"
+        "microservices": "Mikrodienste",
+        "monolith": "Modularer Monolith",
+        "serverless": "Serverlos",
+        "eventDriven": "Ereignisgesteuert",
+        "ciCd": "CI/CD-Pipeline",
+        "network": "Netzwerktopologie",
+        "dataPipeline": "Datenpipeline"
       },
       "export": {
-        "title": "Export format",
-        "description": "Choose how to export the diagram",
-        "png": "PNG (image)",
-        "svg": "SVG (vector)",
-        "pdf": "PDF (document)",
-        "drawio": "Draw.io (editable)",
+        "title": "Exportformat",
+        "description": "Wählen Sie aus, wie das Diagramm exportiert werden soll",
+        "png": "PNG (Bild)",
+        "svg": "SVG (Vektor)",
+        "pdf": "PDF (Dokument)",
+        "drawio": "Draw.io (bearbeitbar)",
         "terraform": "Terraform (IaC)",
-        "mermaid": "Mermaid (text)",
+        "mermaid": "Meerjungfrau (Text)",
         "plantuml": "PlantUML"
       },
       "recentDiagrams": {
-        "title": "Recent diagrams",
-        "empty": "No diagrams generated yet",
-        "createdAt": "Created at",
-        "components": "{count} components",
-        "download": "Download",
+        "title": "Aktuelle Diagramme",
+        "empty": "Es wurden noch keine Diagramme generiert",
+        "createdAt": "Erstellt bei",
+        "components": "{count} Komponenten",
+        "download": "Herunterladen",
         "edit": "Edit",
-        "delete": "Delete"
+        "delete": "Löschen"
       },
       "actions": {
-        "generate": "Generate diagram",
-        "generating": "Generating diagram…",
-        "generateDescription": "Generate documentation",
-        "save": "Save project",
+        "generate": "Diagramm erstellen",
+        "generating": "Diagramm wird erstellt…",
+        "generateDescription": "Dokumentation erstellen",
+        "save": "Projekt speichern",
         "share": "Share",
-        "shareDescription": "Share with your team via link"
+        "shareDescription": "Teilen Sie es per Link mit Ihrem Team"
       },
       "errors": {
-        "generateFailed": "Failed to generate diagram. Please try again."
+        "generateFailed": "Diagramm konnte nicht erstellt werden. Bitte versuchen Sie es erneut."
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this diagram?",
-        "shareLink": "Share link copied to clipboard!\n\nShare this architecture project with your team."
+        "deleteConfirm": "Möchten Sie dieses Diagramm wirklich löschen?",
+        "shareLink": "Teilen-Link in die Zwischenablage kopiert! \n\nTeilen Sie dieses Architekturprojekt mit Ihrem Team."
       }
     }
   },
   "footer": {
-    "copyright": "© {year} Pytomatiza+. All rights reserved.",
+    "copyright": "© {year} Pytomatiza+. Alle Rechte vorbehalten.",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "status": "Systemstatus"
@@ -1104,16 +1037,16 @@
     "subtitle": "Monitore execuções de automação e gerencie solicitações de aprovação pendentes.",
     "stats": {
       "totalExecutions": "Total de Execuções",
-      "successRate": "Taxa de Sucesso",
-      "pendingApprovals": "Aprovações Pendentes",
-      "errors24h": "Erros (24h)"
+      "successRate": "Taxa de Success",
+      "pendingApprovals": "Aprovações Pendings",
+      "errors24h": "Fehler (24h)"
     },
     "tableHeader": "Execuções Recentes",
     "tableAriaLabel": "Registros de execução",
     "status": {
-      "success": "Sucesso",
-      "error": "Erro",
-      "pending": "Aprovação Pendente",
+      "success": "Erfolg",
+      "error": "Error",
+      "pending": "Aprovação Pending",
       "running": "Em Execução"
     },
     "agents": {
@@ -1139,16 +1072,16 @@
     "duration": {
       "ongoing": "em andamento"
     },
-    "tableEmpty": "No execution logs found.",
-    "loginPrompt": "Log in to your account to access real-time data!"
+    "tableEmpty": "Keine Ausführungsprotokolle gefunden.",
+    "loginPrompt": "Melden Sie sich bei Ihrem Konto an, um auf Echtzeitdaten zuzugreifen!"
   },
   "brand": {
-    "tagline": "AI-powered automation that thinks, learns, and executes — so you don't have to.",
-    "feature1Title": "Natural Language Workflows",
-    "feature1Desc": "Describe tasks in plain English. Our NLP engine builds the automation for you.",
-    "feature2Title": "Multi-Agent Orchestration",
-    "feature2Desc": "Specialized AI agents collaborate to handle complex, multi-step processes.",
-    "feature3Title": "Enterprise-Grade Security",
-    "feature3Desc": "End-to-end encryption, role-based access, and full audit trails."
+    "tagline": "KI-gestützte Automatisierung, die denkt, lernt und ausführt – damit Sie es nicht tun müssen.",
+    "feature1Title": "Arbeitsabläufe in natürlicher Sprache",
+    "feature1Desc": "Beschreiben Sie Aufgaben in einfachem Englisch. Unsere NLP-Engine erstellt die Automatisierung für Sie.",
+    "feature2Title": "Multi-Agent-Orchestrierung",
+    "feature2Desc": "Spezialisierte KI-Agenten arbeiten zusammen, um komplexe, mehrstufige Prozesse abzuwickeln.",
+    "feature3Title": "Enterprise-Grade Sicherheit",
+    "feature3Desc": "End-to-end Verschlüsselung, rollenbasierter Zugriff und vollständige Prüfprotokolle."
   }
 }

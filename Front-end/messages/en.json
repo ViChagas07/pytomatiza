@@ -413,7 +413,8 @@
         "name": "Content Translator",
         "desc": "Translates blog posts and documentation into 9 languages using AI."
       }
-    }
+    },
+    "resetFilters": "Reset all filters"
   },
   "automations": {
     "title": "Automations",
@@ -526,9 +527,9 @@
     "settings": "Settings",
     "signOut": "Sign Out",
     "signIn": "Sign In",
-      "appearance": "Appearance",
-      "user": "User"
-    },
+    "appearance": "Appearance",
+    "user": "User"
+  },
   "logs": {
     "title": "Logs & Approvals",
     "subtitle": "Monitor automation executions and manage pending approval requests.",
@@ -1010,7 +1011,7 @@
           "disconnect": "Disconnect"
         }
       },
-      "aiPlaceholder": "Ex.: Organize todos os PDFs da pasta Downloads por data de criação, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses."
+      "aiPlaceholder": "E.g.: Organize all PDFs from the Downloads folder by creation date, rename with the pattern 'YYYY-MM-DD - original name', move invoices to /Finance/Invoices/{year}/{month} and compress files older than 6 months."
     },
     "architecture": {
       "title": "Architecture",

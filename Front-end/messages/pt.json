@@ -413,7 +413,8 @@
         "name": "Tradutor de Conteúdo",
         "desc": "Traduz posts de blog e documentação para 9 idiomas usando IA."
       }
-    }
+    },
+    "resetFilters": "Redefinir todos os filtros"
   },
   "automations": {
     "title": "Automações",

@@ -536,7 +536,7 @@ export function DashboardContent({
             <div
               className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3"
               role="list"
-              aria-label="Agents"
+              aria-label={t("recentActivity")}
             >
               {agents.map((agent) => (
                 <div key={agent.id} role="listitem">

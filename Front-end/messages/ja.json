@@ -11,8 +11,8 @@
     "breadcrumb": "ブレッドクラム",
     "pagination": "ページネーション",
     "currentPage": "現在のページ、ページ {page}",
-    "goToPage": "ページ {ページ} に移動",
-    "goToHome": "Go to home page"
+    "goToPage": "ページ {page} に移動",
+    "goToHome": "ホームページへ行く"
   },
   "common": {
     "loading": "読み込み中…",
@@ -35,8 +35,8 @@
     "copied": "クリップボードにコピーされました",
     "enabled": "有効",
     "disabled": "無効",
-    "increasedBy": "Increased by",
-    "decreasedBy": "Decreased by"
+    "increasedBy": "増加",
+    "decreasedBy": "減少"
   },
   "auth": {
     "signIn": {
@@ -80,7 +80,7 @@
       "generic": "予期しないエラーが発生しました。 もう一度試してください。",
       "rateLimited": "試行回数が多すぎます。 しばらくお待ちください。"
     },
-    "authenticationForm": "Authentication form"
+    "authenticationForm": "認証フォーム"
   },
   "meta": {
     "login": {
@@ -112,28 +112,28 @@
       "description": "Visualize execuções de automação, histórico de agentes e gerencie aprovações pendentes."
     },
     "documents": {
-      "title": "Documents — Pytomatiza+",
-      "description": "Automate document processing with AI. Extract data, convert formats, and manage PDFs, DOCX, and more."
+      "title": "ドキュメント — Pytomatiza+",
+      "description": "AIで文書処理を自動化。 データの抽出、形式の変換、PDF、DOCX などの管理を行います。"
     },
     "data": {
-      "title": "Data & Spreadsheets — Pytomatiza+",
-      "description": "Connect data sources, transform spreadsheets, and automate analysis with AI agents."
+      "title": "データとスプレッドシート — Pytomatiza+",
+      "description": "データ ソースを接続し、スプレッドシートを変換し、AI エージェントを使用して分析を自動化します。"
     },
     "communication": {
-      "title": "Communication — Pytomatiza+",
-      "description": "Automate emails, messages, and multi-channel notifications with intelligent workflows."
+      "title": "コミュニケーション — Pytomatiza+",
+      "description": "インテリジェントなワークフローで電子メール、メッセージ、マルチチャネル通知を自動化します。"
     },
     "media": {
-      "title": "Media & Images — Pytomatiza+",
-      "description": "Process, convert, and optimize images and media in batch with intelligent automation."
+      "title": "メディアと画像 — Pytomatiza+",
+      "description": "インテリジェントな自動化により、画像とメディアをバッチで処理、変換、最適化します。"
     },
     "files": {
-      "title": "Files — Pytomatiza+",
-      "description": "Manage, organize, and automate file operations with intelligent rules."
+      "title": "ファイル — Pytomatiza+",
+      "description": "インテリジェントなルールを使用してファイル操作を管理、整理、自動化します。"
     },
     "architecture": {
-      "title": "Architecture — Pytomatiza+",
-      "description": "Generate architecture diagrams, technical documentation, and system flows with AI."
+      "title": "建築 — Pytomatiza+",
+      "description": "AI を使用してアーキテクチャ図、技術文書、システム フローを生成します。"
     }
   },
   "navigation": {
@@ -188,14 +188,14 @@
       "bgPresetSepia": "セピア",
       "bgPresetMidnight": "夜中",
       "bgPresetSlate": "スレート",
-      "colorYellow": "Yellow",
+      "colorYellow": "黄色",
       "colorBlue": "Blue",
       "colorGreen": "Green",
-      "colorPurple": "Purple",
-      "colorOrange": "Orange",
+      "colorPurple": "紫",
+      "colorOrange": "オレンジ",
       "colorRed": "Red",
       "colorPink": "Pink",
-      "accentColorAria": "{color} accent color"
+      "accentColorAria": "{color} アクセントカラー"
     },
     "accessibility": {
       "title": "アクセシビリティ",
@@ -280,26 +280,26 @@
   "help": {
     "title": "ヘルプとサポート",
     "subtitle": "ヘルプを入手し、ドキュメントを参照し、当社のチームにお問い合わせください。",
-    "documentation": "Documentation",
-    "documentationDescription": "Browse guides, tutorials, and API references.",
-    "contactSupport": "Contact Support",
-    "contactSupportDescription": "Get help from our team. Usually responds within 24 hours.",
-    "faqTitle": "Frequently Asked Questions",
+    "documentation": "ドキュメント",
+    "documentationDescription": "ガイド、チュートリアル、API リファレンスを参照します。",
+    "contactSupport": "サポートに連絡する",
+    "contactSupportDescription": "私たちのチームに助けてもらいましょう。 通常 24 時間以内に返信します。",
+    "faqTitle": "よくある質問",
     "faq0": {
-      "question": "How do I create an automation?",
-      "answer": "Go to the Automations page and use the Natural Language Workflow Builder. Describe what you want to automate in plain English, and Pytomatiza+ will build the workflow for you."
+      "question": "オートメーションを作成するにはどうすればよいですか?",
+      "answer": "「自動化」ページに移動し、Natural Language Workflow Builder を使用します。 自動化したい内容をわかりやすい英語で説明すると、Pytomatiza+ がワークフローを構築します。"
     },
     "faq1": {
-      "question": "How do I connect a new integration?",
-      "answer": "Navigate to Settings → Integrations to connect third-party services like Google Workspace, Slack, or GitHub."
+      "question": "新しい統合を接続するにはどうすればよいですか?",
+      "answer": "[設定] → [統合] に移動して、Google Workspace、Slack、GitHub などのサードパーティ サービスに接続します。"
     },
     "faq2": {
-      "question": "What happens if an agent fails?",
-      "answer": "Failed agents are marked with an error status. You can view the error details in the agent card and retry the execution."
+      "question": "エージェントが失敗するとどうなりますか?",
+      "answer": "失敗したエージェントには、エラー ステータスがマークされます。 エージェント カードでエラーの詳細を表示し、実行を再試行できます。"
     },
     "faq3": {
-      "question": "How do I change my language?",
-      "answer": "Click the globe icon in the header to switch between 9 supported languages."
+      "question": "言語を変更するにはどうすればよいですか?",
+      "answer": "ヘッダーの地球アイコンをクリックして、サポートされている 9 つの言語を切り替えます。"
     }
   },
   "dashboard": {
@@ -314,8 +314,8 @@
       "automationsToday": "今日のオートメーション",
       "successRate": "成功率",
       "pendingApprovals": "承認待ち",
-      "increasedBy": "Increased by {value}",
-      "decreasedBy": "Decreased by {value}"
+      "increasedBy": "{value}増加",
+      "decreasedBy": "{value}減少"
     },
     "recentActivity": "最近の活動",
     "quickActions": "クイックアクション",
@@ -327,18 +327,18 @@
       "title": "データの読み込みエラー",
       "loadingFailed": "ダッシュボードデータを読み込めませんでした。接続を確認して再試行してください。",
       "retry": "再試行",
-      "offlineBanner": "Backend unavailable — displayed data may be out of date",
-      "unknown": "Unknown error"
+      "offlineBanner": "バックエンドを利用できません - 表示されるデータは古い可能性があります",
+      "unknown": "不明なエラー"
     },
     "empty": {
       "title": "エージェントが見つかりません",
       "description": "最初の自動化エージェントを作成して、ここでアクティビティを確認できるようにしましょう。",
-      "offlineTitle": "Backend offline",
-      "offlineDescription": "Connect to the backend to see your agents. Click \"Retry\" once the service is available."
+      "offlineTitle": "バックエンドがオフライン",
+      "offlineDescription": "バックエンドに接続してエージェントを確認します。 サービスが利用可能になったら、「再試行」をクリックします。"
     },
-    "recentActivityEmpty": "Empty history… Create your first automation with Pytomatiza+ by going to Modules!",
-    "loginPrompt": "Sign in to your account to access real-time data!",
-    "loginAction": "Sign in",
+    "recentActivityEmpty": "履歴を空にします…モジュールに移動して、Pytomatiza+ で最初のオートメーションを作成します。",
+    "loginPrompt": "アカウントにサインインしてリアルタイム データにアクセスしてください。",
+    "loginAction": "サインイン",
     "user": "User"
   },
   "agents": {
@@ -360,80 +360,12 @@
       "idle": "アイドル状態",
       "running": "ランニング",
       "error": "エラー",
-      "mock": {
-        "1": {
-          "name": "Salvador de Anexos de E-mail",
-          "desc": "Monitora a caixa de entrada em busca de anexos, salva-os no Google Drive e notifica via Slack."
-        },
-        "2": {
-          "name": "Gerador de Relat�rios Semanais",
-          "desc": "Compila dados de m�ltiplas fontes e gera um relat�rio PDF formatado toda segunda-feira."
-        },
-        "3": {
-          "name": "Monitor de Redes Sociais",
-          "desc": "Rastreia men��es � marca no Twitter, LinkedIn e Reddit. Responde automaticamente a consultas de suporte."
-        },
-        "4": {
-          "name": "Agente de Backup de Banco de Dados",
-          "desc": "Realiza backups noturnos do banco de dados e verifica a integridade. Alerta em caso de falha."
-        },
-        "5": {
-          "name": "Verificador de Sa�de de APIs",
-          "desc": "Faz ping em todas as APIs internas a cada minuto. Escala para o PagerDuty em caso de inatividade."
-        },
-        "6": {
-          "name": "Processador de Faturas",
-          "desc": "Extrai dados de faturas em PDF usando OCR e envia para o software de contabilidade."
-        },
-        "7": {
-          "name": "Agendador de Reuni�es",
-          "desc": "Coordena calend�rios entre equipes para encontrar hor�rios ideais e envia convites."
-        },
-        "8": {
-          "name": "Tradutor de Conte�do",
-          "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
-        }
-      },
       "paused": "一時停止中"
     },
     "statusDescriptions": {
       "idle": "ステータス: 準備ができて待機中",
       "running": "ステータス: 現在実行中",
       "error": "ステータス: エラーが発生しました",
-      "mock": {
-        "1": {
-          "name": "Salvador de Anexos de E-mail",
-          "desc": "Monitora a caixa de entrada em busca de anexos, salva-os no Google Drive e notifica via Slack."
-        },
-        "2": {
-          "name": "Gerador de Relat�rios Semanais",
-          "desc": "Compila dados de m�ltiplas fontes e gera um relat�rio PDF formatado toda segunda-feira."
-        },
-        "3": {
-          "name": "Monitor de Redes Sociais",
-          "desc": "Rastreia men��es � marca no Twitter, LinkedIn e Reddit. Responde automaticamente a consultas de suporte."
-        },
-        "4": {
-          "name": "Agente de Backup de Banco de Dados",
-          "desc": "Realiza backups noturnos do banco de dados e verifica a integridade. Alerta em caso de falha."
-        },
-        "5": {
-          "name": "Verificador de Sa�de de APIs",
-          "desc": "Faz ping em todas as APIs internas a cada minuto. Escala para o PagerDuty em caso de inatividade."
-        },
-        "6": {
-          "name": "Processador de Faturas",
-          "desc": "Extrai dados de faturas em PDF usando OCR e envia para o software de contabilidade."
-        },
-        "7": {
-          "name": "Agendador de Reuni�es",
-          "desc": "Coordena calend�rios entre equipes para encontrar hor�rios ideais e envia convites."
-        },
-        "8": {
-          "name": "Tradutor de Conte�do",
-          "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
-        }
-      },
       "paused": "ステータス: ユーザーによって一時停止されました"
     },
     "card": {
@@ -481,7 +413,8 @@
         "desc": "Traduz posts de blog e documenta��o para 9 idiomas usando IA."
       }
     },
-    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}"
+    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}",
+    "resetFilters": "すべてのフィルターをリセット"
   },
   "automations": {
     "title": "自動化",
@@ -498,7 +431,7 @@
       "requireApprovalHelper": "有効にすると、ワークフローは実行前にレビューのために一時停止します。",
       "build": "ワークフローの構築",
       "building": "ワークフローを構築中…",
-      "charCount": "{現在}/{最大} 文字",
+      "charCount": "{current}/{max} 文字",
       "suggestions": "次の例を試してください。",
       "example1": "クローズされたすべてのチケットの週次レポートを毎週金曜日の午後 5 時にチームの Slack チャネルに送信します",
       "example2": "Twitter のメンションを監視し、ヘルプ センターへのリンクを使用してサポートの質問に自動的に返信します。",
@@ -513,26 +446,26 @@
       "delete": "ワークフローの削除",
       "deleteConfirm": "このワークフローを削除してもよろしいですか? この操作は元に戻すことができません。",
       "deleted": "ワークフローが正常に削除されました",
-      "statusToggled": "ワークフロー {ステータス}",
-      "label": "Workflows",
-      "neverTriggered": "Never triggered",
-      "status": "Status: {status}",
-      "created": "Workflow created! Agent type: {agentType}. Approval: {approval}.",
-      "required": "required",
-      "notRequired": "not required"
+      "statusToggled": "ワークフロー {status}",
+      "label": "ワークフロー",
+      "neverTriggered": "決してトリガーされない",
+      "status": "ステータス: {status}",
+      "created": "ワークフローが作成されました! エージェントの種類: {agentType}。 承認: {approval}。",
+      "required": "必須",
+      "notRequired": "必要ありません"
     },
     "errors": {
       "instructionTooShort": "指示は 10 文字以上である必要があります",
       "instructionTooLong": "指示は 500 文字を超えてはなりません",
       "buildFailed": "ワークフローの構築に失敗しました。 もう一度試してください。"
     },
-    "loginPrompt": "Log in to your account to access real-time data!",
+    "loginPrompt": "アカウントにログインしてリアルタイム データにアクセスしてください。",
     "agentTypes": {
-      "productivity": "Productivity",
+      "productivity": "生産性",
       "data": "Data",
-      "content": "Content",
+      "content": "コンテンツ",
       "admin": "Admin",
-      "technical": "Technical"
+      "technical": "テクニカル"
     }
   },
   "theme": {
@@ -556,17 +489,17 @@
       "description": "このページにアクセスするにはサインインする必要があります。",
       "signIn": "サインイン"
     },
-    "notFoundTitle": "Page not found",
-    "notFoundDescription": "The page you're looking for doesn't exist or has been moved.",
-    "notFoundAction": "Go to dashboard",
-    "somethingWentWrong": "Something went wrong",
-    "unexpectedError": "An unexpected error occurred. Our team has been notified.",
-    "dashboardErrorDescription": "An unexpected error occurred while loading this page.",
-    "tryAgain": "Try again",
-    "goHome": "Go home",
-    "errorId": "Error ID: ",
-    "loadingDashboard": "Loading dashboard",
-    "loadingDashboardContent": "Loading dashboard content…"
+    "notFoundTitle": "ページが見つかりません",
+    "notFoundDescription": "お探しのページは存在しないか、移動されました。",
+    "notFoundAction": "ダッシュボードに移動",
+    "somethingWentWrong": "何か問題が発生しました",
+    "unexpectedError": "予期しないエラーが発生しました。 私たちのチームに通知されました。",
+    "dashboardErrorDescription": "このページの読み込み中に予期しないエラーが発生しました。",
+    "tryAgain": "もう一度やり直してください",
+    "goHome": "家に帰れ",
+    "errorId": "エラーID:",
+    "loadingDashboard": "ダッシュボードを読み込み中",
+    "loadingDashboardContent": "ダッシュボードのコンテンツを読み込み中…"
   },
   "nav": {
     "dashboard": "ダッシュボード",
@@ -591,510 +524,510 @@
     "filesDesc": "一般的なファイルのストレージと管理。",
     "architecture": "建築",
     "architectureDesc": "システム図とアーキテクチャのドキュメント。",
-    "settings": "Settings",
-    "signOut": "Sign Out",
-    "signIn": "Sign In",
+    "settings": "設定",
+    "signOut": "サインアウト",
+    "signIn": "サインイン",
     "appearance": "外観",
     "user": "User"
   },
   "modules": {
     "documents": {
-      "title": "Documents",
-      "subtitle": "Automate intelligent document processing with AI agents",
+      "title": "書類",
+      "subtitle": "AI エージェントによるインテリジェントなドキュメント処理の自動化",
       "upload": {
-        "title": "Attach document",
-        "description": "Drag and drop your file here or click to select",
-        "dragActive": "Drop the file to attach",
-        "browse": "Browse files",
+        "title": "文書を添付する",
+        "description": "ここにファイルをドラッグ アンド ドロップするか、クリックして選択します",
+        "dragActive": "添付するファイルをドロップします",
+        "browse": "ファイルを参照する",
         "supportedFormats": "Supported formats: PDF, DOCX, XLSX, PPTX, TXT, CSV, images",
-        "maxSize": "Max size: 25 MB",
-        "fileSelected": "File selected",
-        "remove": "Remove file"
+        "maxSize": "最大サイズ: 25 MB",
+        "fileSelected": "選択されたファイル",
+        "remove": "ファイルを削除する"
       },
       "instruction": {
-        "title": "What should the AI agent do?",
-        "description": "Describe in natural language what you want the agent to do with this document.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Extract all data from the table on page 3 and convert it to a CSV spreadsheet. Then email it to finance@company.com.",
-        "helper": "Be specific: include which data to extract, output format, recipients, and post-processing actions.",
-        "charCount": "{current}/{max} characters"
+        "title": "AIエージェントは何をすべきでしょうか?",
+        "description": "エージェントにこの文書に対して何をしてもらいたいかを自然言語で説明します。",
+        "label": "エージェントの指示",
+        "placeholder": "例: 3 ページの表からすべてのデータを抽出し、CSV スプレッドシートに変換します。 その後、finance@company.com に電子メールで送信します。",
+        "helper": "具体的にする: 抽出するデータ、出力形式、受信者、後処理アクションを含めます。",
+        "charCount": "{current}/{max}文字"
       },
       "quickActions": {
-        "title": "Quick actions",
-        "extractData": "Extract data",
-        "convertFormat": "Convert format",
-        "mergeDocs": "Merge documents",
-        "ocrScan": "OCR scan",
-        "summarize": "Summarize content",
-        "translate": "Translate",
+        "title": "クイックアクション",
+        "extractData": "データの抽出",
+        "convertFormat": "フォーマットを変換する",
+        "mergeDocs": "文書を結合する",
+        "ocrScan": "OCRスキャン",
+        "summarize": "内容を要約する",
+        "translate": "翻訳する",
         "presets": {
-          "extract": "Extract all structured data from this document and export as CSV.",
-          "convert": "Convert this document to PDF format while preserving the original layout.",
-          "merge": "Merge this document with other files in the folder and generate a single unified PDF.",
-          "ocr": "Scan this document using OCR and extract all text in editable format.",
-          "summarize": "Summarize the content of this document in one paragraph with key points.",
-          "translate": "Translate this document to English while preserving the original formatting."
+          "extract": "このドキュメントからすべての構造化データを抽出し、CSV としてエクスポートします。",
+          "convert": "元のレイアウトを維持したまま、このドキュメントを PDF 形式に変換します。",
+          "merge": "このドキュメントをフォルダー内の他のファイルと結合し、単一の統合された PDF を生成します。",
+          "ocr": "OCR を使用してこの文書をスキャンし、すべてのテキストを編集可能な形式で抽出します。",
+          "summarize": "この文書の内容を重要なポイントとともに 1 つの段落に要約します。",
+          "translate": "元の書式を維持したまま、この文書を英語に翻訳します。"
         }
       },
       "recentDocuments": {
-        "title": "Recent documents",
-        "empty": "No documents processed yet. Upload your first document above.",
-        "processed": "Processed",
-        "status": "Status",
-        "actions": "Actions",
-        "download": "Download result",
-        "reprocess": "Reprocess",
-        "delete": "Delete"
+        "title": "最近のドキュメント",
+        "empty": "まだ処理された文書はありません。 最初のドキュメントを上にアップロードします。",
+        "processed": "加工済み",
+        "status": "状態",
+        "actions": "アクション",
+        "download": "ダウンロード結果",
+        "reprocess": "再処理",
+        "delete": "消去"
       },
       "processing": {
-        "button": "Process document",
-        "processing": "Processing…",
-        "success": "Document processed successfully!",
-        "error": "Failed to process document. Please try again.",
-        "reprocessInstruction": "Reprocess the document {name} applying the same previous transformations."
+        "button": "プロセス文書",
+        "processing": "処理…",
+        "success": "書類は正常に処理されました!",
+        "error": "ドキュメントの処理に失敗しました。 もう一度試してください。",
+        "reprocessInstruction": "以前と同じ変換を適用してドキュメント {name} を再処理します。"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and select documents directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "Google Drive から直接ドキュメントにアクセスして選択します。",
+          "connect": "Google Drive を接続します",
+          "connecting": "接続中...",
+          "connected": "Google Drive に接続されました",
+          "browse": "ドライブを参照"
         }
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this document? This action cannot be undone."
+        "deleteConfirm": "この文書を削除してもよろしいですか? この操作は元に戻すことができません。"
       }
     },
     "data": {
-      "title": "Data & Spreadsheets",
-      "subtitle": "Connect data sources, transform spreadsheets, and automate analysis",
+      "title": "データとスプレッドシート",
+      "subtitle": "データソースを接続し、スプレッドシートを変換し、分析を自動化します",
       "source": {
-        "title": "Data source",
-        "description": "Choose how to connect your data",
-        "uploadCsv": "Upload CSV/Excel",
+        "title": "データソース",
+        "description": "データの接続方法を選択してください",
+        "uploadCsv": "CSV/Excelのアップロード",
         "googleSheets": "Google Sheets",
-        "database": "SQL Database",
+        "database": "SQLデータベース",
         "api": "REST API",
-        "url": "Public URL",
-        "selectPlaceholder": "Select source type…",
-        "connect": "Connect",
-        "connecting": "Connecting…"
+        "url": "公開URL",
+        "selectPlaceholder": "ソースタイプを選択してください…",
+        "connect": "接続する",
+        "connecting": "接続中…"
       },
       "instruction": {
-        "title": "What to do with the data?",
-        "description": "Describe the desired transformation, analysis, or automation",
-        "label": "Processing instruction",
-        "placeholder": "e.g., Merge 'First Name' and 'Last Name' columns, filter records with sales over $10,000, group by region, and generate a bar chart.",
-        "helper": "Include filters, aggregations, table joins, and the desired output format.",
-        "charCount": "{current}/{max} characters"
+        "title": "データをどうするか?",
+        "description": "希望する変換、分析、または自動化について説明します。",
+        "label": "処理命令",
+        "placeholder": "たとえば、「名」列と「姓」列を結合し、売上が 10,000 ドルを超えるレコードをフィルタリングし、地域ごとにグループ化し、棒グラフを生成します。",
+        "helper": "フィルター、集計、テーブル結合、および必要な出力形式を含めます。",
+        "charCount": "{current}/{max}文字"
       },
       "preview": {
-        "title": "Preview",
-        "noData": "Connect a data source to preview",
-        "rows": "{count} rows",
-        "columns": "{count} columns",
+        "title": "プレビュー",
+        "noData": "データソースをプレビューに接続する",
+        "rows": "{count}行",
+        "columns": "{count}列",
         "id": "ID",
         "name": "Name",
-        "region": "Region",
+        "region": "地域",
         "sales": "Sales",
-        "status": "Status",
-        "showingRecords": "Showing {shown} of {total} records"
+        "status": "状態",
+        "showingRecords": "{total} 件中 {shown} 件のレコードを表示しています"
       },
       "recentDatasets": {
-        "title": "Recent datasets",
-        "empty": "No datasets processed yet",
-        "source": "Source",
-        "lastUsed": "Last used",
-        "info": "{rows} rows · {cols} columns"
+        "title": "最近のデータセット",
+        "empty": "データセットはまだ処理されていません",
+        "source": "ソース",
+        "lastUsed": "最後に使用した",
+        "info": "{rows}行 · {cols}列"
       },
       "actions": {
-        "transform": "Transform data",
-        "analyze": "Analyze data",
-        "export": "Export result",
-        "schedule": "Schedule automation",
-        "sidebarTitle": "Actions",
-        "dashboard": "Dashboard",
-        "processing": "Processing…"
+        "transform": "データを変換する",
+        "analyze": "データを分析する",
+        "export": "結果のエクスポート",
+        "schedule": "スケジュールの自動化",
+        "sidebarTitle": "アクション",
+        "dashboard": "ダッシュボード",
+        "processing": "処理…"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access spreadsheets and data files directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "Google Drive からスプレッドシートやデータ ファイルに直接アクセスします。",
+          "connect": "Google Drive を接続します",
+          "connecting": "接続中...",
+          "connected": "Google Drive に接続されました",
+          "browse": "ドライブを参照"
         }
       },
       "errors": {
-        "connectFailed": "Failed to connect to data source.",
-        "processFailed": "Failed to process data."
+        "connectFailed": "データソースへの接続に失敗しました。",
+        "processFailed": "データの処理に失敗しました。"
       },
       "results": {
-        "connected": "Connected successfully! Data source ready for processing.",
-        "transformComplete": "Transformation complete! {count} records processed. The result is ready for download.",
-        "analyzeInstruction": "Analyze the connected data and generate insights: trends, outliers, correlations, and recommendations.",
-        "scheduleAlert": "Scheduling configured! Data will be processed automatically.",
-        "comingSoon": "Feature coming soon."
+        "connected": "無事接続されました！ データ ソースを処理する準備ができています。",
+        "transformComplete": "変身完了！ {count} レコードが処理されました。 結果をダウンロードする準備ができました。",
+        "analyzeInstruction": "接続されたデータを分析し、傾向、異常値、相関関係、推奨事項などの洞察を生成します。",
+        "scheduleAlert": "スケジュールが設定されました! データは自動的に処理されます。",
+        "comingSoon": "機能は近日公開予定です。"
       },
       "presets": {
         "merge": {
-          "label": "Merge columns",
-          "prompt": "Merge 'Name' and 'Last Name' columns into a single 'Full Name' column."
+          "label": "列を結合する",
+          "prompt": "「名前」列と「姓」列を 1 つの「フルネーム」列に結合します。"
         },
         "filter": {
-          "label": "Filter records",
-          "prompt": "Filter records where 'Sales' column is greater than $10,000."
+          "label": "レコードをフィルタリングする",
+          "prompt": "「Sales」列が $10,000 を超えるレコードをフィルターします。"
         },
         "group": {
-          "label": "Group & summarize",
-          "prompt": "Group data by 'Region' and calculate the sum and average of 'Sales'."
+          "label": "グループ化して要約する",
+          "prompt": "データを「地域」ごとにグループ化し、「売上」の合計と平均を計算します。"
         },
         "pivot": {
-          "label": "Pivot table",
-          "prompt": "Create a pivot table with 'Category' as rows, 'Month' as columns, and sum of 'Revenue'."
+          "label": "ピボットテーブル",
+          "prompt": "「Category」を行、「Month」を列、「Revenue」の合計を含むピボット テーブルを作成します。"
         },
         "chart": {
-          "label": "Generate chart",
-          "prompt": "Generate a bar chart comparing sales by region."
+          "label": "チャートの生成",
+          "prompt": "地域ごとの売上を比較する棒グラフを生成します。"
         },
         "export": {
-          "label": "Export structured",
-          "prompt": "Export the transformed data to a CSV file with UTF-8 encoding."
+          "label": "構造化されたエクスポート",
+          "prompt": "変換されたデータを UTF-8 エンコードを使用して CSV ファイルにエクスポートします。"
         }
       }
     },
     "communication": {
-      "title": "Communication",
-      "subtitle": "Automate emails, messages, and multi-channel notifications",
+      "title": "コミュニケーション",
+      "subtitle": "電子メール、メッセージ、マルチチャネル通知を自動化する",
       "composer": {
-        "title": "Compose message",
-        "description": "Describe the content and the AI agent will draft the message",
-        "instructionLabel": "Message instruction",
-        "instructionPlaceholder": "e.g., Send a reminder email to all clients with invoices due in 3 days, using a professional yet friendly tone, and include the payment link.",
-        "instructionHelper": "Specify: message tone, information to include, personalizations, and call-to-action.",
-        "subjectLabel": "Subject (for emails)",
-        "subjectPlaceholder": "Email subject…",
-        "charCount": "{current}/{max} characters",
-        "noSubject": "(no subject)"
+        "title": "メッセージを作成する",
+        "description": "コンテンツを説明すると、AI エージェントがメッセージの下書きを作成します",
+        "instructionLabel": "メッセージ指示",
+        "instructionPlaceholder": "例: 3 日以内に請求書の期限が来るすべてのクライアントに、プロフェッショナルかつフレンドリーな口調でリマインダー メールを送信し、支払いリンクを含めます。",
+        "instructionHelper": "メッセージ トーン、含める情報、パーソナライゼーション、CTA を指定します。",
+        "subjectLabel": "件名（メールの場合）",
+        "subjectPlaceholder": "メールの件名…",
+        "charCount": "{current}/{max}文字",
+        "noSubject": "(主語なし)"
       },
       "channels": {
-        "title": "Delivery channels",
+        "title": "配送チャネル",
         "email": "Email",
         "slack": "Slack",
-        "whatsapp": "WhatsApp",
-        "teams": "Microsoft Teams",
+        "whatsapp": "ワッツアップ",
+        "teams": "マイクロソフトチーム",
         "sms": "SMS",
-        "discord": "Discord"
+        "discord": "不和"
       },
       "recipients": {
-        "title": "Recipients",
-        "description": "Configure who will receive the message",
+        "title": "受信者",
+        "description": "メッセージを受信する人を設定する",
         "to": "To",
         "toPlaceholder": "email@example.com",
-        "cc": "CC (carbon copy)",
+        "cc": "CC（カーボンコピー）",
         "ccPlaceholder": "email@example.com",
-        "addMore": "Add more",
-        "list": "Distribution list",
-        "condition": "By condition (e.g., inactive clients)"
+        "addMore": "さらに追加",
+        "list": "配布リスト",
+        "condition": "条件別（非アクティブなクライアントなど）"
       },
       "schedule": {
-        "title": "Schedule",
-        "sendNow": "Send now",
-        "scheduleLater": "Schedule for later",
-        "recurring": "Recurring",
-        "dateTime": "Date and time",
-        "frequency": "Frequency",
+        "title": "スケジュール",
+        "sendNow": "今すぐ送信",
+        "scheduleLater": "後の予定を立てる",
+        "recurring": "繰り返し発生する",
+        "dateTime": "日時",
+        "frequency": "頻度",
         "daily": "Daily",
-        "weekly": "Weekly",
-        "monthly": "Monthly",
-        "dateTimePlaceholder": "Date/time picker available in the full version."
+        "weekly": "毎週",
+        "monthly": "毎月",
+        "dateTimePlaceholder": "日付/時刻ピッカーはフルバージョンで利用できます。"
       },
       "recentMessages": {
-        "title": "Recent messages",
-        "empty": "No messages sent yet",
-        "channel": "Channel",
-        "sentAt": "Sent at",
-        "status": "Status"
+        "title": "最近のメッセージ",
+        "empty": "まだメッセージは送信されていません",
+        "channel": "チャネル",
+        "sentAt": "に送信されました",
+        "status": "状態"
       },
       "actions": {
-        "send": "Send message",
-        "sending": "Sending…",
-        "preview": "Preview",
-        "saveDraft": "Save draft",
-        "testSend": "Send test",
-        "testSendDescription": "Send a test to verify formatting"
+        "send": "メッセージを送信する",
+        "sending": "送信中…",
+        "preview": "プレビュー",
+        "saveDraft": "下書きの保存",
+        "testSend": "送信テスト",
+        "testSendDescription": "テストを送信してフォーマットを検証する"
       },
       "status": {
         "sent": "Sent",
-        "scheduled": "Scheduled",
-        "failed": "Failed"
+        "scheduled": "予定されている",
+        "failed": "失敗した"
       },
       "results": {
-        "sent": "Message sent successfully via {channels}!",
-        "preview": "[PREVIEW]\n\nChannels: {channels}\nSubject: {subject}\n\n{instruction}\n\n(This is a preview simulation)",
-        "draftSaved": "Draft saved successfully! You can access it in 'Messages > Drafts'.",
-        "testSent": "Test sent to {email}! Check your inbox."
+        "sent": "{channels}経由でメッセージが正常に送信されました!",
+        "preview": "[プレビュー]\n\n チャンネル: {channels}\n 件名: {subject}\n\n {instruction}\n\n (これはプレビュー シミュレーションです)",
+        "draftSaved": "下書きは正常に保存されました。 「メッセージ > 下書き」からアクセスできます。",
+        "testSent": "テストは{email}に送信されました! 受信箱を確認してください。"
       },
       "errors": {
-        "sendFailed": "Failed to send message.",
-        "testNoRecipient": "Please enter a recipient for the test."
+        "sendFailed": "メッセージの送信に失敗しました。",
+        "testNoRecipient": "テストの受信者を入力してください。"
       }
     },
     "media": {
-      "title": "Media & Images",
-      "subtitle": "Process, convert, and optimize images and media in batch",
+      "title": "メディアと画像",
+      "subtitle": "画像とメディアをバッチで処理、変換、最適化します",
       "instruction": {
-        "title": "What should the AI agent do with the media?",
-        "description": "Describe in natural language what you want the agent to do with your images or videos.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Remove the background from all images, resize to 1200x800 maintaining aspect ratio, convert to WebP at 85% quality, apply brightness +10 filter, and add '© My Company' watermark at the bottom right corner.",
-        "helper": "Include: which transformations to apply, dimensions, output format, quality, filters, and watermark.",
-        "charCount": "{current}/{max} characters",
-        "button": "Process with AI",
-        "processing": "Processing…"
+        "title": "AI エージェントはメディアに対して何をすべきでしょうか?",
+        "description": "エージェントに画像やビデオに対して何をしてもらいたいかを自然言語で説明します。",
+        "label": "エージェントの指示",
+        "placeholder": "たとえば、すべての画像から背景を削除し、アスペクト比を維持して 1200x800 にサイズ変更し、85% の品質で WebP に変換し、明るさ +10 フィルターを適用し、右下隅に「© My Company」の透かしを追加します。",
+        "helper": "適用する変換、サイズ、出力形式、品質、フィルター、ウォーターマークが含まれます。",
+        "charCount": "{current}/{max}文字",
+        "button": "AIによる処理",
+        "processing": "処理…"
       },
       "upload": {
-        "title": "Media upload",
-        "description": "Drag images or videos to get started",
-        "dragActive": "Drop files to upload",
-        "browse": "Browse files",
+        "title": "メディアのアップロード",
+        "description": "画像またはビデオをドラッグして開始します",
+        "dragActive": "ファイルをドロップしてアップロードする",
+        "browse": "ファイルを参照する",
         "supportedFormats": "Formats: JPG, PNG, GIF, SVG, WebP, MP4, MOV, WebM",
-        "maxSize": "Max size: 100 MB per file",
-        "batchInfo": "{count} file(s) selected",
-        "remove": "Remove"
+        "maxSize": "最大サイズ: ファイルごとに 100 MB",
+        "batchInfo": "{count} ファイルが選択されました",
+        "remove": "取り除く"
       },
       "transformations": {
-        "title": "Transformations",
-        "description": "Choose what to do with your media",
-        "resize": "Resize",
-        "resizeDescription": "Change image dimensions",
+        "title": "変換",
+        "description": "メディアをどうするかを選択してください",
+        "resize": "サイズ変更",
+        "resizeDescription": "画像の寸法を変更する",
         "width": "Width",
-        "height": "Height",
-        "maintainAspect": "Maintain aspect ratio",
-        "convertFormat": "Convert format",
-        "convertDescription": "Convert to another file format",
-        "targetFormat": "Target format",
-        "compress": "Compress",
-        "compressDescription": "Reduce file size",
-        "quality": "Quality",
-        "watermark": "Watermark",
-        "watermarkDescription": "Add text or logo overlay on the image",
-        "watermarkText": "Watermark text",
-        "filters": "Filters & adjustments",
-        "brightness": "Brightness",
-        "contrast": "Contrast",
-        "saturation": "Saturation",
+        "height": "身長",
+        "maintainAspect": "アスペクト比を維持する",
+        "convertFormat": "フォーマットを変換する",
+        "convertDescription": "別のファイル形式に変換する",
+        "targetFormat": "対象フォーマット",
+        "compress": "圧縮する",
+        "compressDescription": "ファイルサイズを減らす",
+        "quality": "品質",
+        "watermark": "透かし",
+        "watermarkDescription": "画像にテキストまたはロゴのオーバーレイを追加する",
+        "watermarkText": "透かしテキスト",
+        "filters": "フィルターと調整",
+        "brightness": "輝度",
+        "contrast": "対比",
+        "saturation": "飽和",
         "blur": "Blur"
       },
       "preview": {
-        "title": "Preview",
-        "original": "Original",
-        "processed": "Processed",
-        "noMedia": "Upload media to preview"
+        "title": "プレビュー",
+        "original": "オリジナル",
+        "processed": "加工済み",
+        "noMedia": "メディアをアップロードしてプレビューする"
       },
       "recentMedia": {
-        "title": "Recent media",
-        "empty": "No media processed yet"
+        "title": "最近のメディア",
+        "empty": "まだメディアが処理されていません"
       },
       "actions": {
-        "process": "Process media",
-        "processing": "Processing…",
-        "download": "Download result",
-        "downloadAll": "Download all (ZIP)",
-        "batchProcess": "Batch processing",
-        "filesCount": "{count} files"
+        "process": "プロセスメディア",
+        "processing": "処理…",
+        "download": "ダウンロード結果",
+        "downloadAll": "すべてダウンロード（ZIP）",
+        "batchProcess": "バッチ処理",
+        "filesCount": "{count} ファイル"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access images and videos stored in your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "Google Drive に保存されている画像やビデオにアクセスします。",
+          "connect": "Google Drive を接続します",
+          "connecting": "接続中...",
+          "connected": "Google Drive に接続されました",
+          "browse": "ドライブを参照"
         },
         "googlePhotos": {
-          "title": "Google Photos",
-          "description": "Access your photos and albums directly from Google Photos.",
-          "connect": "Connect Google Photos",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Photos",
-          "browse": "Browse Photos"
+          "title": "Googleフォト",
+          "description": "Google フォトから写真やアルバムに直接アクセスします。",
+          "connect": "Google フォトを接続する",
+          "connecting": "接続中...",
+          "connected": "Googleフォトに接続しました",
+          "browse": "写真を閲覧する"
         }
       },
       "errors": {
-        "processFailed": "Failed to process media.",
-        "aiFailed": "Failed to interpret instruction."
+        "processFailed": "メディアの処理に失敗しました。",
+        "aiFailed": "指示の解釈に失敗しました。"
       },
       "results": {
-        "processComplete": "Processing complete! {count} file(s) transformed successfully.",
-        "aiInterpreted": "Instruction interpreted successfully! Transformations have been pre-configured as described. Review the adjustments in the panel and click 'Process media' to apply.",
-        "downloadSimulation": "Simulating download of {count} processed file(s) as ZIP.\n\nIn the full version, all files would be compressed and downloaded.",
-        "downloadComplete": "Download complete! Files removed from the list."
+        "processComplete": "処理が完了しました！ {count} ファイルは正常に変換されました。",
+        "aiInterpreted": "命令は正常に解釈されました。 変換は説明どおりに事前構成されています。 パネル内の調整を確認し、「メディアを処理」をクリックして適用します。",
+        "downloadSimulation": "{count} 処理されたファイルを ZIP 形式でダウンロードすることをシミュレートします。 \n\nフルバージョンでは、すべてのファイルが圧縮されてダウンロードされます。",
+        "downloadComplete": "ダウンロード完了！ ファイルがリストから削除されました。"
       }
     },
     "files": {
       "title": "Files",
-      "subtitle": "Manage, organize, and automate file operations",
+      "subtitle": "ファイル操作を管理、整理、自動化する",
       "instruction": {
-        "title": "What should the AI agent do with your files?",
-        "description": "Describe in natural language how you want to organize, process, or manage your files.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Organize all PDFs in the Downloads folder by creation date, rename them using the pattern 'YYYY-MM-DD - original name', move invoices to /Finance/Invoices/{year}/{month}, and compress files older than 6 months.",
-        "helper": "Include: which files to affect, how to organize them, renaming pattern, destination folders, and additional actions.",
-        "charCount": "{current}/{max} characters",
-        "button": "Execute with AI",
-        "processing": "Executing…"
+        "title": "AI エージェントはファイルに対して何をすべきでしょうか?",
+        "description": "ファイルをどのように整理、処理、管理するかを自然言語で説明します。",
+        "label": "エージェントの指示",
+        "placeholder": "たとえば、ダウンロード フォルダー内のすべての PDF を作成日順に整理し、「YYYY-MM-DD - 元の名前」パターンを使用して名前を変更し、請求書を /Finance/Invoices/{year}/{month} に移動し、6 か月以上前のファイルを圧縮します。",
+        "helper": "含まれる内容: 影響するファイル、それらの整理方法、名前変更パターン、宛先フォルダー、追加のアクション。",
+        "charCount": "{current}/{max}文字",
+        "button": "AIで実行する",
+        "processing": "実行中…"
       },
       "storage": {
-        "title": "Storage",
+        "title": "ストレージ",
         "used": "Used",
-        "total": "of {total}",
-        "files": "{count} files",
-        "folders": "{count} folders",
-        "activeRules": "Active rules",
-        "rulesConfigured": "{count} configured",
-        "lastFolder": "Last: {name}",
-        "progressLabel": "{progress}% used"
+        "total": "{total}",
+        "files": "{count} ファイル",
+        "folders": "{count}フォルダ",
+        "activeRules": "アクティブなルール",
+        "rulesConfigured": "{count}設定済み",
+        "lastFolder": "最後: {name}",
+        "progressLabel": "{progress}%使用"
       },
       "upload": {
-        "title": "File upload",
-        "description": "Drag files or folders to upload",
-        "dragActive": "Drop to upload",
-        "browse": "Browse",
-        "createFolder": "Create folder"
+        "title": "ファイルのアップロード",
+        "description": "ファイルまたはフォルダーをドラッグしてアップロードします",
+        "dragActive": "ドロップしてアップロード",
+        "browse": "ブラウズ",
+        "createFolder": "フォルダーの作成"
       },
       "browser": {
-        "title": "File explorer",
-        "empty": "This folder is empty",
+        "title": "ファイルエクスプローラー",
+        "empty": "このフォルダは空です",
         "name": "Name",
         "size": "Size",
-        "modified": "Modified",
+        "modified": "修正済み",
         "type": "Type",
-        "sortBy": "Sort by",
-        "search": "Search files…",
-        "gridView": "Grid view",
-        "listView": "List view",
-        "folder": "Folder"
+        "sortBy": "並べ替え",
+        "search": "ファイルを検索…",
+        "gridView": "グリッドビュー",
+        "listView": "リストビュー",
+        "folder": "フォルダ"
       },
       "rules": {
-        "title": "Organization rules",
-        "description": "Automate file organization",
-        "ruleName": "Rule name",
-        "ruleNamePlaceholder": "e.g., Sort invoices by month",
-        "condition": "Condition",
-        "conditionPlaceholder": "e.g., filename contains 'invoice'",
-        "action": "Action",
-        "actionPlaceholder": "e.g., move to /Finance/Invoices/{year}/{month}",
-        "addRule": "Add rule",
-        "active": "Active",
-        "inactive": "Inactive",
-        "empty": "No rules configured"
+        "title": "組織規則",
+        "description": "ファイル整理を自動化する",
+        "ruleName": "ルール名",
+        "ruleNamePlaceholder": "例: 請求書を月ごとに並べ替える",
+        "condition": "状態",
+        "conditionPlaceholder": "例: ファイル名に「請求書」が含まれている",
+        "action": "アクション",
+        "actionPlaceholder": "例: /Finance/Invoices/{year}/{month} に移動します",
+        "addRule": "ルールの追加",
+        "active": "アクティブ",
+        "inactive": "非アクティブ",
+        "empty": "ルールが設定されていません"
       },
       "actions": {
-        "label": "Actions",
-        "moreOptions": "More options",
-        "upload": "Upload",
-        "newFolder": "New folder",
-        "delete": "Delete",
-        "rename": "Rename",
+        "label": "アクション",
+        "moreOptions": "その他のオプション",
+        "upload": "アップロード",
+        "newFolder": "新しいフォルダー",
+        "delete": "消去",
+        "rename": "名前の変更",
         "move": "Move",
         "copy": "Copy",
         "share": "Share",
-        "download": "Download"
+        "download": "ダウンロード"
       },
-      "aiPlaceholder": "Ex.: Organize todos os PDFs da pasta Downloads por data de criação, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
+      "aiPlaceholder": "E.g.: Organize all PDFs from the Downloads folder by creation date, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and manage files directly from your Google Drive as if it were a local folder.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Explore Drive",
-          "disconnect": "Disconnect"
+          "description": "ローカル フォルダーであるかのように、Google Drive からファイルに直接アクセスして管理します。",
+          "connect": "Google Drive を接続します",
+          "connecting": "接続中...",
+          "connected": "Google Drive に接続されました",
+          "browse": "ドライブを探索する",
+          "disconnect": "切断する"
         }
       },
       "dialogs": {
-        "newFolder": "New folder name:",
-        "rename": "Rename to:",
-        "deleteConfirm": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
-        "moveAlert": "Move \"{name}\" — In the full version, a folder selector would be shown.",
-        "copySuffix": " (copy)",
-        "shareLink": "Share link for \"{name}\" copied to clipboard!\n\nhttps://pytomatiza.app/share/{id}",
-        "selectFile": "\"{label}\" — Select a file in the explorer to use this action."
+        "newFolder": "新しいフォルダー名:",
+        "rename": "名前を次のように変更します:",
+        "deleteConfirm": "「{name}」を削除してもよろしいですか? この操作は元に戻すことができません。",
+        "moveAlert": "「{name}」を移動 — 製品版では、フォルダー セレクターが表示されます。",
+        "copySuffix": "（コピー）",
+        "shareLink": "クリップボードにコピーされた「{name}」のリンクを共有します。 \n\nhttps://pytomatiza.app/share/{id}",
+        "selectFile": "「{label}」 — このアクションを使用するには、エクスプローラーでファイルを選択します。"
       },
       "results": {
-        "aiInterpreted": "Instruction interpreted successfully! Organization rules have been created automatically. Review them in the rules panel."
+        "aiInterpreted": "命令は正常に解釈されました。 組織ルールは自動的に作成されます。 ルールパネルでそれらを確認してください。"
       }
     },
     "architecture": {
-      "title": "Architecture",
-      "subtitle": "Generate architecture diagrams and technical documentation with AI",
+      "title": "建築",
+      "subtitle": "AI を使用してアーキテクチャ図と技術文書を生成",
       "diagramBuilder": {
-        "title": "Describe your architecture",
-        "description": "Describe the system in natural language and the AI agent will generate the diagram",
-        "instructionLabel": "Architecture description",
-        "instructionPlaceholder": "e.g., E-commerce system with: load balancer (Nginx), 3 API instances (Node.js on Kubernetes), primary PostgreSQL + read replica, Redis for caching, RabbitMQ queue for orders, Python workers, and S3 storage for product images.",
-        "instructionHelper": "Include: components, connections, protocols, technologies, and data flow.",
-        "charCount": "{current}/{max} characters"
+        "title": "アーキテクチャについて説明してください",
+        "description": "自然言語でシステムを説明すると、AI エージェントが図を生成します",
+        "instructionLabel": "アーキテクチャの説明",
+        "instructionPlaceholder": "例: ロード バランサー (Nginx)、3 つの API インスタンス (Kubernetes の Node.js)、プライマリ PostgreSQL + リード レプリカ、キャッシュ用の Redis、注文用の RabbitMQ キュー、Python ワーカー、および製品画像用の S3 ストレージを備えた電子商取引システム。",
+        "instructionHelper": "コンポーネント、接続、プロトコル、テクノロジー、データ フローが含まれます。",
+        "charCount": "{current}/{max}文字"
       },
       "templates": {
-        "title": "Architecture templates",
-        "description": "Choose a template as a starting point",
-        "aws": "AWS Cloud",
-        "gcp": "Google Cloud",
-        "azure": "Microsoft Azure",
-        "microservices": "Microservices",
-        "monolith": "Modular Monolith",
-        "serverless": "Serverless",
-        "eventDriven": "Event-Driven",
-        "ciCd": "CI/CD Pipeline",
-        "network": "Network Topology",
-        "dataPipeline": "Data Pipeline"
+        "title": "アーキテクチャテンプレート",
+        "description": "出発点としてテンプレートを選択する",
+        "aws": "AWS クラウド",
+        "gcp": "グーグルクラウド",
+        "azure": "マイクロソフトアジュール",
+        "microservices": "マイクロサービス",
+        "monolith": "モジュラーモノリス",
+        "serverless": "サーバーレス",
+        "eventDriven": "イベント駆動型",
+        "ciCd": "CI/CD パイプライン",
+        "network": "ネットワークトポロジー",
+        "dataPipeline": "データパイプライン"
       },
       "export": {
-        "title": "Export format",
-        "description": "Choose how to export the diagram",
-        "png": "PNG (image)",
-        "svg": "SVG (vector)",
-        "pdf": "PDF (document)",
-        "drawio": "Draw.io (editable)",
-        "terraform": "Terraform (IaC)",
-        "mermaid": "Mermaid (text)",
-        "plantuml": "PlantUML"
+        "title": "エクスポート形式",
+        "description": "図のエクスポート方法を選択する",
+        "png": "PNG（イメージ）",
+        "svg": "SVG（ベクター）",
+        "pdf": "PDF（文書）",
+        "drawio": "Draw.io (編集可能)",
+        "terraform": "テラフォーム (IaC)",
+        "mermaid": "人魚（テキスト）",
+        "plantuml": "プラントUML"
       },
       "recentDiagrams": {
-        "title": "Recent diagrams",
-        "empty": "No diagrams generated yet",
-        "createdAt": "Created at",
-        "components": "{count} components",
-        "download": "Download",
+        "title": "最近の図",
+        "empty": "図はまだ生成されていません",
+        "createdAt": "で作成されました",
+        "components": "{count} コンポーネント",
+        "download": "ダウンロード",
         "edit": "Edit",
-        "delete": "Delete"
+        "delete": "消去"
       },
       "actions": {
-        "generate": "Generate diagram",
-        "generating": "Generating diagram…",
-        "generateDescription": "Generate documentation",
-        "save": "Save project",
+        "generate": "ダイアグラムの生成",
+        "generating": "図を生成中…",
+        "generateDescription": "ドキュメントの生成",
+        "save": "プロジェクトの保存",
         "share": "Share",
-        "shareDescription": "Share with your team via link"
+        "shareDescription": "リンク経由でチームと共有する"
       },
       "errors": {
-        "generateFailed": "Failed to generate diagram. Please try again."
+        "generateFailed": "ダイアグラムの生成に失敗しました。 もう一度試してください。"
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this diagram?",
-        "shareLink": "Share link copied to clipboard!\n\nShare this architecture project with your team."
+        "deleteConfirm": "この図を削除してもよろしいですか?",
+        "shareLink": "クリップボードにコピーされたリンクを共有します!\n\n このアーキテクチャ プロジェクトをチームと共有します。"
       }
     }
   },
   "footer": {
-    "copyright": "© {year} Pytomatiza+. All rights reserved.",
+    "copyright": "© {year} Pytomatiza+. 無断転載を禁じます。",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "status": "システムステータス"
@@ -1104,16 +1037,16 @@
     "subtitle": "Monitore execuções de automação e gerencie solicitações de aprovação pendentes.",
     "stats": {
       "totalExecutions": "Total de Execuções",
-      "successRate": "Taxa de Sucesso",
-      "pendingApprovals": "Aprovações Pendentes",
-      "errors24h": "Erros (24h)"
+      "successRate": "Taxa de Success",
+      "pendingApprovals": "Aprovações Pendings",
+      "errors24h": "エラー (24 時間)"
     },
     "tableHeader": "Execuções Recentes",
     "tableAriaLabel": "Registros de execução",
     "status": {
-      "success": "Sucesso",
-      "error": "Erro",
-      "pending": "Aprovação Pendente",
+      "success": "成功",
+      "error": "Error",
+      "pending": "Aprovação Pending",
       "running": "Em Execução"
     },
     "agents": {
@@ -1139,16 +1072,16 @@
     "duration": {
       "ongoing": "em andamento"
     },
-    "tableEmpty": "No execution logs found.",
-    "loginPrompt": "Log in to your account to access real-time data!"
+    "tableEmpty": "実行ログが見つかりませんでした。",
+    "loginPrompt": "アカウントにログインしてリアルタイム データにアクセスしてください。"
   },
   "brand": {
-    "tagline": "AI-powered automation that thinks, learns, and executes — so you don't have to.",
-    "feature1Title": "Natural Language Workflows",
-    "feature1Desc": "Describe tasks in plain English. Our NLP engine builds the automation for you.",
-    "feature2Title": "Multi-Agent Orchestration",
-    "feature2Desc": "Specialized AI agents collaborate to handle complex, multi-step processes.",
-    "feature3Title": "Enterprise-Grade Security",
-    "feature3Desc": "End-to-end encryption, role-based access, and full audit trails."
+    "tagline": "AI を活用した自動化により、考え、学習し、実行するため、その必要はありません。",
+    "feature1Title": "自然言語ワークフロー",
+    "feature1Desc": "わかりやすい英語でタスクを説明します。 当社の NLP エンジンは自動化を構築します。",
+    "feature2Title": "マルチエージェントオーケストレーション",
+    "feature2Desc": "専門の AI エージェントが連携して、複雑な複数ステップのプロセスを処理します。",
+    "feature3Title": "Enterprise-Grade セキュリティ",
+    "feature3Desc": "End-to-end 暗号化、ロールベースのアクセス、完全な監査証跡。"
   }
 }

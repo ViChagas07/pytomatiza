@@ -10,9 +10,9 @@
     "sidebarNavigation": "साइडबार नेविगेशन",
     "breadcrumb": "ब्रेडक्रम्ब",
     "pagination": "पृष्ठ पर अंक लगाना",
-    "currentPage": "वर्तमान पृष्ठ, पृष्ठ {पेज}",
-    "goToPage": "पेज {पेज} पर जाएँ",
-    "goToHome": "Go to home page"
+    "currentPage": "वर्तमान पृष्ठ, पृष्ठ {page}",
+    "goToPage": "पेज {page} पर जाएँ",
+    "goToHome": "मुखपृष्ठ प्र जाएं"
   },
   "common": {
     "loading": "लोड हो रहा है...",
@@ -35,8 +35,8 @@
     "copied": "क्लिपबोर्ड पर कॉपी किया गया",
     "enabled": "सक्रिय",
     "disabled": "अक्षम",
-    "increasedBy": "Increased by",
-    "decreasedBy": "Decreased by"
+    "increasedBy": "की वृद्धि हुई",
+    "decreasedBy": "की कमी हुई"
   },
   "auth": {
     "signIn": {
@@ -80,7 +80,7 @@
       "generic": "एक अप्रत्याशित त्रुटि हुई। कृपया पुन: प्रयास करें।",
       "rateLimited": "बहुत अधिक प्रयास. कृपया कुछ देर इंतज़ार करें।"
     },
-    "authenticationForm": "Authentication form"
+    "authenticationForm": "प्रमाणीकरण प्रपत्र"
   },
   "meta": {
     "login": {
@@ -112,28 +112,28 @@
       "description": "स्वचालन निष्पादन देखें, एजेंट इतिहास देखें और लंबित अनुमोदन प्रबंधित करें।"
     },
     "documents": {
-      "title": "Documents — Pytomatiza+",
-      "description": "Automate document processing with AI. Extract data, convert formats, and manage PDFs, DOCX, and more."
+      "title": "दस्तावेज़ - Pytomatiza+",
+      "description": "एआई के साथ दस्तावेज़ प्रसंस्करण को स्वचालित करें। डेटा निकालें, प्रारूप बदलें, और PDF, DOCX और बहुत कुछ प्रबंधित करें।"
     },
     "data": {
-      "title": "Data & Spreadsheets — Pytomatiza+",
-      "description": "Connect data sources, transform spreadsheets, and automate analysis with AI agents."
+      "title": "डेटा और स्प्रेडशीट - Pytomatiza+",
+      "description": "डेटा स्रोतों को कनेक्ट करें, स्प्रेडशीट को रूपांतरित करें और एआई एजेंटों के साथ विश्लेषण को स्वचालित करें।"
     },
     "communication": {
-      "title": "Communication — Pytomatiza+",
-      "description": "Automate emails, messages, and multi-channel notifications with intelligent workflows."
+      "title": "संचार - Pytomatiza+",
+      "description": "बुद्धिमान वर्कफ़्लो के साथ ईमेल, संदेश और मल्टी-चैनल सूचनाएं स्वचालित करें।"
     },
     "media": {
-      "title": "Media & Images — Pytomatiza+",
-      "description": "Process, convert, and optimize images and media in batch with intelligent automation."
+      "title": "मीडिया और छवियाँ — Pytomatiza+",
+      "description": "बुद्धिमान स्वचालन के साथ बैच में छवियों और मीडिया को संसाधित करें, परिवर्तित करें और अनुकूलित करें।"
     },
     "files": {
-      "title": "Files — Pytomatiza+",
-      "description": "Manage, organize, and automate file operations with intelligent rules."
+      "title": "फ़ाइलें - Pytomatiza+",
+      "description": "बुद्धिमान नियमों के साथ फ़ाइल संचालन को प्रबंधित, व्यवस्थित और स्वचालित करें।"
     },
     "architecture": {
-      "title": "Architecture — Pytomatiza+",
-      "description": "Generate architecture diagrams, technical documentation, and system flows with AI."
+      "title": "वास्तुकला - Pytomatiza+",
+      "description": "एआई के साथ आर्किटेक्चर आरेख, तकनीकी दस्तावेज़ीकरण और सिस्टम प्रवाह उत्पन्न करें।"
     }
   },
   "navigation": {
@@ -188,14 +188,14 @@
       "bgPresetSepia": "एक प्रकार की मछली",
       "bgPresetMidnight": "मध्यरात्रि",
       "bgPresetSlate": "स्लेट",
-      "colorYellow": "Yellow",
+      "colorYellow": "पीला",
       "colorBlue": "Blue",
       "colorGreen": "Green",
-      "colorPurple": "Purple",
-      "colorOrange": "Orange",
+      "colorPurple": "बैंगनी",
+      "colorOrange": "नारंगी",
       "colorRed": "Red",
       "colorPink": "Pink",
-      "accentColorAria": "{color} accent color"
+      "accentColorAria": "{color} उच्चारण रंग"
     },
     "accessibility": {
       "title": "सरल उपयोग",
@@ -280,26 +280,26 @@
   "help": {
     "title": "सहायता एवं सहायता",
     "subtitle": "सहायता प्राप्त करें, दस्तावेज़ ब्राउज़ करें और हमारी टीम से संपर्क करें।",
-    "documentation": "Documentation",
-    "documentationDescription": "Browse guides, tutorials, and API references.",
-    "contactSupport": "Contact Support",
-    "contactSupportDescription": "Get help from our team. Usually responds within 24 hours.",
-    "faqTitle": "Frequently Asked Questions",
+    "documentation": "प्रलेखन",
+    "documentationDescription": "गाइड, ट्यूटोरियल और एपीआई संदर्भ ब्राउज़ करें।",
+    "contactSupport": "समर्थन से संपर्क करें",
+    "contactSupportDescription": "हमारी टीम से सहायता प्राप्त करें. आमतौर पर 24 घंटे के भीतर जवाब देता है।",
+    "faqTitle": "अक्सर पूछे जाने वाले प्रश्नों",
     "faq0": {
-      "question": "How do I create an automation?",
-      "answer": "Go to the Automations page and use the Natural Language Workflow Builder. Describe what you want to automate in plain English, and Pytomatiza+ will build the workflow for you."
+      "question": "मैं स्वचालन कैसे बनाऊं?",
+      "answer": "ऑटोमेशन पेज पर जाएं और नेचुरल लैंग्वेज वर्कफ़्लो बिल्डर का उपयोग करें। स्पष्ट अंग्रेजी में बताएं कि आप क्या स्वचालित करना चाहते हैं, और Pytomatiza+ आपके लिए वर्कफ़्लो तैयार करेगा।"
     },
     "faq1": {
-      "question": "How do I connect a new integration?",
-      "answer": "Navigate to Settings → Integrations to connect third-party services like Google Workspace, Slack, or GitHub."
+      "question": "मैं एक नया एकीकरण कैसे जोड़ूँ?",
+      "answer": "Google Workspace, Slack, या GitHub जैसी तृतीय-पक्ष सेवाओं को जोड़ने के लिए सेटिंग्स → एकीकरण पर नेविगेट करें।"
     },
     "faq2": {
-      "question": "What happens if an agent fails?",
-      "answer": "Failed agents are marked with an error status. You can view the error details in the agent card and retry the execution."
+      "question": "यदि कोई एजेंट विफल हो जाए तो क्या होगा?",
+      "answer": "विफल एजेंटों को त्रुटि स्थिति के साथ चिह्नित किया जाता है। आप एजेंट कार्ड में त्रुटि विवरण देख सकते हैं और निष्पादन का पुनः प्रयास कर सकते हैं।"
     },
     "faq3": {
-      "question": "How do I change my language?",
-      "answer": "Click the globe icon in the header to switch between 9 supported languages."
+      "question": "मैं अपनी भाषा कैसे बदलूं?",
+      "answer": "9 समर्थित भाषाओं के बीच स्विच करने के लिए हेडर में ग्लोब आइकन पर क्लिक करें।"
     }
   },
   "dashboard": {
@@ -314,8 +314,8 @@
       "automationsToday": "स्वचालन आज",
       "successRate": "सफलता दर",
       "pendingApprovals": "स्वीकृतियां लंबित हैं",
-      "increasedBy": "Increased by {value}",
-      "decreasedBy": "Decreased by {value}"
+      "increasedBy": "{value} की वृद्धि",
+      "decreasedBy": "{value} की कमी"
     },
     "recentActivity": "हाल की गतिविधि",
     "quickActions": "त्वरित कार्रवाई",
@@ -327,18 +327,18 @@
       "title": "डेटा लोड करने में त्रुटि",
       "loadingFailed": "डैशबोर्ड डेटा लोड नहीं किया जा सका। कृपया अपना कनेक्शन जांचें और पुनः प्रयास करें।",
       "retry": "पुनः प्रयास करें",
-      "offlineBanner": "Backend unavailable — displayed data may be out of date",
-      "unknown": "Unknown error"
+      "offlineBanner": "बैकएंड अनुपलब्ध - प्रदर्शित डेटा पुराना हो सकता है",
+      "unknown": "अज्ञात त्रुटि"
     },
     "empty": {
       "title": "कोई एजेंट नहीं मिला",
       "description": "यहां गतिविधि देखना शुरू करने के लिए अपना पहला स्वचालन एजेंट बनाएं।",
-      "offlineTitle": "Backend offline",
-      "offlineDescription": "Connect to the backend to see your agents. Click \"Retry\" once the service is available."
+      "offlineTitle": "बैकएंड ऑफ़लाइन",
+      "offlineDescription": "अपने एजेंटों को देखने के लिए बैकएंड से कनेक्ट करें। सेवा उपलब्ध होने पर \"पुनः प्रयास करें\" पर क्लिक करें।"
     },
-    "recentActivityEmpty": "Empty history… Create your first automation with Pytomatiza+ by going to Modules!",
-    "loginPrompt": "Sign in to your account to access real-time data!",
-    "loginAction": "Sign in",
+    "recentActivityEmpty": "खाली इतिहास... मॉड्यूल पर जाकर Pytomatiza+ के साथ अपना पहला स्वचालन बनाएं!",
+    "loginPrompt": "वास्तविक समय डेटा तक पहुंचने के लिए अपने खाते में साइन इन करें!",
+    "loginAction": "दाखिल करना",
     "user": "User"
   },
   "agents": {
@@ -413,7 +413,8 @@
         "desc": "AI का उपयोग करके ब्लॉग पोस्ट और दस्तावेज़ीकरण का 9 भाषाओं में अनुवाद करता है।"
       }
     },
-    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}"
+    "agentsFound": "{count, plural, =1 {1 agente encontrado} other {{count} agentes encontrados}}",
+    "resetFilters": "सभी फ़िल्टर रीसेट करें"
   },
   "automations": {
     "title": "स्वचालन",
@@ -430,7 +431,7 @@
       "requireApprovalHelper": "सक्षम होने पर, वर्कफ़्लो चलने से पहले आपकी समीक्षा के लिए रुक जाएगा।",
       "build": "वर्कफ़्लो बनाएँ",
       "building": "बिल्डिंग वर्कफ़्लो…",
-      "charCount": "{वर्तमान}/{अधिकतम} वर्ण",
+      "charCount": "{current}/{max} वर्ण",
       "suggestions": "इन उदाहरणों को आज़माएँ:",
       "example1": "प्रत्येक शुक्रवार शाम 5 बजे टीम स्लैक चैनल को सभी बंद टिकटों की साप्ताहिक रिपोर्ट भेजें",
       "example2": "हमारे ट्विटर उल्लेखों पर नज़र रखें और सहायता केंद्र के लिंक के साथ समर्थन प्रश्नों का स्वचालित रूप से उत्तर दें",
@@ -445,26 +446,26 @@
       "delete": "वर्कफ़्लो हटाएँ",
       "deleteConfirm": "क्या आप वाकई इस वर्कफ़्लो को हटाना चाहते हैं? इस एक्शन को वापस नहीं किया जा सकता।",
       "deleted": "वर्कफ़्लो सफलतापूर्वक हटा दिया गया",
-      "statusToggled": "वर्कफ़्लो {स्थिति}",
-      "label": "Workflows",
-      "neverTriggered": "Never triggered",
-      "status": "Status: {status}",
-      "created": "Workflow created! Agent type: {agentType}. Approval: {approval}.",
-      "required": "required",
-      "notRequired": "not required"
+      "statusToggled": "वर्कफ़्लो {status}",
+      "label": "वर्कफ़्लो",
+      "neverTriggered": "कभी ट्रिगर नहीं हुआ",
+      "status": "स्थिति: {status}",
+      "created": "वर्कफ़्लो बनाया गया! एजेंट प्रकार: {agentType}. अनुमोदन: {approval}.",
+      "required": "आवश्यक",
+      "notRequired": "आवश्यक नहीं"
     },
     "errors": {
       "instructionTooShort": "निर्देश कम से कम 10 अक्षर का होना चाहिए",
       "instructionTooLong": "निर्देश 500 अक्षरों से अधिक नहीं होना चाहिए",
       "buildFailed": "वर्कफ़्लो बनाने में विफल. कृपया पुन: प्रयास करें।"
     },
-    "loginPrompt": "Log in to your account to access real-time data!",
+    "loginPrompt": "वास्तविक समय डेटा तक पहुंचने के लिए अपने खाते में लॉग इन करें!",
     "agentTypes": {
-      "productivity": "Productivity",
+      "productivity": "उत्पादकता",
       "data": "Data",
-      "content": "Content",
+      "content": "सामग्री",
       "admin": "Admin",
-      "technical": "Technical"
+      "technical": "तकनीकी"
     }
   },
   "theme": {
@@ -488,17 +489,17 @@
       "description": "इस पेज तक पहुंचने के लिए आपको साइन इन करना होगा.",
       "signIn": "दाखिल करना"
     },
-    "notFoundTitle": "Page not found",
-    "notFoundDescription": "The page you're looking for doesn't exist or has been moved.",
-    "notFoundAction": "Go to dashboard",
-    "somethingWentWrong": "Something went wrong",
-    "unexpectedError": "An unexpected error occurred. Our team has been notified.",
-    "dashboardErrorDescription": "An unexpected error occurred while loading this page.",
-    "tryAgain": "Try again",
-    "goHome": "Go home",
-    "errorId": "Error ID: ",
-    "loadingDashboard": "Loading dashboard",
-    "loadingDashboardContent": "Loading dashboard content…"
+    "notFoundTitle": "पृष्ठ नहीं मिला",
+    "notFoundDescription": "आप जिस पृष्ठ को खोज रहे हैं वह मौजूद नहीं है या उसे स्थानांतरित कर दिया गया है।",
+    "notFoundAction": "डैशबोर्ड पर जाएँ",
+    "somethingWentWrong": "कुछ गलत हो गया",
+    "unexpectedError": "एक अप्रत्याशित त्रुटि हुई। हमारी टीम को सूचित कर दिया गया है.",
+    "dashboardErrorDescription": "इस पृष्ठ को लोड करते समय एक अप्रत्याशित त्रुटि उत्पन्न हुई.",
+    "tryAgain": "पुनः प्रयास करें",
+    "goHome": "घर जाओ",
+    "errorId": "त्रुटि आईडी:",
+    "loadingDashboard": "डैशबोर्ड लोड हो रहा है",
+    "loadingDashboardContent": "डैशबोर्ड सामग्री लोड हो रही है…"
   },
   "nav": {
     "dashboard": "डैशबोर्ड",
@@ -523,510 +524,510 @@
     "filesDesc": "सामान्य फ़ाइल भंडारण और प्रबंधन।",
     "architecture": "वास्तुकला",
     "architectureDesc": "सिस्टम आरेख और आर्किटेक्चर दस्तावेज़।",
-    "settings": "Settings",
-    "signOut": "Sign Out",
-    "signIn": "Sign In",
+    "settings": "सेटिंग्स",
+    "signOut": "साइन आउट",
+    "signIn": "दाखिल करना",
     "appearance": "उपस्थिति",
     "user": "User"
   },
   "modules": {
     "documents": {
-      "title": "Documents",
-      "subtitle": "Automate intelligent document processing with AI agents",
+      "title": "दस्तावेज़",
+      "subtitle": "एआई एजेंटों के साथ बुद्धिमान दस्तावेज़ प्रसंस्करण को स्वचालित करें",
       "upload": {
-        "title": "Attach document",
-        "description": "Drag and drop your file here or click to select",
-        "dragActive": "Drop the file to attach",
-        "browse": "Browse files",
+        "title": "दस्तावेज़ संलग्न करें",
+        "description": "अपनी फ़ाइल को यहां खींचें और छोड़ें या चयन करने के लिए क्लिक करें",
+        "dragActive": "संलग्न करने के लिए फ़ाइल छोड़ें",
+        "browse": "फ़ाइलों को ब्राउज़ करें",
         "supportedFormats": "Supported formats: PDF, DOCX, XLSX, PPTX, TXT, CSV, images",
-        "maxSize": "Max size: 25 MB",
-        "fileSelected": "File selected",
-        "remove": "Remove file"
+        "maxSize": "अधिकतम आकार: 25 एमबी",
+        "fileSelected": "फ़ाइल चयनित",
+        "remove": "फ़ाइल हटाएँ"
       },
       "instruction": {
-        "title": "What should the AI agent do?",
-        "description": "Describe in natural language what you want the agent to do with this document.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Extract all data from the table on page 3 and convert it to a CSV spreadsheet. Then email it to finance@company.com.",
-        "helper": "Be specific: include which data to extract, output format, recipients, and post-processing actions.",
-        "charCount": "{current}/{max} characters"
+        "title": "एआई एजेंट को क्या करना चाहिए?",
+        "description": "स्वाभाविक भाषा में वर्णन करें कि आप एजेंट से इस दस्तावेज़ के साथ क्या करवाना चाहते हैं।",
+        "label": "एजेंट अनुदेश",
+        "placeholder": "उदाहरण के लिए, पृष्ठ 3 पर तालिका से सभी डेटा निकालें और इसे सीएसवी स्प्रेडशीट में परिवर्तित करें। फिर इसे फाइनेंस@company.com पर ईमेल करें।",
+        "helper": "विशिष्ट रहें: इसमें कौन सा डेटा निकालना है, आउटपुट स्वरूप, प्राप्तकर्ता और पोस्ट-प्रोसेसिंग क्रियाएं शामिल करें।",
+        "charCount": "{current}/{max} अक्षर"
       },
       "quickActions": {
-        "title": "Quick actions",
-        "extractData": "Extract data",
-        "convertFormat": "Convert format",
-        "mergeDocs": "Merge documents",
-        "ocrScan": "OCR scan",
-        "summarize": "Summarize content",
-        "translate": "Translate",
+        "title": "त्वरित कार्रवाई",
+        "extractData": "डेटा निकालें",
+        "convertFormat": "प्रारूप परिवर्तित करें",
+        "mergeDocs": "दस्तावेज़ मर्ज करें",
+        "ocrScan": "ओसीआर स्कैन",
+        "summarize": "सामग्री को सारांशित करें",
+        "translate": "अनुवाद",
         "presets": {
-          "extract": "Extract all structured data from this document and export as CSV.",
-          "convert": "Convert this document to PDF format while preserving the original layout.",
-          "merge": "Merge this document with other files in the folder and generate a single unified PDF.",
-          "ocr": "Scan this document using OCR and extract all text in editable format.",
-          "summarize": "Summarize the content of this document in one paragraph with key points.",
-          "translate": "Translate this document to English while preserving the original formatting."
+          "extract": "इस दस्तावेज़ से सभी संरचित डेटा निकालें और CSV के रूप में निर्यात करें।",
+          "convert": "मूल लेआउट को संरक्षित करते हुए इस दस्तावेज़ को पीडीएफ प्रारूप में परिवर्तित करें।",
+          "merge": "इस दस्तावेज़ को फ़ोल्डर में अन्य फ़ाइलों के साथ मर्ज करें और एक एकीकृत पीडीएफ बनाएं।",
+          "ocr": "ओसीआर का उपयोग करके इस दस्तावेज़ को स्कैन करें और सभी टेक्स्ट को संपादन योग्य प्रारूप में निकालें।",
+          "summarize": "इस दस्तावेज़ की सामग्री को मुख्य बिंदुओं के साथ एक पैराग्राफ में सारांशित करें।",
+          "translate": "मूल स्वरूपण को संरक्षित करते हुए इस दस्तावेज़ का अंग्रेजी में अनुवाद करें।"
         }
       },
       "recentDocuments": {
-        "title": "Recent documents",
-        "empty": "No documents processed yet. Upload your first document above.",
-        "processed": "Processed",
-        "status": "Status",
-        "actions": "Actions",
-        "download": "Download result",
-        "reprocess": "Reprocess",
-        "delete": "Delete"
+        "title": "हाल के दस्तावेज़",
+        "empty": "अभी तक कोई दस्तावेज़ संसाधित नहीं हुआ. अपना पहला दस्तावेज़ ऊपर अपलोड करें।",
+        "processed": "प्रसंस्कृत",
+        "status": "स्थिति",
+        "actions": "कार्रवाई",
+        "download": "परिणाम डाउनलोड करें",
+        "reprocess": "पुन: संसाधित",
+        "delete": "मिटाना"
       },
       "processing": {
-        "button": "Process document",
-        "processing": "Processing…",
-        "success": "Document processed successfully!",
-        "error": "Failed to process document. Please try again.",
-        "reprocessInstruction": "Reprocess the document {name} applying the same previous transformations."
+        "button": "प्रक्रिया दस्तावेज़",
+        "processing": "प्रसंस्करण…",
+        "success": "दस्तावेज़ सफलतापूर्वक संसाधित हुआ!",
+        "error": "दस्तावेज़ संसाधित करने में विफल. कृपया पुन: प्रयास करें।",
+        "reprocessInstruction": "पिछले परिवर्तनों को लागू करके दस्तावेज़ {name} को पुन: संसाधित करें।"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and select documents directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "सीधे अपने Google Drive से दस्तावेज़ों तक पहुंचें और उनका चयन करें।",
+          "connect": "कनेक्ट करें Google Drive",
+          "connecting": "कनेक्ट हो रहा है...",
+          "connected": "Google Drive से जुड़ा हुआ",
+          "browse": "ड्राइव ब्राउज़ करें"
         }
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this document? This action cannot be undone."
+        "deleteConfirm": "क्या आप वाकई इस दस्तावेज़ को हटाना चाहते हैं? इस एक्शन को वापस नहीं किया जा सकता।"
       }
     },
     "data": {
-      "title": "Data & Spreadsheets",
-      "subtitle": "Connect data sources, transform spreadsheets, and automate analysis",
+      "title": "डेटा और स्प्रेडशीट",
+      "subtitle": "डेटा स्रोतों को कनेक्ट करें, स्प्रैडशीट्स को रूपांतरित करें और विश्लेषण को स्वचालित करें",
       "source": {
-        "title": "Data source",
-        "description": "Choose how to connect your data",
-        "uploadCsv": "Upload CSV/Excel",
+        "title": "डेटा स्रोत",
+        "description": "अपना डेटा कनेक्ट करने का तरीका चुनें",
+        "uploadCsv": "सीएसवी/एक्सेल अपलोड करें",
         "googleSheets": "Google Sheets",
-        "database": "SQL Database",
-        "api": "REST API",
-        "url": "Public URL",
-        "selectPlaceholder": "Select source type…",
-        "connect": "Connect",
-        "connecting": "Connecting…"
+        "database": "एसक्यूएल डेटाबेस",
+        "api": "बाकी एपीआई",
+        "url": "सार्वजनिक यूआरएल",
+        "selectPlaceholder": "स्रोत प्रकार चुनें...",
+        "connect": "जोड़ना",
+        "connecting": "कनेक्ट हो रहा है..."
       },
       "instruction": {
-        "title": "What to do with the data?",
-        "description": "Describe the desired transformation, analysis, or automation",
-        "label": "Processing instruction",
-        "placeholder": "e.g., Merge 'First Name' and 'Last Name' columns, filter records with sales over $10,000, group by region, and generate a bar chart.",
-        "helper": "Include filters, aggregations, table joins, and the desired output format.",
-        "charCount": "{current}/{max} characters"
+        "title": "डेटा का क्या करें?",
+        "description": "वांछित परिवर्तन, विश्लेषण या स्वचालन का वर्णन करें",
+        "label": "प्रसंस्करण अनुदेश",
+        "placeholder": "उदाहरण के लिए, 'प्रथम नाम' और 'अंतिम नाम' कॉलम को मर्ज करें, 10,000 डॉलर से अधिक की बिक्री वाले रिकॉर्ड को फ़िल्टर करें, क्षेत्र के अनुसार समूह बनाएं और एक बार चार्ट बनाएं।",
+        "helper": "फ़िल्टर, एकत्रीकरण, टेबल जॉइन और वांछित आउटपुट प्रारूप शामिल करें।",
+        "charCount": "{current}/{max} अक्षर"
       },
       "preview": {
-        "title": "Preview",
-        "noData": "Connect a data source to preview",
-        "rows": "{count} rows",
-        "columns": "{count} columns",
+        "title": "पूर्व दर्शन",
+        "noData": "पूर्वावलोकन करने के लिए डेटा स्रोत कनेक्ट करें",
+        "rows": "{count} पंक्तियाँ",
+        "columns": "{count} कॉलम",
         "id": "ID",
         "name": "Name",
-        "region": "Region",
+        "region": "क्षेत्र",
         "sales": "Sales",
-        "status": "Status",
-        "showingRecords": "Showing {shown} of {total} records"
+        "status": "स्थिति",
+        "showingRecords": "{total} में से {shown} रिकॉर्ड दिखाए जा रहे हैं"
       },
       "recentDatasets": {
-        "title": "Recent datasets",
-        "empty": "No datasets processed yet",
-        "source": "Source",
-        "lastUsed": "Last used",
-        "info": "{rows} rows · {cols} columns"
+        "title": "हाल के डेटासेट",
+        "empty": "अभी तक कोई डेटासेट संसाधित नहीं हुआ है",
+        "source": "स्रोत",
+        "lastUsed": "अंतिम समय प्रयोग हुआ",
+        "info": "{rows} पंक्तियाँ · {cols} कॉलम"
       },
       "actions": {
-        "transform": "Transform data",
-        "analyze": "Analyze data",
-        "export": "Export result",
-        "schedule": "Schedule automation",
-        "sidebarTitle": "Actions",
-        "dashboard": "Dashboard",
-        "processing": "Processing…"
+        "transform": "डेटा परिवर्तित करें",
+        "analyze": "डेटा का विश्लेषण करें",
+        "export": "निर्यात परिणाम",
+        "schedule": "अनुसूची स्वचालन",
+        "sidebarTitle": "कार्रवाई",
+        "dashboard": "डैशबोर्ड",
+        "processing": "प्रसंस्करण…"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access spreadsheets and data files directly from your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "सीधे अपने Google Drive से स्प्रेडशीट और डेटा फ़ाइलों तक पहुंचें।",
+          "connect": "कनेक्ट करें Google Drive",
+          "connecting": "कनेक्ट हो रहा है...",
+          "connected": "Google Drive से जुड़ा हुआ",
+          "browse": "ड्राइव ब्राउज़ करें"
         }
       },
       "errors": {
-        "connectFailed": "Failed to connect to data source.",
-        "processFailed": "Failed to process data."
+        "connectFailed": "डेटा स्रोत से कनेक्ट करने में विफल.",
+        "processFailed": "डेटा संसाधित करने में विफल."
       },
       "results": {
-        "connected": "Connected successfully! Data source ready for processing.",
-        "transformComplete": "Transformation complete! {count} records processed. The result is ready for download.",
-        "analyzeInstruction": "Analyze the connected data and generate insights: trends, outliers, correlations, and recommendations.",
-        "scheduleAlert": "Scheduling configured! Data will be processed automatically.",
-        "comingSoon": "Feature coming soon."
+        "connected": "सफलतापूर्वक कनेक्ट हो गया! डेटा स्रोत प्रसंस्करण के लिए तैयार है.",
+        "transformComplete": "परिवर्तन पूर्ण! {count} रिकॉर्ड संसाधित। परिणाम डाउनलोड के लिए तैयार है.",
+        "analyzeInstruction": "कनेक्टेड डेटा का विश्लेषण करें और अंतर्दृष्टि उत्पन्न करें: रुझान, आउटलेर, सहसंबंध और सिफारिशें।",
+        "scheduleAlert": "शेड्यूलिंग कॉन्फ़िगर! डेटा स्वचालित रूप से संसाधित हो जाएगा.",
+        "comingSoon": "सुविधा जल्द ही आ रही है."
       },
       "presets": {
         "merge": {
-          "label": "Merge columns",
-          "prompt": "Merge 'Name' and 'Last Name' columns into a single 'Full Name' column."
+          "label": "कॉलम मर्ज करें",
+          "prompt": "'नाम' और 'अंतिम नाम' कॉलम को एक 'पूरा नाम' कॉलम में मिलाएं।"
         },
         "filter": {
-          "label": "Filter records",
-          "prompt": "Filter records where 'Sales' column is greater than $10,000."
+          "label": "रिकॉर्ड फ़िल्टर करें",
+          "prompt": "उन रिकॉर्ड्स को फ़िल्टर करें जहां 'बिक्री' कॉलम $10,000 से अधिक है।"
         },
         "group": {
-          "label": "Group & summarize",
-          "prompt": "Group data by 'Region' and calculate the sum and average of 'Sales'."
+          "label": "समूह बनाएं और संक्षेप करें",
+          "prompt": "डेटा को 'क्षेत्र' के आधार पर समूहित करें और 'बिक्री' के योग और औसत की गणना करें।"
         },
         "pivot": {
-          "label": "Pivot table",
-          "prompt": "Create a pivot table with 'Category' as rows, 'Month' as columns, and sum of 'Revenue'."
+          "label": "पिवट तालिका",
+          "prompt": "पंक्तियों के रूप में 'श्रेणी', कॉलम के रूप में 'माह' और 'राजस्व' के योग के साथ एक धुरी तालिका बनाएं।"
         },
         "chart": {
-          "label": "Generate chart",
-          "prompt": "Generate a bar chart comparing sales by region."
+          "label": "चार्ट जनरेट करें",
+          "prompt": "क्षेत्र के अनुसार बिक्री की तुलना करते हुए एक बार चार्ट तैयार करें।"
         },
         "export": {
-          "label": "Export structured",
-          "prompt": "Export the transformed data to a CSV file with UTF-8 encoding."
+          "label": "निर्यात संरचित",
+          "prompt": "परिवर्तित डेटा को UTF-8 एन्कोडिंग के साथ CSV फ़ाइल में निर्यात करें।"
         }
       }
     },
     "communication": {
-      "title": "Communication",
-      "subtitle": "Automate emails, messages, and multi-channel notifications",
+      "title": "संचार",
+      "subtitle": "ईमेल, संदेश और मल्टी-चैनल सूचनाएं स्वचालित करें",
       "composer": {
-        "title": "Compose message",
-        "description": "Describe the content and the AI agent will draft the message",
-        "instructionLabel": "Message instruction",
-        "instructionPlaceholder": "e.g., Send a reminder email to all clients with invoices due in 3 days, using a professional yet friendly tone, and include the payment link.",
-        "instructionHelper": "Specify: message tone, information to include, personalizations, and call-to-action.",
-        "subjectLabel": "Subject (for emails)",
-        "subjectPlaceholder": "Email subject…",
-        "charCount": "{current}/{max} characters",
-        "noSubject": "(no subject)"
+        "title": "संदेश लिखें",
+        "description": "सामग्री का वर्णन करें और एआई एजेंट संदेश का मसौदा तैयार करेगा",
+        "instructionLabel": "संदेश निर्देश",
+        "instructionPlaceholder": "उदाहरण के लिए, 3 दिनों में देय चालान वाले सभी ग्राहकों को पेशेवर लेकिन मैत्रीपूर्ण लहजे में एक अनुस्मारक ईमेल भेजें और भुगतान लिंक शामिल करें।",
+        "instructionHelper": "निर्दिष्ट करें: संदेश टोन, शामिल की जाने वाली जानकारी, वैयक्तिकरण और कॉल-टू-एक्शन।",
+        "subjectLabel": "विषय (ईमेल के लिए)",
+        "subjectPlaceholder": "ईमेल विषय...",
+        "charCount": "{current}/{max} अक्षर",
+        "noSubject": "(कोई विषय नहीं)"
       },
       "channels": {
-        "title": "Delivery channels",
+        "title": "वितरण चैनल",
         "email": "Email",
         "slack": "Slack",
         "whatsapp": "WhatsApp",
-        "teams": "Microsoft Teams",
+        "teams": "माइक्रोसॉफ्ट टीमें",
         "sms": "SMS",
-        "discord": "Discord"
+        "discord": "कलह"
       },
       "recipients": {
-        "title": "Recipients",
-        "description": "Configure who will receive the message",
+        "title": "प्राप्तकर्ता",
+        "description": "कॉन्फ़िगर करें कि संदेश कौन प्राप्त करेगा",
         "to": "To",
         "toPlaceholder": "email@example.com",
-        "cc": "CC (carbon copy)",
+        "cc": "सीसी (कार्बन कॉपी)",
         "ccPlaceholder": "email@example.com",
-        "addMore": "Add more",
-        "list": "Distribution list",
-        "condition": "By condition (e.g., inactive clients)"
+        "addMore": "अधिक जोड़ें",
+        "list": "वितरण सूची",
+        "condition": "शर्त के अनुसार (जैसे, निष्क्रिय ग्राहक)"
       },
       "schedule": {
-        "title": "Schedule",
-        "sendNow": "Send now",
-        "scheduleLater": "Schedule for later",
-        "recurring": "Recurring",
-        "dateTime": "Date and time",
-        "frequency": "Frequency",
+        "title": "अनुसूची",
+        "sendNow": "अब भेजें",
+        "scheduleLater": "बाद के लिए शेड्यूल करें",
+        "recurring": "पुनरावर्ती",
+        "dateTime": "तिथि और समय",
+        "frequency": "आवृत्ति",
         "daily": "Daily",
-        "weekly": "Weekly",
-        "monthly": "Monthly",
-        "dateTimePlaceholder": "Date/time picker available in the full version."
+        "weekly": "साप्ताहिक",
+        "monthly": "महीने के",
+        "dateTimePlaceholder": "दिनांक/समय चयनकर्ता पूर्ण संस्करण में उपलब्ध है।"
       },
       "recentMessages": {
-        "title": "Recent messages",
-        "empty": "No messages sent yet",
-        "channel": "Channel",
-        "sentAt": "Sent at",
-        "status": "Status"
+        "title": "हाल के संदेश",
+        "empty": "अभी तक कोई संदेश नहीं भेजा गया",
+        "channel": "चैनल",
+        "sentAt": "पर भेजा गया",
+        "status": "स्थिति"
       },
       "actions": {
-        "send": "Send message",
-        "sending": "Sending…",
-        "preview": "Preview",
-        "saveDraft": "Save draft",
-        "testSend": "Send test",
-        "testSendDescription": "Send a test to verify formatting"
+        "send": "मेसेज भेजें",
+        "sending": "भेजा जा रहा है...",
+        "preview": "पूर्व दर्शन",
+        "saveDraft": "मसौदा सेव करें",
+        "testSend": "परीक्षण भेजें",
+        "testSendDescription": "फ़ॉर्मेटिंग सत्यापित करने के लिए एक परीक्षण भेजें"
       },
       "status": {
         "sent": "Sent",
-        "scheduled": "Scheduled",
-        "failed": "Failed"
+        "scheduled": "अनुसूचित",
+        "failed": "असफल"
       },
       "results": {
-        "sent": "Message sent successfully via {channels}!",
-        "preview": "[PREVIEW]\n\nChannels: {channels}\nSubject: {subject}\n\n{instruction}\n\n(This is a preview simulation)",
-        "draftSaved": "Draft saved successfully! You can access it in 'Messages > Drafts'.",
-        "testSent": "Test sent to {email}! Check your inbox."
+        "sent": "संदेश {channels} के माध्यम से सफलतापूर्वक भेजा गया!",
+        "preview": "[पूर्वावलोकन] \n\nचैनल: {channels} \nविषय: {subject} \n\n{instruction} \n\n(यह एक पूर्वावलोकन सिमुलेशन है)",
+        "draftSaved": "ड्राफ्ट सफलतापूर्वक सहेजा गया! आप इसे 'संदेश > ड्राफ्ट' में एक्सेस कर सकते हैं।",
+        "testSent": "परीक्षण {email} पर भेजा गया! अपने इनबॉक्स की जाँच करें।"
       },
       "errors": {
-        "sendFailed": "Failed to send message.",
-        "testNoRecipient": "Please enter a recipient for the test."
+        "sendFailed": "संदेश भेजने में विफल.",
+        "testNoRecipient": "कृपया परीक्षण के लिए एक प्राप्तकर्ता दर्ज करें।"
       }
     },
     "media": {
-      "title": "Media & Images",
-      "subtitle": "Process, convert, and optimize images and media in batch",
+      "title": "मीडिया और छवियाँ",
+      "subtitle": "बैच में छवियों और मीडिया को संसाधित करें, परिवर्तित करें और अनुकूलित करें",
       "instruction": {
-        "title": "What should the AI agent do with the media?",
-        "description": "Describe in natural language what you want the agent to do with your images or videos.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Remove the background from all images, resize to 1200x800 maintaining aspect ratio, convert to WebP at 85% quality, apply brightness +10 filter, and add '© My Company' watermark at the bottom right corner.",
-        "helper": "Include: which transformations to apply, dimensions, output format, quality, filters, and watermark.",
-        "charCount": "{current}/{max} characters",
-        "button": "Process with AI",
-        "processing": "Processing…"
+        "title": "एआई एजेंट को मीडिया के साथ क्या करना चाहिए?",
+        "description": "स्वाभाविक भाषा में वर्णन करें कि आप एजेंट से अपनी छवियों या वीडियो के साथ क्या करवाना चाहते हैं।",
+        "label": "एजेंट अनुदेश",
+        "placeholder": "उदाहरण के लिए, सभी छवियों से पृष्ठभूमि हटाएं, पहलू अनुपात बनाए रखते हुए 1200x800 का आकार बदलें, 85% गुणवत्ता पर वेबपी में कनवर्ट करें, चमक +10 फ़िल्टर लागू करें, और निचले दाएं कोने पर '© मेरी कंपनी' वॉटरमार्क जोड़ें।",
+        "helper": "शामिल करें: कौन से परिवर्तन लागू करने हैं, आयाम, आउटपुट स्वरूप, गुणवत्ता, फ़िल्टर और वॉटरमार्क।",
+        "charCount": "{current}/{max} अक्षर",
+        "button": "एआई के साथ प्रक्रिया",
+        "processing": "प्रसंस्करण…"
       },
       "upload": {
-        "title": "Media upload",
-        "description": "Drag images or videos to get started",
-        "dragActive": "Drop files to upload",
-        "browse": "Browse files",
+        "title": "मीडिया अपलोड",
+        "description": "आरंभ करने के लिए चित्र या वीडियो खींचें",
+        "dragActive": "अपलोड करने के लिए फ़ाइलें छोड़ें",
+        "browse": "फ़ाइलों को ब्राउज़ करें",
         "supportedFormats": "Formats: JPG, PNG, GIF, SVG, WebP, MP4, MOV, WebM",
-        "maxSize": "Max size: 100 MB per file",
-        "batchInfo": "{count} file(s) selected",
-        "remove": "Remove"
+        "maxSize": "अधिकतम आकार: प्रति फ़ाइल 100 एमबी",
+        "batchInfo": "{count}फ़ाइल चयनित",
+        "remove": "निकालना"
       },
       "transformations": {
-        "title": "Transformations",
-        "description": "Choose what to do with your media",
-        "resize": "Resize",
-        "resizeDescription": "Change image dimensions",
+        "title": "परिवर्तनों",
+        "description": "चुनें कि अपने मीडिया के साथ क्या करना है",
+        "resize": "आकार",
+        "resizeDescription": "छवि आयाम बदलें",
         "width": "Width",
-        "height": "Height",
-        "maintainAspect": "Maintain aspect ratio",
-        "convertFormat": "Convert format",
-        "convertDescription": "Convert to another file format",
-        "targetFormat": "Target format",
-        "compress": "Compress",
-        "compressDescription": "Reduce file size",
-        "quality": "Quality",
-        "watermark": "Watermark",
-        "watermarkDescription": "Add text or logo overlay on the image",
-        "watermarkText": "Watermark text",
-        "filters": "Filters & adjustments",
-        "brightness": "Brightness",
-        "contrast": "Contrast",
-        "saturation": "Saturation",
+        "height": "ऊंचाई",
+        "maintainAspect": "आकृति अनुपात को बनाए रखने",
+        "convertFormat": "प्रारूप परिवर्तित करें",
+        "convertDescription": "किसी अन्य फ़ाइल स्वरूप में कनवर्ट करें",
+        "targetFormat": "लक्ष्य प्रारूप",
+        "compress": "संकुचित करें",
+        "compressDescription": "फ़ाइल का आकार कम करें",
+        "quality": "गुणवत्ता",
+        "watermark": "वाटर-मार्क",
+        "watermarkDescription": "छवि पर टेक्स्ट या लोगो ओवरले जोड़ें",
+        "watermarkText": "वॉटरमार्क पाठ",
+        "filters": "फ़िल्टर एवं समायोजन",
+        "brightness": "चमक",
+        "contrast": "अंतर",
+        "saturation": "परिपूर्णता",
         "blur": "Blur"
       },
       "preview": {
-        "title": "Preview",
-        "original": "Original",
-        "processed": "Processed",
-        "noMedia": "Upload media to preview"
+        "title": "पूर्व दर्शन",
+        "original": "मूल",
+        "processed": "प्रसंस्कृत",
+        "noMedia": "पूर्वावलोकन करने के लिए मीडिया अपलोड करें"
       },
       "recentMedia": {
-        "title": "Recent media",
-        "empty": "No media processed yet"
+        "title": "हालिया मीडिया",
+        "empty": "अभी तक कोई मीडिया संसाधित नहीं हुआ"
       },
       "actions": {
-        "process": "Process media",
-        "processing": "Processing…",
-        "download": "Download result",
-        "downloadAll": "Download all (ZIP)",
-        "batchProcess": "Batch processing",
-        "filesCount": "{count} files"
+        "process": "प्रक्रिया माध्यम",
+        "processing": "प्रसंस्करण…",
+        "download": "परिणाम डाउनलोड करें",
+        "downloadAll": "सभी डाउनलोड करें (ज़िप)",
+        "batchProcess": "प्रचय संसाधन",
+        "filesCount": "{count} फ़ाइलें"
       },
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access images and videos stored in your Google Drive.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Browse Drive"
+          "description": "अपने Google Drive में संग्रहीत छवियों और वीडियो तक पहुंचें।",
+          "connect": "कनेक्ट करें Google Drive",
+          "connecting": "कनेक्ट हो रहा है...",
+          "connected": "Google Drive से जुड़ा हुआ",
+          "browse": "ड्राइव ब्राउज़ करें"
         },
         "googlePhotos": {
-          "title": "Google Photos",
-          "description": "Access your photos and albums directly from Google Photos.",
-          "connect": "Connect Google Photos",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Photos",
-          "browse": "Browse Photos"
+          "title": "गूगल फ़ोटो",
+          "description": "सीधे Google फ़ोटो से अपनी फ़ोटो और एल्बम तक पहुंचें।",
+          "connect": "Google फ़ोटो कनेक्ट करें",
+          "connecting": "कनेक्ट हो रहा है...",
+          "connected": "Google फ़ोटो से कनेक्ट किया गया",
+          "browse": "तस्वीरें ब्राउज़ करें"
         }
       },
       "errors": {
-        "processFailed": "Failed to process media.",
-        "aiFailed": "Failed to interpret instruction."
+        "processFailed": "मीडिया संसाधित करने में विफल.",
+        "aiFailed": "निर्देश की व्याख्या करने में विफल."
       },
       "results": {
-        "processComplete": "Processing complete! {count} file(s) transformed successfully.",
-        "aiInterpreted": "Instruction interpreted successfully! Transformations have been pre-configured as described. Review the adjustments in the panel and click 'Process media' to apply.",
-        "downloadSimulation": "Simulating download of {count} processed file(s) as ZIP.\n\nIn the full version, all files would be compressed and downloaded.",
-        "downloadComplete": "Download complete! Files removed from the list."
+        "processComplete": "प्रसंस्करण पूर्ण! {count}फ़ाइलें सफलतापूर्वक रूपांतरित हुईं।",
+        "aiInterpreted": "अनुदेश की सफलतापूर्वक व्याख्या की गई! परिवर्तनों को वर्णित अनुसार पूर्व-कॉन्फ़िगर किया गया है। पैनल में समायोजनों की समीक्षा करें और लागू करने के लिए 'प्रोसेस मीडिया' पर क्लिक करें।",
+        "downloadSimulation": "{count} संसाधित फ़ाइल(फ़ाइलों) को ज़िप के रूप में डाउनलोड करना। \n\nपूर्ण संस्करण में, सभी फ़ाइलें संपीड़ित और डाउनलोड की जाएंगी।",
+        "downloadComplete": "डाउनलोड पूर्ण! फ़ाइलें सूची से हटा दी गईं."
       }
     },
     "files": {
       "title": "Files",
-      "subtitle": "Manage, organize, and automate file operations",
+      "subtitle": "फ़ाइल संचालन को प्रबंधित, व्यवस्थित और स्वचालित करें",
       "instruction": {
-        "title": "What should the AI agent do with your files?",
-        "description": "Describe in natural language how you want to organize, process, or manage your files.",
-        "label": "Agent instruction",
-        "placeholder": "e.g., Organize all PDFs in the Downloads folder by creation date, rename them using the pattern 'YYYY-MM-DD - original name', move invoices to /Finance/Invoices/{year}/{month}, and compress files older than 6 months.",
-        "helper": "Include: which files to affect, how to organize them, renaming pattern, destination folders, and additional actions.",
-        "charCount": "{current}/{max} characters",
-        "button": "Execute with AI",
-        "processing": "Executing…"
+        "title": "AI एजेंट को आपकी फ़ाइलों के साथ क्या करना चाहिए?",
+        "description": "प्राकृतिक भाषा में वर्णन करें कि आप अपनी फ़ाइलों को कैसे व्यवस्थित, संसाधित या प्रबंधित करना चाहते हैं।",
+        "label": "एजेंट अनुदेश",
+        "placeholder": "उदाहरण के लिए, डाउनलोड फ़ोल्डर में सभी पीडीएफ को निर्माण तिथि के अनुसार व्यवस्थित करें, पैटर्न 'YYYY-MM-DD - मूल नाम' का उपयोग करके उनका नाम बदलें, चालान को /Finance/Invoices/{year}/{month} पर ले जाएं, और 6 महीने से अधिक पुरानी फ़ाइलों को संपीड़ित करें।",
+        "helper": "शामिल करें: किन फ़ाइलों को प्रभावित करना है, उन्हें कैसे व्यवस्थित करना है, नाम बदलने का पैटर्न, गंतव्य फ़ोल्डर और अतिरिक्त कार्रवाइयां।",
+        "charCount": "{current}/{max} अक्षर",
+        "button": "एआई के साथ निष्पादित करें",
+        "processing": "क्रियान्वित किया जा रहा है..."
       },
       "storage": {
-        "title": "Storage",
+        "title": "भंडारण",
         "used": "Used",
-        "total": "of {total}",
-        "files": "{count} files",
-        "folders": "{count} folders",
-        "activeRules": "Active rules",
-        "rulesConfigured": "{count} configured",
-        "lastFolder": "Last: {name}",
-        "progressLabel": "{progress}% used"
+        "total": "{total} का",
+        "files": "{count} फ़ाइलें",
+        "folders": "{count} फ़ोल्डर",
+        "activeRules": "सक्रिय नियम",
+        "rulesConfigured": "{count} कॉन्फ़िगर किया गया",
+        "lastFolder": "अंतिम: {name}",
+        "progressLabel": "{progress}% उपयोग किया गया"
       },
       "upload": {
-        "title": "File upload",
-        "description": "Drag files or folders to upload",
-        "dragActive": "Drop to upload",
-        "browse": "Browse",
-        "createFolder": "Create folder"
+        "title": "फ़ाइल अपलोड करें",
+        "description": "अपलोड करने के लिए फ़ाइलें या फ़ोल्डर खींचें",
+        "dragActive": "अपलोड करने के लिए छोड़ें",
+        "browse": "ब्राउज़",
+        "createFolder": "फ़ोल्डर बनाएँ"
       },
       "browser": {
-        "title": "File explorer",
-        "empty": "This folder is empty",
+        "title": "फाइल ढूँढने वाला",
+        "empty": "यह फ़ोल्डर खाली है",
         "name": "Name",
         "size": "Size",
-        "modified": "Modified",
+        "modified": "संशोधित",
         "type": "Type",
-        "sortBy": "Sort by",
-        "search": "Search files…",
-        "gridView": "Grid view",
-        "listView": "List view",
-        "folder": "Folder"
+        "sortBy": "इसके अनुसार क्रमबद्ध करें",
+        "search": "फ़ाइलें खोजें...",
+        "gridView": "जालक दृश्य",
+        "listView": "लिस्ट व्यू",
+        "folder": "फ़ोल्डर"
       },
       "rules": {
-        "title": "Organization rules",
-        "description": "Automate file organization",
-        "ruleName": "Rule name",
-        "ruleNamePlaceholder": "e.g., Sort invoices by month",
-        "condition": "Condition",
-        "conditionPlaceholder": "e.g., filename contains 'invoice'",
-        "action": "Action",
-        "actionPlaceholder": "e.g., move to /Finance/Invoices/{year}/{month}",
-        "addRule": "Add rule",
-        "active": "Active",
-        "inactive": "Inactive",
-        "empty": "No rules configured"
+        "title": "संगठन के नियम",
+        "description": "फ़ाइल संगठन को स्वचालित करें",
+        "ruleName": "नियम का नाम",
+        "ruleNamePlaceholder": "उदाहरण के लिए, महीने के अनुसार चालान क्रमबद्ध करें",
+        "condition": "स्थिति",
+        "conditionPlaceholder": "उदाहरण के लिए, फ़ाइल नाम में 'चालान' शामिल है",
+        "action": "कार्रवाई",
+        "actionPlaceholder": "उदाहरण के लिए, /Finance/Invoices/{year}/{month} पर जाएं",
+        "addRule": "नियम जोड़ें",
+        "active": "सक्रिय",
+        "inactive": "निष्क्रिय",
+        "empty": "कोई नियम कॉन्फ़िगर नहीं किया गया"
       },
       "actions": {
-        "label": "Actions",
-        "moreOptions": "More options",
-        "upload": "Upload",
-        "newFolder": "New folder",
-        "delete": "Delete",
-        "rename": "Rename",
+        "label": "कार्रवाई",
+        "moreOptions": "अधिक विकल्प",
+        "upload": "अपलोड करें",
+        "newFolder": "नया फ़ोल्डर",
+        "delete": "मिटाना",
+        "rename": "नाम बदलें",
         "move": "Move",
         "copy": "Copy",
         "share": "Share",
-        "download": "Download"
+        "download": "डाउनलोड करना"
       },
-      "aiPlaceholder": "Ex.: Organize todos os PDFs da pasta Downloads por data de criação, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
+      "aiPlaceholder": "E.g.: Organize all PDFs from the Downloads folder by creation date, renomeie com o padrão 'YYYY-MM-DD - nome original', mova faturas para /Financeiro/Faturas/{ano}/{mês} e compacte arquivos com mais de 6 meses.",
       "integrations": {
         "googleDrive": {
           "title": "Google Drive",
-          "description": "Access and manage files directly from your Google Drive as if it were a local folder.",
-          "connect": "Connect Google Drive",
-          "connecting": "Connecting...",
-          "connected": "Connected to Google Drive",
-          "browse": "Explore Drive",
-          "disconnect": "Disconnect"
+          "description": "सीधे अपने Google Drive से फ़ाइलों तक पहुंचें और प्रबंधित करें जैसे कि यह कोई स्थानीय फ़ोल्डर हो।",
+          "connect": "कनेक्ट करें Google Drive",
+          "connecting": "कनेक्ट हो रहा है...",
+          "connected": "Google Drive से जुड़ा हुआ",
+          "browse": "ड्राइव का अन्वेषण करें",
+          "disconnect": "डिस्कनेक्ट"
         }
       },
       "dialogs": {
-        "newFolder": "New folder name:",
-        "rename": "Rename to:",
-        "deleteConfirm": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
-        "moveAlert": "Move \"{name}\" — In the full version, a folder selector would be shown.",
-        "copySuffix": " (copy)",
-        "shareLink": "Share link for \"{name}\" copied to clipboard!\n\nhttps://pytomatiza.app/share/{id}",
-        "selectFile": "\"{label}\" — Select a file in the explorer to use this action."
+        "newFolder": "नये फ़ोल्डर का नाम:",
+        "rename": "इसका नाम बदलें:",
+        "deleteConfirm": "क्या आप वाकई \"{name}\" को हटाना चाहते हैं? इस एक्शन को वापस नहीं किया जा सकता।",
+        "moveAlert": "\"{name}\" को स्थानांतरित करें - पूर्ण संस्करण में, एक फ़ोल्डर चयनकर्ता दिखाया जाएगा।",
+        "copySuffix": "(प्रतिलिपि)",
+        "shareLink": "\"{name}\" के लिए लिंक साझा करें क्लिपबोर्ड पर कॉपी किया गया! \n\nhttps://pytomatiza.app/share/{id}",
+        "selectFile": "\"{label}\" - इस क्रिया का उपयोग करने के लिए एक्सप्लोरर में एक फ़ाइल का चयन करें।"
       },
       "results": {
-        "aiInterpreted": "Instruction interpreted successfully! Organization rules have been created automatically. Review them in the rules panel."
+        "aiInterpreted": "अनुदेश की सफलतापूर्वक व्याख्या की गई! संगठन के नियम स्वचालित रूप से बनाए गए हैं। नियम पैनल में उनकी समीक्षा करें."
       }
     },
     "architecture": {
-      "title": "Architecture",
-      "subtitle": "Generate architecture diagrams and technical documentation with AI",
+      "title": "वास्तुकला",
+      "subtitle": "एआई के साथ आर्किटेक्चर आरेख और तकनीकी दस्तावेज़ तैयार करें",
       "diagramBuilder": {
-        "title": "Describe your architecture",
-        "description": "Describe the system in natural language and the AI agent will generate the diagram",
-        "instructionLabel": "Architecture description",
-        "instructionPlaceholder": "e.g., E-commerce system with: load balancer (Nginx), 3 API instances (Node.js on Kubernetes), primary PostgreSQL + read replica, Redis for caching, RabbitMQ queue for orders, Python workers, and S3 storage for product images.",
-        "instructionHelper": "Include: components, connections, protocols, technologies, and data flow.",
-        "charCount": "{current}/{max} characters"
+        "title": "अपनी वास्तुकला का वर्णन करें",
+        "description": "प्राकृतिक भाषा में सिस्टम का वर्णन करें और एआई एजेंट आरेख तैयार करेगा",
+        "instructionLabel": "वास्तु विवरण",
+        "instructionPlaceholder": "उदाहरण के लिए, ई-कॉमर्स सिस्टम: लोड बैलेंसर (Nginx), 3 API इंस्टेंसेस (Kubernetes पर Node.js), प्राइमरी PostgreSQL + रीड रेप्लिका, कैशिंग के लिए Redis, ऑर्डर के लिए RabbitMQ कतार, Python वर्कर और उत्पाद छवियों के लिए S3 स्टोरेज।",
+        "instructionHelper": "शामिल करें: घटक, कनेक्शन, प्रोटोकॉल, प्रौद्योगिकियां और डेटा प्रवाह।",
+        "charCount": "{current}/{max} अक्षर"
       },
       "templates": {
-        "title": "Architecture templates",
-        "description": "Choose a template as a starting point",
-        "aws": "AWS Cloud",
-        "gcp": "Google Cloud",
-        "azure": "Microsoft Azure",
-        "microservices": "Microservices",
-        "monolith": "Modular Monolith",
-        "serverless": "Serverless",
-        "eventDriven": "Event-Driven",
-        "ciCd": "CI/CD Pipeline",
-        "network": "Network Topology",
-        "dataPipeline": "Data Pipeline"
+        "title": "वास्तुकला टेम्पलेट्स",
+        "description": "आरंभिक बिंदु के रूप में एक टेम्पलेट चुनें",
+        "aws": "AWS बादल",
+        "gcp": "गूगल क्लाउड",
+        "azure": "माइक्रोसॉफ्ट एज़्योर",
+        "microservices": "माइक्रोसर्विसेज",
+        "monolith": "मॉड्यूलर मोनोलिथ",
+        "serverless": "सर्वर रहित",
+        "eventDriven": "घटना संचालित की गई",
+        "ciCd": "सीआई/सीडी पाइपलाइन",
+        "network": "नेटवर्क टोपोलॉजी",
+        "dataPipeline": "डेटा पाइपलाइन"
       },
       "export": {
-        "title": "Export format",
-        "description": "Choose how to export the diagram",
-        "png": "PNG (image)",
-        "svg": "SVG (vector)",
-        "pdf": "PDF (document)",
-        "drawio": "Draw.io (editable)",
-        "terraform": "Terraform (IaC)",
-        "mermaid": "Mermaid (text)",
-        "plantuml": "PlantUML"
+        "title": "निर्यात प्रारूप",
+        "description": "आरेख को निर्यात करने का तरीका चुनें",
+        "png": "पीएनजी (छवि)",
+        "svg": "एसवीजी (वेक्टर)",
+        "pdf": "पीडीएफ (दस्तावेज़)",
+        "drawio": "ड्रा.आईओ (संपादन योग्य)",
+        "terraform": "टेराफॉर्म (IaC)",
+        "mermaid": "जलपरी (पाठ)",
+        "plantuml": "प्लांटयूएमएल"
       },
       "recentDiagrams": {
-        "title": "Recent diagrams",
-        "empty": "No diagrams generated yet",
-        "createdAt": "Created at",
-        "components": "{count} components",
-        "download": "Download",
+        "title": "हाल के चित्र",
+        "empty": "अभी तक कोई आरेख उत्पन्न नहीं हुआ",
+        "createdAt": "पर बनाया गया",
+        "components": "{count} घटक",
+        "download": "डाउनलोड करना",
         "edit": "Edit",
-        "delete": "Delete"
+        "delete": "मिटाना"
       },
       "actions": {
-        "generate": "Generate diagram",
-        "generating": "Generating diagram…",
-        "generateDescription": "Generate documentation",
-        "save": "Save project",
+        "generate": "आरेख उत्पन्न करें",
+        "generating": "आरेख उत्पन्न हो रहा है...",
+        "generateDescription": "दस्तावेज़ तैयार करें",
+        "save": "प्रोजेक्ट सहेजें",
         "share": "Share",
-        "shareDescription": "Share with your team via link"
+        "shareDescription": "लिंक के माध्यम से अपनी टीम के साथ साझा करें"
       },
       "errors": {
-        "generateFailed": "Failed to generate diagram. Please try again."
+        "generateFailed": "आरेख उत्पन्न करने में विफल. कृपया पुन: प्रयास करें।"
       },
       "dialogs": {
-        "deleteConfirm": "Are you sure you want to delete this diagram?",
-        "shareLink": "Share link copied to clipboard!\n\nShare this architecture project with your team."
+        "deleteConfirm": "क्या आप वाकई इस आरेख को हटाना चाहते हैं?",
+        "shareLink": "शेयर लिंक को क्लिपबोर्ड पर कॉपी किया गया! \n\nइस आर्किटेक्चर प्रोजेक्ट को अपनी टीम के साथ साझा करें।"
       }
     }
   },
   "footer": {
-    "copyright": "© {year} Pytomatiza+. All rights reserved.",
+    "copyright": "© {year} Pytomatiza+. सर्वाधिकार सुरक्षित।",
     "privacy": "गोपनीयता नीति",
     "terms": "सेवा की शर्तें",
     "status": "सिस्टम स्थिति"
@@ -1071,16 +1072,16 @@
     "duration": {
       "ongoing": "जारी है"
     },
-    "tableEmpty": "No execution logs found.",
-    "loginPrompt": "Log in to your account to access real-time data!"
+    "tableEmpty": "कोई निष्पादन लॉग नहीं मिला.",
+    "loginPrompt": "वास्तविक समय डेटा तक पहुंचने के लिए अपने खाते में लॉग इन करें!"
   },
   "brand": {
-    "tagline": "AI-powered automation that thinks, learns, and executes — so you don't have to.",
-    "feature1Title": "Natural Language Workflows",
-    "feature1Desc": "Describe tasks in plain English. Our NLP engine builds the automation for you.",
-    "feature2Title": "Multi-Agent Orchestration",
-    "feature2Desc": "Specialized AI agents collaborate to handle complex, multi-step processes.",
-    "feature3Title": "Enterprise-Grade Security",
-    "feature3Desc": "End-to-end encryption, role-based access, and full audit trails."
+    "tagline": "एआई-संचालित स्वचालन जो सोचता है, सीखता है और क्रियान्वित करता है - इसलिए आपको ऐसा करने की आवश्यकता नहीं है।",
+    "feature1Title": "प्राकृतिक भाषा वर्कफ़्लोज़",
+    "feature1Desc": "कार्यों का स्पष्ट अंग्रेजी में वर्णन करें। हमारा एनएलपी इंजन आपके लिए स्वचालन बनाता है।",
+    "feature2Title": "मल्टी-एजेंट ऑर्केस्ट्रेशन",
+    "feature2Desc": "विशिष्ट एआई एजेंट जटिल, बहु-चरणीय प्रक्रियाओं को संभालने के लिए सहयोग करते हैं।",
+    "feature3Title": "Enterprise-Grade सुरक्षा",
+    "feature3Desc": "End-to-end एन्क्रिप्शन, भूमिका-आधारित पहुंच और पूर्ण ऑडिट ट्रेल्स।"
   }
 }
