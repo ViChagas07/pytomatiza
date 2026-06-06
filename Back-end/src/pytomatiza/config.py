@@ -81,7 +81,20 @@ class Settings(BaseSettings):
     RATE_LIMIT_PER_MINUTE: int = 60
     RATE_LIMIT_AUTH_PER_MINUTE: int = 10
 
-    # ── AI Agents ────────────────────────────────────────────────────────
+    # ── AI / LLM Provider ────────────────────────────────────────────────
+    LLM_PROVIDER: str = "gemini"        # "gemini" | "ollama" | "openai"
+    AI_TEMPERATURE: float = 0.1
+    AI_MAX_TOKENS: int = 4096
+
+    # ── Gemini ───────────────────────────────────────────────────────────
+    GOOGLE_GEMINI_API_KEY: str = ""
+    GOOGLE_GEMINI_MODEL: str = "gemini-2.5-flash"
+
+    # ── Ollama ───────────────────────────────────────────────────────────
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "llama3"
+
+    # ── OpenAI / LangChain (legacy) ──────────────────────────────────────
     OPENAI_API_KEY: str = ""
     CREWAI_MODEL: str = "gpt-4o"
     LANGCHAIN_TRACING_V2: bool = False
