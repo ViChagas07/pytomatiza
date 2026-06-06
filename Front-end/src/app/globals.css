@@ -418,243 +418,135 @@ code, pre, kbd, samp {
 }
 
 /* ═══════════════════════════════════════════════════════════════════
-   AURA BACKGROUND — Aurora-borealis animated gradient blobs
-   Reflects --brand-accent and --brand-accent-light CSS vars.
-   Each page/section gets a RANDOMLY-SELECTED animation variant
-   from 6 possible motions per blob (see .aura-blob-{1..3}{a..f}).
-   Respects .reduce-motion (animations disabled via global rule).
+   AUTOMATION SERPENT — Background ambient animations
+   Animations for the symbolic AI automation serpent background.
+   A subtle, futuristic Python-inspired visual identity element
+   made of workflow paths, AI nodes, and circuitry.
+
+    • Aura clouds breathe slowly (15-30s cycles)
+    • Serpent body shimmers gently
+    • AI nodes pulse softly
+    • Head cluster has a subtle life-like motion
+
+   Respects .reduce-motion (animations disabled via global rule above).
    ═══════════════════════════════════════════════════════════════════ */
 
-/* ── Base class (shared) ───────────────────────────────────────── */
+/* ── Aura clouds — slow breathing opacity + scale ──────────────── */
 
-.aura-blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  will-change: transform;
-  pointer-events: none;
-  backface-visibility: hidden;
-  transform: translateZ(0);
+@keyframes aura-breathe-1 {
+  0%, 100% { opacity: 0.035; transform: scale(1); }
+  33%      { opacity: 0.06;  transform: scale(1.05); }
+  66%      { opacity: 0.025; transform: scale(0.95); }
 }
+.aura-cloud-1 { animation: aura-breathe-1 22s ease-in-out infinite; }
 
-/* ── Positioning classes (animation-free) ──────────────────────── */
-
-.aura-blob-1 {
-  width: 70vw;
-  height: 70vw;
-  max-width: 900px;
-  max-height: 900px;
-  top: -15%;
-  left: 5%;
-  opacity: 0.28;
+@keyframes aura-breathe-2 {
+  0%, 100% { opacity: 0.025; transform: scale(1); }
+  40%      { opacity: 0.05;  transform: scale(1.08); }
+  75%      { opacity: 0.02;  transform: scale(0.92); }
 }
+.aura-cloud-2 { animation: aura-breathe-2 28s ease-in-out infinite; }
 
-.aura-blob-2 {
-  width: 55vw;
-  height: 55vw;
-  max-width: 700px;
-  max-height: 700px;
-  top: 20%;
-  right: -8%;
-  opacity: 0.22;
+@keyframes aura-breathe-3 {
+  0%, 100% { opacity: 0.02;  transform: scale(1); }
+  30%      { opacity: 0.04;  transform: scale(1.04); }
+  70%      { opacity: 0.015; transform: scale(0.96); }
 }
+.aura-cloud-3 { animation: aura-breathe-3 25s ease-in-out infinite; }
 
-.aura-blob-3 {
-  width: 45vw;
-  height: 45vw;
-  max-width: 550px;
-  max-height: 550px;
-  bottom: -8%;
-  left: 35%;
-  opacity: 0.2;
+@keyframes aura-breathe-4 {
+  0%, 100% { opacity: 0.015; transform: scale(1); }
+  50%      { opacity: 0.035; transform: scale(1.06); }
+  80%      { opacity: 0.012; transform: scale(0.94); }
 }
+.aura-cloud-4 { animation: aura-breathe-4 30s ease-in-out infinite; }
 
-/* Mobile: reduce blur intensity for performance */
-@media (max-width: 768px) {
-  .aura-blob {
-    filter: blur(60px);
-  }
+/* ── Serpent body — subtle shimmer / alive pulse ───────────────── */
+
+@keyframes serpent-shimmer {
+  0%, 100% { opacity: 0.055; }
+  50%      { opacity: 0.075; }
 }
+.serpent-body-main { animation: serpent-shimmer 8s ease-in-out infinite; }
 
-/* ═══════════════════════════════════════════════════════════════════
-   BLOB 1 (top area, large) — 6 animation variants
-   Sweeps across wide horizontal + vertical range so the aura
-   fills the screen rather than staying in one corner.
-   ═══════════════════════════════════════════════════════════════════ */
-
-/* V1A — Figure-8 wide: sweeps left↔right + up↔down */
-@keyframes drift-1-a {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  20%     { transform: translate(22%, -18%) rotate(4deg) scale(1.08); }
-  40%     { transform: translate(-18%, -28%) rotate(-3deg) scale(0.92); }
-  60%     { transform: translate(-28%, -10%) rotate(2deg) scale(1.06); }
-  80%     { transform: translate(12%, -20%) rotate(-2deg) scale(0.95); }
+@keyframes serpent-glow-pulse {
+  0%, 100% { opacity: 0.012; }
+  50%      { opacity: 0.025; }
 }
-.aura-blob-1a { animation: drift-1-a 18s ease-in-out infinite; }
+.serpent-glow { animation: serpent-glow-pulse 6s ease-in-out infinite; }
 
-/* V1B — Deep vertical sweep: reaches top → bottom */
-@keyframes drift-1-b {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25%     { transform: translate(18%, -32%) rotate(-5deg) scale(1.1); }
-  50%     { transform: translate(-14%, 20%) rotate(6deg) scale(0.88); }
-  75%     { transform: translate(-24%, -22%) rotate(-4deg) scale(1.07); }
+@keyframes serpent-inner-pulse {
+  0%, 100% { opacity: 0.035; }
+  50%      { opacity: 0.055; }
 }
-.aura-blob-1b { animation: drift-1-b 17s ease-in-out infinite; }
+.serpent-body-inner { animation: serpent-inner-pulse 10s ease-in-out infinite; }
 
-/* V1C — Wide circular sweep: full rotation across screen */
-@keyframes drift-1-c {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25%     { transform: translate(30%, -18%) rotate(8deg) scale(1.05); }
-  50%     { transform: translate(-18%, 30%) rotate(-8deg) scale(0.93); }
-  75%     { transform: translate(-32%, -16%) rotate(10deg) scale(1.04); }
+@keyframes serpent-offset-pulse {
+  0%, 100% { opacity: 0.03; }
+  50%      { opacity: 0.045; }
 }
-.aura-blob-1c { animation: drift-1-c 19s ease-in-out infinite; }
+.serpent-body-offset { animation: serpent-offset-pulse 12s ease-in-out infinite; }
 
-/* V1D — Horizontal dominance: wide left↔right sweep */
-@keyframes drift-1-d {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25%     { transform: translate(34%, 8%) rotate(3deg) scale(1.03); }
-  50%     { transform: translate(-28%, 12%) rotate(-3deg) scale(0.95); }
-  75%     { transform: translate(16%, -8%) rotate(2deg) scale(1.04); }
+/* ── Head cluster — subtle rotation/life ───────────────────────── */
+
+@keyframes head-breathe {
+  0%, 100% { opacity: 0.055; transform: scale(1); }
+  50%      { opacity: 0.07;  transform: scale(1.015); }
 }
-.aura-blob-1d { animation: drift-1-d 16s ease-in-out infinite; }
+.serpent-head { animation: head-breathe 14s ease-in-out infinite; }
 
-/* V1E — Diagonal oscillation: crosses the viewport diagonally */
-@keyframes drift-1-e {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  20%     { transform: translate(24%, -24%) rotate(5deg) scale(1.08); }
-  40%     { transform: translate(-16%, -16%) rotate(-4deg) scale(0.92); }
-  60%     { transform: translate(-24%, 24%) rotate(3deg) scale(1.07); }
-  80%     { transform: translate(16%, 16%) rotate(-5deg) scale(0.93); }
+/* ── AI nodes — gentle sequential pulse ────────────────────────── */
+
+@keyframes node-pulse {
+  0%, 100% { opacity: 0.05; }
+  50%      { opacity: 0.075; }
 }
-.aura-blob-1e { animation: drift-1-e 20s ease-in-out infinite; }
-
-/* V1F — Moderate breathing: gentler but still covers ground */
-@keyframes drift-1-f {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  33%     { transform: translate(12%, -14%) rotate(2deg) scale(1.05); }
-  66%     { transform: translate(-10%, 10%) rotate(-2deg) scale(0.95); }
+.serpent-nodes circle {
+  animation: node-pulse 5s ease-in-out infinite;
 }
-.aura-blob-1f { animation: drift-1-f 22s ease-in-out infinite; }
+.serpent-nodes circle:nth-child(2)  { animation-delay: 0.4s; }
+.serpent-nodes circle:nth-child(3)  { animation-delay: 0.8s; }
+.serpent-nodes circle:nth-child(4)  { animation-delay: 1.2s; }
+.serpent-nodes circle:nth-child(5)  { animation-delay: 1.6s; }
+.serpent-nodes circle:nth-child(6)  { animation-delay: 0.6s; }
+.serpent-nodes circle:nth-child(7)  { animation-delay: 1.0s; }
+.serpent-nodes circle:nth-child(8)  { animation-delay: 1.8s; }
+.serpent-nodes circle:nth-child(9)  { animation-delay: 0.3s; }
+.serpent-nodes circle:nth-child(10) { animation-delay: 1.4s; }
+.serpent-nodes circle:nth-child(11) { animation-delay: 2.0s; }
+.serpent-nodes circle:nth-child(12) { animation-delay: 0.9s; }
 
-/* ═══════════════════════════════════════════════════════════════════
-   BLOB 2 (right side, medium) — 6 animation variants
-   Sweeps leftward across the screen and returns, covering the
-   central and left areas to balance Blob 1's coverage.
-   ═══════════════════════════════════════════════════════════════════ */
+/* ── Micro nodes — scattered subtle twinkle ────────────────────── */
 
-/* V2A — Smooth float: drifts toward center + back */
-@keyframes drift-2-a {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25%     { transform: translate(-22%, 16%) rotate(-4deg) scale(0.9); }
-  50%     { transform: translate(14%, 28%) rotate(3deg) scale(1.1); }
-  75%     { transform: translate(24%, 8%) rotate(-3deg) scale(0.93); }
+@keyframes micro-twinkle {
+  0%, 100% { opacity: 0.03; }
+  50%      { opacity: 0.05; }
 }
-.aura-blob-2a { animation: drift-2-a 22s ease-in-out infinite; }
-
-/* V2B — Vertical rise emphasis: climbs high + drops low */
-@keyframes drift-2-b {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  20%     { transform: translate(-16%, -32%) rotate(-6deg) scale(1.07); }
-  40%     { transform: translate(12%, 24%) rotate(3deg) scale(0.9); }
-  60%     { transform: translate(-20%, -18%) rotate(-3deg) scale(1.06); }
-  80%     { transform: translate(10%, 16%) rotate(5deg) scale(0.94); }
+.serpent-micro-nodes circle {
+  animation: micro-twinkle 3s ease-in-out infinite;
 }
-.aura-blob-2b { animation: drift-2-b 20s ease-in-out infinite; }
+.serpent-micro-nodes circle:nth-child(odd)  { animation-delay: 0.5s; }
+.serpent-micro-nodes circle:nth-child(3n)   { animation-delay: 1.0s; }
+.serpent-micro-nodes circle:nth-child(5n+2) { animation-delay: 1.7s; }
 
-/* V2C — Counter-clockwise sweep: wide rotational arc */
-@keyframes drift-2-c {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  30%     { transform: translate(-26%, -20%) rotate(-8deg) scale(1.04); }
-  60%     { transform: translate(28%, -6%) rotate(8deg) scale(0.92); }
-  85%     { transform: translate(-20%, 26%) rotate(-5deg) scale(1.07); }
+/* ── Branches — subtle flow direction ──────────────────────────── */
+
+@keyframes branch-breathe {
+  0%, 100% { opacity: 0.04; }
+  50%      { opacity: 0.06; }
 }
-.aura-blob-2c { animation: drift-2-c 24s ease-in-out infinite; }
-
-/* V2D — Horizontal sweep: reaches far left → far right */
-@keyframes drift-2-d {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  30%     { transform: translate(-36%, 10%) rotate(-4deg) scale(0.94); }
-  60%     { transform: translate(24%, -12%) rotate(5deg) scale(1.06); }
-  85%     { transform: translate(-16%, 6%) rotate(-3deg) scale(0.97); }
+.serpent-branch {
+  animation: branch-breathe 7s ease-in-out infinite;
 }
-.aura-blob-2d { animation: drift-2-d 21s ease-in-out infinite; }
+.serpent-branch:nth-child(even) { animation-delay: 1.5s; }
 
-/* V2E — Diagonal zigzag: crosses the screen corner-to-corner */
-@keyframes drift-2-e {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  20%     { transform: translate(18%, 22%) rotate(4deg) scale(1.08); }
-  40%     { transform: translate(-26%, -16%) rotate(-6deg) scale(0.91); }
-  60%     { transform: translate(22%, -22%) rotate(3deg) scale(1.07); }
-  80%     { transform: translate(-16%, 18%) rotate(-4deg) scale(0.94); }
+/* ── Gears — subtle rotation suggestion ────────────────────────── */
+
+@keyframes gear-hint {
+  0%, 100% { opacity: 0.035; }
+  50%      { opacity: 0.05; }
 }
-.aura-blob-2e { animation: drift-2-e 19s ease-in-out infinite; }
-
-/* V2F — Gentle breathe: lighter but still reaches out */
-@keyframes drift-2-f {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  33%     { transform: translate(-14%, -16%) rotate(-3deg) scale(1.05); }
-  66%     { transform: translate(10%, 12%) rotate(3deg) scale(0.95); }
+.serpent-gears circle {
+  animation: gear-hint 9s ease-in-out infinite;
 }
-.aura-blob-2f { animation: drift-2-f 23s ease-in-out infinite; }
-
-/* ═══════════════════════════════════════════════════════════════════
-   BLOB 3 (bottom area, smaller) — 6 animation variants
-   Sweeps across the lower portion of the screen, reaching up
-   and sideways to fill the bottom with ambient glow.
-   ═══════════════════════════════════════════════════════════════════ */
-
-/* V3A — Gentle drift: covers bottom with smooth arcs */
-@keyframes drift-3-a {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  15%     { transform: translate(-14%, -12%) rotate(3deg) scale(1.06); }
-  45%     { transform: translate(20%, -8%) rotate(-3.5deg) scale(0.91); }
-  70%     { transform: translate(10%, 18%) rotate(2deg) scale(1.07); }
-  85%     { transform: translate(12%, 6%) rotate(-1.5deg) scale(0.95); }
-}
-.aura-blob-3a { animation: drift-3-a 20s ease-in-out infinite; }
-
-/* V3B — Pronounced vertical: climbs up high, sinks low */
-@keyframes drift-3-b {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25%     { transform: translate(-18%, -34%) rotate(-4deg) scale(1.09); }
-  50%     { transform: translate(12%, 26%) rotate(5deg) scale(0.89); }
-  75%     { transform: translate(-14%, -22%) rotate(-3deg) scale(1.06); }
-}
-.aura-blob-3b { animation: drift-3-b 18s ease-in-out infinite; }
-
-/* V3C — Circular drift: rotational sweep across lower half */
-@keyframes drift-3-c {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  30%     { transform: translate(26%, -16%) rotate(6deg) scale(1.04); }
-  60%     { transform: translate(-18%, 28%) rotate(-6deg) scale(0.93); }
-  85%     { transform: translate(16%, -22%) rotate(4deg) scale(1.06); }
-}
-.aura-blob-3c { animation: drift-3-c 22s ease-in-out infinite; }
-
-/* V3D — Horizontal sway: wide left↔right at bottom */
-@keyframes drift-3-d {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  25%     { transform: translate(32%, 6%) rotate(4deg) scale(1.03); }
-  50%     { transform: translate(-26%, -6%) rotate(-5deg) scale(0.95); }
-  75%     { transform: translate(18%, 12%) rotate(3deg) scale(1.04); }
-}
-.aura-blob-3d { animation: drift-3-d 24s ease-in-out infinite; }
-
-/* V3E — Diagonal stretch: crosses bottom area corner-to-corner */
-@keyframes drift-3-e {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  20%     { transform: translate(20%, 16%) rotate(3deg) scale(1.09); }
-  40%     { transform: translate(-16%, -22%) rotate(-5deg) scale(0.92); }
-  60%     { transform: translate(-22%, 18%) rotate(4deg) scale(1.08); }
-  80%     { transform: translate(16%, -20%) rotate(-4deg) scale(0.93); }
-}
-.aura-blob-3e { animation: drift-3-e 19s ease-in-out infinite; }
-
-/* V3F — Subtle shimmer: gentler but still wanders */
-@keyframes drift-3-f {
-  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  33%     { transform: translate(-10%, -12%) rotate(-2deg) scale(1.04); }
-  66%     { transform: translate(8%, 8%) rotate(2deg) scale(0.96); }
-}
-.aura-blob-3f { animation: drift-3-f 21s ease-in-out infinite; }
+.serpent-gears circle:nth-child(odd) { animation-delay: 1s; }

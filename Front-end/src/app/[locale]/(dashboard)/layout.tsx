@@ -1,10 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════════
    Pytomatiza+ Dashboard Layout
-   Shell for all authenticated pages: aura background + navbar +
-   content area. The aura reflects the user's chosen accent color
-   and uses a UNIQUE random animation pattern per section — every
-   page gets its own distinct motion, and the pattern changes
-   whenever the user navigates between tabs.
+   Shell for all authenticated pages: automation serpent background +
+   navbar + content area. The serpent reflects the user's chosen
+   accent color and adapts to light/dark mode automatically.
    ═══════════════════════════════════════════════════════════════════ */
 
 import { type ReactNode } from "react";
@@ -18,7 +16,7 @@ interface DashboardLayoutProps {
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <div className="relative flex min-h-screen flex-col">
-      {/* Aurora background — fixed behind content, reflects accent color */}
+      {/* Automation serpent background — fixed behind content, reflects accent color */}
       <AuraBackground />
 
       {/* Navbar — z-50 (defined in Navbar), always on top */}
