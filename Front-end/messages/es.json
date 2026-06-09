@@ -1022,7 +1022,8 @@
       },
       "dialogs": {
         "deleteConfirm": "¿Está seguro de que desea eliminar este diagrama?",
-        "shareLink": "¡Compartir enlace copiado al portapapeles! \n\nComparte este proyecto de arquitectura con tu equipo."
+        "shareLink": "¡Compartir enlace copiado al portapapeles! \n\nComparte este proyecto de arquitectura con tu equipo.",
+        "shareEmptyWarning": "¡Crea tu diagrama con los Agentes de IA primero para compartirlo!"
       }
     }
   },

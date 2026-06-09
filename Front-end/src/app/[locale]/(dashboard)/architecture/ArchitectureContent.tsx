@@ -170,6 +170,7 @@ export function ArchitectureContent() {
   };
 
   const handleShare = () => {
+    if (diagrams.length === 0) return;
     alert(t("dialogs.shareLink"));
   };
 
@@ -345,24 +346,75 @@ export function ArchitectureContent() {
             </div>
           </section>
 
-          {/* Additional actions */}
-          <button
-            type="button"
-            onClick={handleShare}
-            className={cn(
-              "flex w-full items-center gap-3 rounded-[var(--radius-lg)] border border-dashed border-[var(--border-default)]",
-              "bg-[var(--surface-1)] p-4 text-left transition-colors hover:bg-[var(--surface-2)]",
-              "focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[var(--brand-accent)]"
+          {/* Additional actions — Share */}
+          <div className="space-y-2">
+            <button
+              type="button"
+              onClick={handleShare}
+              aria-disabled={diagrams.length === 0}
+              tabIndex={diagrams.length === 0 ? -1 : 0}
+              className={cn(
+                "flex w-full items-center gap-3 rounded-[var(--radius-lg)] border border-dashed p-4 text-left transition-all",
+                diagrams.length > 0
+                  ? "border-[var(--border-default)] bg-[var(--surface-1)] hover:bg-[var(--surface-2)] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[var(--brand-accent)]"
+                  : "border-[var(--border-default)]/60 bg-[var(--surface-1)]/70 opacity-60 cursor-not-allowed"
+              )}
+            >
+              <div
+                className={cn(
+                  "flex h-10 w-10 shrink-0 items-center justify-center rounded-full",
+                  diagrams.length > 0
+                    ? "bg-[var(--brand-accent-light)]"
+                    : "bg-[var(--surface-2)]"
+                )}
+              >
+                <Share2
+                  className={cn(
+                    "h-5 w-5",
+                    diagrams.length > 0
+                      ? "text-[var(--brand-accent)]"
+                      : "text-[var(--text-tertiary)]"
+                  )}
+                  aria-hidden="true"
+                />
+              </div>
+              <div>
+                <p
+                  className={cn(
+                    "text-sm font-medium",
+                    diagrams.length > 0
+                      ? "text-[var(--text-primary)]"
+                      : "text-[var(--text-tertiary)]"
+                  )}
+                >
+                  {t("actions.share")}
+                </p>
+                <p
+                  className={cn(
+                    "text-xs mt-0.5",
+                    diagrams.length > 0
+                      ? "text-[var(--text-tertiary)]"
+                      : "text-[var(--text-tertiary)]/60"
+                  )}
+                >
+                  {t("actions.shareDescription")}
+                </p>
+              </div>
+            </button>
+
+            {/* Warning when no diagrams exist yet */}
+            {diagrams.length === 0 && (
+              <div
+                role="alert"
+                className="flex items-start gap-2 rounded-[var(--radius-md)] bg-[var(--color-warning)]/10 border border-[var(--color-warning)]/25 px-3 py-2.5"
+              >
+                <AlertTriangle className="h-4 w-4 shrink-0 mt-0.5 text-[var(--color-warning)]" aria-hidden="true" />
+                <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
+                  {t("dialogs.shareEmptyWarning")}
+                </p>
+              </div>
             )}
-          >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--brand-accent-light)]">
-              <Share2 className="h-5 w-5 text-[var(--brand-accent)]" aria-hidden="true" />
-            </div>
-            <div>
-              <p className="text-sm font-medium text-[var(--text-primary)]">{t("actions.share")}</p>
-              <p className="text-xs text-[var(--text-tertiary)] mt-0.5">{t("actions.shareDescription")}</p>
-            </div>
-          </button>
+          </div>
         </aside>
       </div>
 

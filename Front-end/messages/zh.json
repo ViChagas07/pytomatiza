@@ -1022,7 +1022,8 @@
       },
       "dialogs": {
         "deleteConfirm": "您确定要删除该图表吗？",
-        "shareLink": "分享链接已复制到剪贴板！ \n\n与您的团队分享此架构项目。"
+        "shareLink": "分享链接已复制到剪贴板！ \n\n与您的团队分享此架构项目。",
+        "shareEmptyWarning": "请先使用AI代理创建您的图表，然后再分享！"
       }
     }
   },

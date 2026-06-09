@@ -1022,7 +1022,8 @@
       },
       "dialogs": {
         "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce diagramme ?",
-        "shareLink": "Lien de partage copié dans le presse-papier ! \n\nPartagez ce projet d'architecture avec votre équipe."
+        "shareLink": "Lien de partage copié dans le presse-papier ! \n\nPartagez ce projet d'architecture avec votre équipe.",
+        "shareEmptyWarning": "Créez d'abord votre diagramme avec les agents IA pour le partager !"
       }
     }
   },

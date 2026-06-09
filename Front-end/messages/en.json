@@ -1063,7 +1063,8 @@
       },
       "dialogs": {
         "deleteConfirm": "Are you sure you want to delete this diagram?",
-        "shareLink": "Share link copied to clipboard!\n\nShare this architecture project with your team."
+        "shareLink": "Share link copied to clipboard!\n\nShare this architecture project with your team.",
+        "shareEmptyWarning": "Create your diagram with AI Agents first to share it!"
       },
       "actions": {
         "generate": "Generate diagram",

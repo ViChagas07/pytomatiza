@@ -1022,7 +1022,8 @@
       },
       "dialogs": {
         "deleteConfirm": "Möchten Sie dieses Diagramm wirklich löschen?",
-        "shareLink": "Teilen-Link in die Zwischenablage kopiert! \n\nTeilen Sie dieses Architekturprojekt mit Ihrem Team."
+        "shareLink": "Teilen-Link in die Zwischenablage kopiert! \n\nTeilen Sie dieses Architekturprojekt mit Ihrem Team.",
+        "shareEmptyWarning": "Erstellen Sie zuerst Ihr Diagramm mit KI-Agenten, um es zu teilen!"
       }
     }
   },

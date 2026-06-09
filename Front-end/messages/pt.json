@@ -1063,7 +1063,8 @@
       },
       "dialogs": {
         "deleteConfirm": "Tem certeza que deseja excluir este diagrama?",
-        "shareLink": "Link de compartilhamento copiado para a área de transferência!\n\nCompartilhe este projeto de arquitetura com sua equipe."
+        "shareLink": "Link de compartilhamento copiado para a área de transferência!\n\nCompartilhe este projeto de arquitetura com sua equipe.",
+        "shareEmptyWarning": "Crie o seu diagrama com ajuda dos Agentes de IA para compartilhá-lo!"
       },
       "actions": {
         "generate": "Gerar diagrama",
